@@ -1,0 +1,9 @@
+maintenance_id,machine_id,start_time,end_time,maintenance_type,parts_replaced,technician_id,cost,notes
+MAINT_000001,VF2_01,2025-01-01 08:00:00,2025-01-01 10:00:00,preventive,bearing,TECH_3,652.0744610995946,Preventive maintenance for VF2_01
+MAINT_000002,ST10_01,2025-01-01 08:00:00,2025-01-01 10:00:00,preventive,belt,TECH_2,495.5808787328392,Preventive maintenance for ST10_01
+MAINT_000003,KUKA_01,2025-01-01 08:00:00,2025-01-01 10:00:00,preventive,oil,TECH_3,609.1630623576224,Preventive maintenance for KUKA_01
+MAINT_000004,COMPRESSOR_01,2025-01-01 08:00:00,2025-01-01 10:00:00,preventive,filter,TECH_2,297.0532927332524,Preventive maintenance for COMPRESSOR_01
+MAINT_000005,LASER_01,2025-01-01 08:00:00,2025-01-01 10:00:00,preventive,oil,TECH_3,199.30149834407396,Preventive maintenance for LASER_01
+MAINT_000006,PRESS_01,2025-01-01 08:00:00,2025-01-01 10:00:00,preventive,oil,TECH_2,583.4278805620181,Preventive maintenance for PRESS_01
+MAINT_000007,DRILL_01,2025-01-01 08:00:00,2025-01-01 10:00:00,preventive,bearing,TECH_2,748.067818907726,Preventive maintenance for DRILL_01
+MAINT_000008,GRINDER_01,2025-01-01 08:00:00,2025-01-01 10:00:00,preventive,filter,TECH_3,465.85807349303326,Preventive maintenance for GRINDER_01
