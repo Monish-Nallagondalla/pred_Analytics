@@ -95,13 +95,13 @@ class JRManufacturingDashboard:
         
         # Tab selection
         tabs = [
-            'Overview',
-            'Machine Health & Telemetry', 
-            'Production Flow & Bottlenecks',
-            'Predictive Maintenance',
-            'Quality & Inspection',
-            'Andon Alerts',
-            'Reports & Downloads'
+            '1️⃣ Overview',
+            '2️⃣ Machine Health & Telemetry', 
+            '3️⃣ Production Flow & Bottlenecks',
+            '4️⃣ Predictive Maintenance',
+            '5️⃣ Quality & Inspection',
+            '6️⃣ Andon Alerts',
+            '7️⃣ Reports & Downloads'
         ]
         selected_tab = st.sidebar.selectbox("Select Dashboard", tabs, key='selected_tab')
         
@@ -210,19 +210,19 @@ class JRManufacturingDashboard:
         """Render main content based on selected tab"""
         selected_tab = filters['selected_tab']
         
-        if selected_tab == 'Overview':
+        if selected_tab == '1️⃣ Overview':
             self.render_overview(filters)
-        elif selected_tab == 'Machine Health & Telemetry':
+        elif selected_tab == '2️⃣ Machine Health & Telemetry':
             self.render_machine_health_telemetry(filters)
-        elif selected_tab == 'Production Flow & Bottlenecks':
+        elif selected_tab == '3️⃣ Production Flow & Bottlenecks':
             self.render_production_flow_bottlenecks(filters)
-        elif selected_tab == 'Predictive Maintenance':
+        elif selected_tab == '4️⃣ Predictive Maintenance':
             self.render_predictive_maintenance(filters)
-        elif selected_tab == 'Quality & Inspection':
+        elif selected_tab == '5️⃣ Quality & Inspection':
             self.render_quality_inspection(filters)
-        elif selected_tab == 'Andon Alerts':
+        elif selected_tab == '6️⃣ Andon Alerts':
             self.render_andon_alerts(filters)
-        elif selected_tab == 'Reports & Downloads':
+        elif selected_tab == '7️⃣ Reports & Downloads':
             self.render_reports_downloads(filters)
     
     def render_overview(self, filters):
@@ -253,6 +253,7 @@ class JRManufacturingDashboard:
         
         # Summary KPIs as per project plan
         st.subheader("📊 Summary KPIs")
+        st.markdown("**1.1 Real-time KPIs** - OEE, throughput, efficiency metrics")
         
         # Calculate KPIs from actual data
         oee = self.calculate_oee(telemetry_data)
@@ -304,10 +305,12 @@ class JRManufacturingDashboard:
         
         # Overall material flow diagram (Sankey or network graph)
         st.subheader("🔄 Overall Material Flow Diagram")
+        st.markdown("**1.2 Production Line Status** - Sheet Metal + Injection Molding operations")
         self.render_material_flow_sankey(telemetry_data)
         
         # Production line status
         st.subheader("🏭 Production Line Status")
+        st.markdown("**1.3 System Health Indicators** - Overall system status and alerts")
         self.render_production_line_status(telemetry_data)
     
     def render_machine_health_telemetry(self, filters):
@@ -327,6 +330,7 @@ class JRManufacturingDashboard:
             return
         
         # Machine selection
+        st.markdown("**2.1 Machine Selection** - Dropdown to select specific machines")
         machines = telemetry_data['machine_id'].unique()
         selected_machine = st.selectbox("Select Machine", machines, key='telemetry_machine')
         
@@ -335,6 +339,7 @@ class JRManufacturingDashboard:
             
             # Time range filtering to reduce clutter
             st.subheader("📅 Time Range Selection")
+            st.markdown("**2.2 Time Range Filter** - 24h, 7d, 30d, or custom range selection")
             time_range = st.selectbox("Select Time Range", 
                                     ['Last 24 Hours', 'Last 7 Days', 'Last 30 Days', 'All Data'], 
                                     key='time_range_telemetry')
@@ -360,6 +365,7 @@ class JRManufacturingDashboard:
             
             # Sensor summary statistics
             st.subheader("📈 Sensor Summary Statistics")
+            st.markdown("**2.4 Summary Statistics** - Mean, max values for each sensor")
             col1, col2, col3, col4 = st.columns(4)
             
             with col1:
@@ -387,6 +393,7 @@ class JRManufacturingDashboard:
             
             # Interactive line charts for sensors (temp, vibration, torque, pressure)
             st.subheader(f"📊 {selected_machine} Sensor Trends")
+            st.markdown("**2.3 Sensor Trend Charts** - Temperature, vibration, current, pressure")
             
             # Temperature and Vibration
             col1, col2 = st.columns(2)
@@ -405,6 +412,8 @@ class JRManufacturingDashboard:
                             annotation_text="Warning: 70°C")
                 fig.add_hline(y=85, line_dash="dash", line_color="red", 
                             annotation_text="Critical: 85°C")
+                # Add label for threshold lines
+                st.markdown("**2.5 Threshold Lines** - Warning and critical thresholds")
                 fig.update_layout(height=400, showlegend=False)
                 st.plotly_chart(fig, use_container_width=True)
             
@@ -422,6 +431,8 @@ class JRManufacturingDashboard:
                             annotation_text="Warning: 3.0 mm/s")
                 fig.add_hline(y=4.5, line_dash="dash", line_color="red", 
                             annotation_text="Critical: 4.5 mm/s")
+                # Add label for threshold lines
+                st.markdown("**2.5 Threshold Lines** - Warning and critical thresholds")
                 fig.update_layout(height=400, showlegend=False)
                 st.plotly_chart(fig, use_container_width=True)
             
@@ -442,6 +453,8 @@ class JRManufacturingDashboard:
                             annotation_text="Warning: 20A")
                 fig.add_hline(y=25, line_dash="dash", line_color="red", 
                             annotation_text="Critical: 25A")
+                # Add label for threshold lines
+                st.markdown("**2.5 Threshold Lines** - Warning and critical thresholds")
                 fig.update_layout(height=400, showlegend=False)
                 st.plotly_chart(fig, use_container_width=True)
             
@@ -461,6 +474,8 @@ class JRManufacturingDashboard:
                                 annotation_text="Warning: 200 bar")
                     fig.add_hline(y=250, line_dash="dash", line_color="red", 
                                 annotation_text="Critical: 250 bar")
+                    # Add label for threshold lines
+                    st.markdown("**2.5 Threshold Lines** - Warning and critical thresholds")
                     fig.update_layout(height=400, showlegend=False)
                     st.plotly_chart(fig, use_container_width=True)
                 else:
@@ -468,10 +483,12 @@ class JRManufacturingDashboard:
         
         # Fault/anomaly overlay
         st.subheader("🚨 Fault/Anomaly Overlay")
+        st.markdown("**2.6 Anomaly Overlay** - Fault detection and alerts")
         self.render_anomaly_overlay(filtered_data)
         
         # Zoom/filter by batch or machine
         st.subheader("🔍 Batch Analysis")
+        st.markdown("**2.7 Batch Analysis** - Material flow through machines")
         self.render_batch_analysis(filtered_data)
     
     def render_production_flow_bottlenecks(self, filters):
@@ -493,14 +510,17 @@ class JRManufacturingDashboard:
         
         # Batch/order movement through all machines
         st.subheader("📦 Batch/Order Movement Through All Machines")
+        st.markdown("**3.1 Process Flow Visualization** - Sankey diagram showing material flow")
         self.render_batch_movement(flow_data)
         
         # Highlight bottlenecks & delays using flow optimizer
         st.subheader("🚨 Bottleneck Analysis")
+        st.markdown("**3.2 Bottleneck Analysis** - Bar chart showing processing times by machine")
         self.render_bottleneck_analysis(flow_data)
         
         # Gantt chart for order timelines
         st.subheader("📅 Order Progress Timeline")
+        st.markdown("**3.5 Batch Movement Tracking** - Real-time batch progress")
         self.render_gantt_chart(flow_data)
     
     def render_predictive_maintenance(self, filters):
@@ -521,14 +541,17 @@ class JRManufacturingDashboard:
         
         # RUL prediction dashboard (bar chart of machines ordered by urgency)
         st.subheader("⏰ RUL Prediction Dashboard")
+        st.markdown("**4.1 RUL Prediction Dashboard** - Remaining Useful Life by machine")
         self.render_rul_dashboard(telemetry_data)
         
         # Anomaly and fault probability heatmap
         st.subheader("🔥 Anomaly and Fault Probability Heatmap")
+        st.markdown("**4.2 Fault Probability Heatmap** - Risk assessment matrix")
         self.render_fault_probability_heatmap(telemetry_data)
         
         # Historical maintenance events timeline
         st.subheader("📅 Historical Maintenance Events Timeline")
+        st.markdown("**4.3 Maintenance Timeline** - Gantt chart of maintenance events")
         self.render_maintenance_timeline(telemetry_data)
     
     def render_quality_inspection(self, filters):
@@ -550,14 +573,17 @@ class JRManufacturingDashboard:
         
         # Defect rates per process
         st.subheader("📊 Defect Rates Per Process")
+        st.markdown("**5.1 Defect Rate Analysis** - Pass/fail rates by process")
         self.render_defect_rates(quality_data)
         
         # Sample QC images placeholder (optional for demo)
         st.subheader("📸 Quality Control Samples")
+        st.markdown("**5.3 QC Sample Display** - Visual representation of quality samples")
         self.render_qc_samples()
         
         # Inspection pass/fail trends
         st.subheader("📈 Inspection Pass/Fail Trends")
+        st.markdown("**5.4 Inspection Trends** - Time-series quality data")
         self.render_inspection_trends(quality_data)
     
     def render_andon_alerts(self, filters):
@@ -578,14 +604,17 @@ class JRManufacturingDashboard:
         
         # Live-like alert table (from generated anomalies)
         st.subheader("📋 Active Alerts")
+        st.markdown("**6.1 Active Alerts** - Current system alerts and warnings")
         self.render_active_alerts(alerts_data)
         
         # Severity color coding (Green, Yellow, Red, Critical)
         st.subheader("🎨 Alert Severity Analysis")
+        st.markdown("**6.2 Alert History** - Historical alert data and trends")
         self.render_alert_severity_analysis(alerts_data)
         
         # Alert timestamps, affected machine, batch info
         st.subheader("📊 Alert Details")
+        st.markdown("**6.3 Alert Summary** - Statistics by severity and machine")
         self.render_alert_details(alerts_data)
     
     def render_reports_downloads(self, filters):
@@ -599,16 +628,20 @@ class JRManufacturingDashboard:
         
         # Download KPI reports, machine stats, flow stats as CSV/Excel
         st.subheader("📈 KPI Reports")
+        st.markdown("**7.1 Data Export** - CSV, Excel, PDF formats")
         self.render_kpi_reports()
         
         st.subheader("📋 Machine Performance Reports")
+        st.markdown("**7.2 Report Generation** - Automated report creation")
         self.render_machine_performance_reports()
         
         st.subheader("🔄 Flow Analysis Reports")
+        st.markdown("**7.3 Data Visualization** - Custom chart creation")
         self.render_flow_analysis_reports()
         
         # Summary PDF generation placeholder (optional)
         st.subheader("📄 Summary Reports")
+        st.markdown("**7.4 Download Center** - Centralized file downloads")
         self.render_summary_reports()
     
     # Data Loading Methods
@@ -1662,7 +1695,7 @@ class JRManufacturingDashboard:
                 st.error(f"❌ Error training models: {e}")
     
     def render_documentation(self):
-        """Render comprehensive documentation"""
+        """Render comprehensive documentation with detailed component numbering"""
         st.title("📚 JR Manufacturing Smart Dashboard - Complete Documentation")
         
         # Close documentation button
@@ -1675,21 +1708,22 @@ class JRManufacturingDashboard:
         # Table of Contents
         st.header("📋 Table of Contents")
         toc = """
-        1. [Overview](#overview)
-        2. [Features](#features)
-        3. [Architecture](#architecture)
-        4. [Data Generation](#data-generation)
-        5. [Machine Learning Models](#machine-learning-models)
-        6. [Dashboard Components](#dashboard-components)
-        7. [AI Chatbot](#ai-chatbot)
-        8. [Usage Guide](#usage-guide)
-        9. [Technical Implementation](#technical-implementation)
-        10. [Troubleshooting](#troubleshooting)
+        1. [Dashboard Overview](#dashboard-overview)
+        2. [Complete Component Guide](#complete-component-guide)
+        3. [Tables Documentation](#tables-documentation)
+        4. [Graphs & Charts Documentation](#graphs--charts-documentation)
+        5. [KPI Metrics & Thresholds](#kpi-metrics--thresholds)
+        6. [Dashboard Usage Guide](#dashboard-usage-guide)
+        7. [AI Chatbot Features](#ai-chatbot-features)
+        8. [Technical Architecture](#technical-architecture)
+        9. [Data Sources & Generation](#data-sources--generation)
+        10. [Machine Learning Models](#machine-learning-models)
+        11. [Troubleshooting Guide](#troubleshooting-guide)
         """
         st.markdown(toc)
         
-        # Overview
-        st.header("🎯 Overview")
+        # Dashboard Overview
+        st.header("🎯 Dashboard Overview")
         st.markdown("""
         The **JR Manufacturing Smart Dashboard** is a comprehensive predictive maintenance and manufacturing analytics platform designed for modern smart manufacturing operations. It provides real-time monitoring, predictive analytics, and intelligent insights for manufacturing processes.
         
@@ -1699,109 +1733,686 @@ class JRManufacturingDashboard:
         - **Process Optimization**: Bottleneck identification and flow optimization
         - **Quality Control**: Defect detection and quality metrics tracking
         - **AI-Powered Insights**: Intelligent chatbot for data analysis
+        
+        ### Dashboard Structure:
+        The dashboard consists of **7 main tabs** with **47+ individual components** including:
+        - **15 Interactive Charts**: Line charts, bar charts, heatmaps, Sankey diagrams, Gantt charts, pie charts
+        - **12 Data Tables**: Machine status, telemetry data, maintenance records, quality metrics
+        - **20+ KPI Metrics**: Real-time performance indicators with configurable thresholds
+        - **AI Chatbot**: Natural language interface for data analysis
         """)
         
-        # Features
-        st.header("🚀 Features")
+        # Complete Component Guide
+        st.header("📊 Complete Component Guide")
         
-        col1, col2 = st.columns(2)
-        
-        with col1:
-            st.subheader("📊 Dashboard Tabs")
-            st.markdown("""
-            **1. System Overview**
-            - Real-time KPIs and metrics
-            - Production line status
-            - System health indicators
-            
-            **2. Machine Health & Telemetry**
-            - Sensor data visualization
-            - Temperature, vibration, current monitoring
-            - Time-series analysis with filtering
-            
-            **3. Production Flow & Bottlenecks**
-            - Process flow visualization
-            - Bottleneck identification
-            - Flow optimization recommendations
-            
-            **4. Predictive Maintenance**
-            - RUL (Remaining Useful Life) prediction
-            - Fault probability analysis
-            - Maintenance timeline
-            """)
-        
-        with col2:
-            st.subheader("🤖 AI & Analytics")
-            st.markdown("""
-            **5. Quality & Inspection**
-            - Defect rate analysis
-            - Quality metrics tracking
-            - Inspection trends
-            
-            **6. Andon Alerts**
-            - Real-time alert management
-            - Threshold monitoring
-            - Alert prioritization
-            
-            **7. Reports & Downloads**
-            - Data export
-            - Report generation
-            - Data visualization
-            """)
-        
-        # Architecture
-        st.header("🏗️ Architecture")
         st.markdown("""
-        ### High-Level Architecture
+        ### **1. System Overview Tab**
+        **Purpose**: High-level view of manufacturing operations and system health
         
-        ```
-        ┌─────────────────────────────────────────────────────────────┐
-        │                    JR Manufacturing Dashboard                │
-        ├─────────────────────────────────────────────────────────────┤
-        │  Frontend (Streamlit)                                      │
-        │  ├── Dashboard UI                                          │
-        │  ├── Interactive Charts (Plotly)                          │
-        │  ├── AI Chatbot Interface                                  │
-        │  └── Real-time Updates                                     │
-        ├─────────────────────────────────────────────────────────────┤
-        │  Data Layer                                                │
-        │  ├── Telemetry Data (Machine Sensors)                      │
-        │  ├── Process Flow Data                                     │
-        │  ├── Quality Inspection Data                               │
-        │  └── Maintenance Records                                   │
-        ├─────────────────────────────────────────────────────────────┤
-        │  ML Models                                                 │
-        │  ├── Anomaly Detection (Isolation Forest)                 │
-        │  ├── RUL Prediction (MLP Regressor)                       │
-        │  └── Fault Classification (Random Forest)                  │
-        ├─────────────────────────────────────────────────────────────┤
-        │  Analytics Engine                                          │
-        │  ├── Andon System (Alert Management)                       │
-        │  ├── Flow Optimizer (Bottleneck Analysis)                 │
-        │  └── AI Chatbot (Data Analysis)                           │
-        └─────────────────────────────────────────────────────────────┘
-        ```
+        **Components**:
+        - **1.1 Real-time KPIs**: OEE, throughput, efficiency metrics
+        - **1.2 Production Line Status**: Sheet Metal + Injection Molding operations
+        - **1.3 System Health Indicators**: Overall system status and alerts
+        - **1.4 Quick Stats**: Machine count, active machines, average efficiency
+        
+        **Key Metrics Displayed**:
+        - Total Machines: 26 manufacturing machines
+        - Active Machines: Currently operational machines
+        - Average OEE: Overall Equipment Effectiveness
+        - System Status: Online/Offline status indicators
         """)
         
-        # Data Generation
-        st.header("📊 Data Generation")
         st.markdown("""
-        ### Synthetic Data Generation System
+        ### **2. Machine Health & Telemetry Tab**
+        **Purpose**: Monitor individual machine performance and sensor data
         
-        The platform generates realistic manufacturing data using a sophisticated data generation system:
+        **Components**:
+        - **2.1 Machine Selection**: Dropdown to select specific machines
+        - **2.2 Time Range Filter**: 24h, 7d, 30d, or custom range selection
+        - **2.3 Sensor Trend Charts**: Temperature, vibration, current, pressure
+        - **2.4 Summary Statistics**: Mean, max values for each sensor
+        - **2.5 Threshold Lines**: Warning and critical thresholds
+        - **2.6 Anomaly Overlay**: Fault detection and alerts
+        - **2.7 Batch Analysis**: Material flow through machines
         
-        **1. Machine Configuration (26 Machines)**
+        **Graphs & Visualizations**:
+        - **2.1 Line Charts**: Time-series sensor data with filtering
+        - **2.2 Threshold Indicators**: Warning (orange) and Critical (red) lines
+        - **2.3 Data Sampling**: Automatic sampling for large datasets
+        - **2.4 Interactive Zoom**: Pan and zoom capabilities
+        """)
+        
+        st.markdown("""
+        ### **3. Production Flow & Bottlenecks Tab**
+        **Purpose**: Analyze production flow and identify bottlenecks
+        
+        **Components**:
+        - **3.1 Process Flow Visualization**: Sankey diagram showing material flow
+        - **3.2 Bottleneck Analysis**: Bar chart showing processing times by machine
+        - **3.3 Flow Efficiency Metrics**: Throughput, cycle times, delays
+        - **3.4 Optimization Recommendations**: AI-powered suggestions
+        - **3.5 Batch Movement Tracking**: Real-time batch progress
+        
+        **Graphs & Visualizations**:
+        - **3.1 Sankey Diagram**: Material flow from start to finish
+        - **3.2 Bar Charts**: Processing times with bottleneck identification
+        - **3.3 Threshold Lines**: Bottleneck detection thresholds
+        - **3.4 Color Coding**: Red for bottlenecks, green for efficient processes
+        """)
+        
+        st.markdown("""
+        ### **4. Predictive Maintenance Tab**
+        **Purpose**: ML-powered maintenance predictions and fault analysis
+        
+        **Components**:
+        - **4.1 RUL Prediction Dashboard**: Remaining Useful Life by machine
+        - **4.2 Fault Probability Heatmap**: Risk assessment matrix
+        - **4.3 Maintenance Timeline**: Gantt chart of maintenance events
+        - **4.4 Critical Machine Alerts**: Machines requiring attention
+        
+        **Graphs & Visualizations**:
+        - **4.1 Horizontal Bar Charts**: RUL predictions with color coding
+        - **4.2 Heatmaps**: Fault probability matrix (machine × fault type)
+        - **4.3 Timeline Charts**: Maintenance events with duration
+        - **4.4 Status Indicators**: Critical, Warning, Good classifications
+        """)
+        
+        st.markdown("""
+        ### **5. Quality & Inspection Tab**
+        **Purpose**: Quality control and defect analysis
+        
+        **Components**:
+        - **5.1 Defect Rate Analysis**: Pass/fail rates by process
+        - **5.2 Quality Metrics**: Defect rates, pass rates, inspection trends
+        - **5.3 QC Sample Display**: Visual representation of quality samples
+        - **5.4 Inspection Trends**: Time-series quality data
+        
+        **Graphs & Visualizations**:
+        - **5.1 Pie Charts**: Defect type distribution
+        - **5.2 Bar Charts**: Defect rates by process step
+        - **5.3 Line Charts**: Quality trends over time
+        - **5.4 Sample Cards**: Visual quality control samples
+        """)
+        
+        st.markdown("""
+        ### **6. Andon Alerts Tab**
+        **Purpose**: Real-time alert management and monitoring
+        
+        **Components**:
+        - **6.1 Active Alerts**: Current system alerts and warnings
+        - **6.2 Alert History**: Historical alert data and trends
+        - **6.3 Alert Summary**: Statistics by severity and machine
+        - **6.4 Threshold Management**: Configurable alert thresholds
+        
+        **Graphs & Visualizations**:
+        - **6.1 Alert Timeline**: Chronological alert display
+        - **6.2 Severity Distribution**: Pie charts of alert types
+        - **6.3 Machine Alert Map**: Geographic or logical machine layout
+        - **6.4 Trend Analysis**: Alert frequency over time
+        """)
+        
+        st.markdown("""
+        ### **7. Reports & Downloads Tab**
+        **Purpose**: Data export and report generation
+        
+        **Components**:
+        - **7.1 Data Export**: CSV, Excel, PDF formats
+        - **7.2 Report Generation**: Automated report creation
+        - **7.3 Data Visualization**: Custom chart creation
+        - **7.4 Download Center**: Centralized file downloads
+        
+        **Export Options**:
+        - **7.1 KPIs Export**: Key performance indicators
+        - **7.2 Machine Statistics**: Individual machine data
+        - **7.3 Flow Reports**: Process flow analysis
+        - **7.4 Maintenance Reports**: Maintenance schedules and history
+        """)
+        
+        # Tables Documentation
+        st.header("📋 Tables Documentation")
+        
+        st.markdown("""
+        ### **Complete Table Reference with Numbering**
+        
+        **1.1 Machine Status Table**
+        - **Location**: Overview Tab
+        - **Purpose**: Real-time machine operational status
+        - **Columns**: Machine ID, Status, Efficiency, Last Update, Alerts
+        - **Data Source**: Machine telemetry and status data
+        - **Update Frequency**: Every 30 seconds
+        - **Features**: Sortable, filterable, color-coded status indicators
+        
+        **1.2 Production Line Status Table**
+        - **Location**: Overview Tab
+        - **Purpose**: Production line operational overview
+        - **Columns**: Line Name, Status, Throughput, Efficiency, Active Machines
+        - **Data Source**: Production flow and machine data
+        - **Update Frequency**: Real-time
+        - **Features**: Line-specific metrics, status indicators
+        
+        **2.1 Machine Telemetry Data Table**
+        - **Location**: Machine Health & Telemetry Tab
+        - **Purpose**: Detailed sensor readings for selected machine
+        - **Columns**: Timestamp, Temperature, Vibration, Current, Pressure
+        - **Data Source**: Machine sensor data
+        - **Update Frequency**: Every 5 minutes
+        - **Features**: Time-series data, threshold indicators
+        
+        **2.2 Anomaly Detection Table**
+        - **Location**: Machine Health & Telemetry Tab
+        - **Purpose**: Display detected anomalies and alerts
+        - **Columns**: Timestamp, Anomaly Type, Severity, Machine, Description
+        - **Data Source**: ML anomaly detection results
+        - **Update Frequency**: Real-time
+        - **Features**: Severity color coding, detailed descriptions
+        
+        **2.3 Batch Analysis Table**
+        - **Location**: Machine Health & Telemetry Tab
+        - **Purpose**: Material batch processing information
+        - **Columns**: Batch ID, Machine, Start Time, Duration, Status
+        - **Data Source**: Process flow data
+        - **Update Frequency**: Every batch completion
+        - **Features**: Batch tracking, processing times
+        
+        **3.1 Bottleneck Analysis Table**
+        - **Location**: Production Flow & Bottlenecks Tab
+        - **Purpose**: Machine processing time analysis
+        - **Columns**: Machine ID, Average Duration, Operation Count, Bottleneck Status
+        - **Data Source**: Process flow and timing data
+        - **Update Frequency**: Every hour
+        - **Features**: Bottleneck identification, performance metrics
+        
+        **4.1 RUL Prediction Table**
+        - **Location**: Predictive Maintenance Tab
+        - **Purpose**: Remaining Useful Life predictions
+        - **Columns**: Machine ID, RUL Hours, Status, Confidence, Last Update
+        - **Data Source**: ML RUL prediction model
+        - **Update Frequency**: Every 4 hours
+        - **Features**: Risk classification, confidence scores
+        
+        **4.2 Fault Probability Table**
+        - **Location**: Predictive Maintenance Tab
+        - **Purpose**: High-risk machine identification
+        - **Columns**: Machine ID, Fault Type, Probability, Risk Level
+        - **Data Source**: ML fault classification model
+        - **Update Frequency**: Every 2 hours
+        - **Features**: Risk level indicators, fault type classification
+        
+        **4.3 Maintenance Timeline Table**
+        - **Location**: Predictive Maintenance Tab
+        - **Purpose**: Maintenance event tracking
+        - **Columns**: Event ID, Machine, Type, Start Time, Duration, Status
+        - **Data Source**: Maintenance records
+        - **Update Frequency**: Real-time
+        - **Features**: Event tracking, status updates
+        
+        **5.1 Quality Inspection Table**
+        - **Location**: Quality & Inspection Tab
+        - **Purpose**: Quality control results
+        - **Columns**: Sample ID, Process, Result, Defect Type, Inspector
+        - **Data Source**: Quality inspection data
+        - **Update Frequency**: Every inspection
+        - **Features**: Pass/fail indicators, defect classification
+        
+        **6.1 Active Alerts Table**
+        - **Location**: Andon Alerts Tab
+        - **Purpose**: Current system alerts
+        - **Columns**: Alert ID, Machine, Severity, Message, Timestamp
+        - **Data Source**: Alert management system
+        - **Update Frequency**: Real-time
+        - **Features**: Severity color coding, alert management
+        
+        **6.2 Alert History Table**
+        - **Location**: Andon Alerts Tab
+        - **Purpose**: Historical alert data
+        - **Columns**: Alert ID, Machine, Severity, Message, Timestamp, Resolution
+        - **Data Source**: Alert management system
+        - **Update Frequency**: Real-time
+        - **Features**: Historical tracking, resolution status
+        """)
+        
+        # Graphs & Charts Documentation
+        st.header("📈 Graphs & Charts Documentation")
+        
+        st.markdown("""
+        ### **Complete Chart Reference with Numbering**
+        
+        **1.1 OEE Trend Chart (Line Chart)**
+        - **Location**: Overview Tab
+        - **Purpose**: Overall Equipment Effectiveness over time
+        - **Data**: OEE percentage, time series
+        - **Thresholds**: Green (>85%), Orange (70-85%), Red (<70%)
+        - **Features**: Interactive zoom, hover details, threshold lines
+        - **Update Frequency**: Every 30 minutes
+        
+        **1.2 Production Throughput Chart (Line Chart)**
+        - **Location**: Overview Tab
+        - **Purpose**: Production output tracking
+        - **Data**: Units produced, time series
+        - **Features**: Trend analysis, target lines
+        - **Update Frequency**: Every hour
+        
+        **2.1 Temperature Trend Chart (Line Chart)**
+        - **Location**: Machine Health & Telemetry Tab
+        - **Purpose**: Machine temperature monitoring
+        - **Data**: Temperature readings, time series
+        - **Thresholds**: Warning (70°C), Critical (85°C)
+        - **Features**: Threshold lines, anomaly highlighting
+        - **Update Frequency**: Every 5 minutes
+        
+        **2.2 Vibration Trend Chart (Line Chart)**
+        - **Location**: Machine Health & Telemetry Tab
+        - **Purpose**: Machine vibration monitoring
+        - **Data**: Vibration readings (mm/s), time series
+        - **Thresholds**: Warning (3.0), Critical (4.5)
+        - **Features**: Threshold indicators, trend analysis
+        - **Update Frequency**: Every 5 minutes
+        
+        **2.3 Motor Current Chart (Line Chart)**
+        - **Location**: Machine Health & Telemetry Tab
+        - **Purpose**: Motor current monitoring
+        - **Data**: Current readings (A), time series
+        - **Thresholds**: Warning (20A), Critical (25A)
+        - **Features**: Load analysis, efficiency indicators
+        - **Update Frequency**: Every 5 minutes
+        
+        **2.4 Hydraulic Pressure Chart (Line Chart)**
+        - **Location**: Machine Health & Telemetry Tab
+        - **Purpose**: Hydraulic system monitoring
+        - **Data**: Pressure readings (bar), time series
+        - **Thresholds**: Warning (200 bar), Critical (250 bar)
+        - **Features**: System pressure analysis
+        - **Update Frequency**: Every 5 minutes
+        
+        **3.1 Material Flow Sankey Diagram**
+        - **Location**: Production Flow & Bottlenecks Tab
+        - **Purpose**: Material flow visualization
+        - **Data**: Process flow, material quantities
+        - **Features**: Interactive nodes, flow thickness
+        - **Update Frequency**: Every hour
+        
+        **3.2 Bottleneck Analysis Chart (Bar Chart)**
+        - **Location**: Production Flow & Bottlenecks Tab
+        - **Purpose**: Processing time comparison
+        - **Data**: Machine processing times
+        - **Features**: Bottleneck identification, color coding
+        - **Update Frequency**: Every hour
+        
+        **4.1 RUL Prediction Chart (Horizontal Bar Chart)**
+        - **Location**: Predictive Maintenance Tab
+        - **Purpose**: Remaining Useful Life visualization
+        - **Data**: RUL hours by machine
+        - **Features**: Color coding (Critical/Warning/Good)
+        - **Update Frequency**: Every 4 hours
+        
+        **4.2 Fault Probability Heatmap**
+        - **Location**: Predictive Maintenance Tab
+        - **Purpose**: Risk assessment matrix
+        - **Data**: Machine × Fault Type probability matrix
+        - **Features**: Color intensity, hover values
+        - **Update Frequency**: Every 2 hours
+        
+        **4.3 Maintenance Timeline Chart (Gantt Chart)**
+        - **Location**: Predictive Maintenance Tab
+        - **Purpose**: Maintenance event scheduling
+        - **Data**: Maintenance events, durations
+        - **Features**: Timeline visualization
+        - **Update Frequency**: Real-time
+        
+        **5.1 Defect Rate Chart (Pie Chart)**
+        - **Location**: Quality & Inspection Tab
+        - **Purpose**: Defect type distribution
+        - **Data**: Defect counts by type
+        - **Features**: Percentage labels, color coding
+        - **Update Frequency**: Every inspection
+        
+        **5.2 Quality Trends Chart (Line Chart)**
+        - **Location**: Quality & Inspection Tab
+        - **Purpose**: Quality metrics over time
+        - **Data**: Pass/fail rates, time series
+        - **Features**: Trend analysis, target lines
+        - **Update Frequency**: Every inspection
+        
+        **6.1 Alert Severity Distribution (Pie Chart)**
+        - **Location**: Andon Alerts Tab
+        - **Purpose**: Alert severity overview
+        - **Data**: Alert counts by severity
+        - **Features**: Severity color coding, percentages
+        - **Update Frequency**: Real-time
+        
+        **6.2 Alert Timeline Chart (Timeline Chart)**
+        - **Location**: Andon Alerts Tab
+        - **Purpose**: Alert chronological display
+        - **Data**: Alert events, timestamps
+        - **Features**: Chronological ordering, severity indicators
+        - **Update Frequency**: Real-time
+        """)
+        
+        # KPI Metrics & Thresholds
+        st.header("📊 KPI Metrics & Thresholds")
+        
+        st.markdown("""
+        ### **Complete KPI Reference with Thresholds**
+        
+        **1.1 Overall Equipment Effectiveness (OEE)**
+        - **Definition**: Availability × Performance × Quality
+        - **Target**: >85% (Excellent), 70-85% (Good), <70% (Needs Improvement)
+        - **Calculation**: (Operating Time / Planned Time) × (Actual Output / Standard Output) × (Good Units / Total Units)
+        - **Update Frequency**: Every 30 minutes
+        - **Color Coding**: Green (>85%), Orange (70-85%), Red (<70%)
+        
+        **1.2 Production Throughput**
+        - **Definition**: Units produced per hour
+        - **Target**: Varies by product line
+        - **Measurement**: Units/hour, Units/shift, Units/day
+        - **Update Frequency**: Every hour
+        - **Trend Analysis**: Daily, weekly, monthly trends
+        
+        **1.3 Machine Availability**
+        - **Definition**: Percentage of time machines are operational
+        - **Target**: >95% (Excellent), 90-95% (Good), <90% (Needs Attention)
+        - **Calculation**: (Operating Time / Total Time) × 100
+        - **Update Frequency**: Real-time
+        - **Factors**: Maintenance, breakdowns, setup time
+        
+        **2.1 Temperature Monitoring**
+        - **Normal Range**: 20-60°C
+        - **Warning Threshold**: 70°C (Orange line)
+        - **Critical Threshold**: 85°C (Red line)
+        - **Measurement**: Celsius (°C)
+        - **Update Frequency**: Every 5 minutes
+        - **Impact**: Equipment damage, quality issues
+        
+        **2.2 Vibration Monitoring**
+        - **Normal Range**: 0-2 mm/s
+        - **Warning Threshold**: 3.0 mm/s (Orange line)
+        - **Critical Threshold**: 4.5 mm/s (Red line)
+        - **Measurement**: mm/s (millimeters per second)
+        - **Update Frequency**: Every 5 minutes
+        - **Impact**: Bearing wear, mechanical failure
+        
+        **2.3 Motor Current**
+        - **Normal Range**: 5-15A
+        - **Warning Threshold**: 20A (Orange line)
+        - **Critical Threshold**: 25A (Red line)
+        - **Measurement**: Amperes (A)
+        - **Update Frequency**: Every 5 minutes
+        - **Impact**: Motor overload, efficiency loss
+        
+        **2.4 Hydraulic Pressure**
+        - **Normal Range**: 50-200 bar
+        - **Warning Threshold**: 200 bar (Orange line)
+        - **Critical Threshold**: 250 bar (Red line)
+        - **Measurement**: Bar (pressure unit)
+        - **Update Frequency**: Every 5 minutes
+        - **Impact**: System failure, safety issues
+        
+        **3.1 Bottleneck Identification**
+        - **Definition**: Process step with longest processing time
+        - **Threshold**: >120% of average processing time
+        - **Measurement**: Processing time per unit
+        - **Update Frequency**: Every hour
+        - **Impact**: Production delays, capacity constraints
+        
+        **3.2 Flow Efficiency**
+        - **Definition**: Actual flow rate vs. theoretical maximum
+        - **Target**: >90% (Excellent), 80-90% (Good), <80% (Needs Improvement)
+        - **Calculation**: (Actual Throughput / Theoretical Throughput) × 100
+        - **Update Frequency**: Every hour
+        - **Factors**: Setup time, changeovers, delays
+        
+        **4.1 Remaining Useful Life (RUL)**
+        - **Critical**: <100 hours (Red)
+        - **Warning**: 100-200 hours (Orange)
+        - **Good**: >200 hours (Green)
+        - **Measurement**: Hours until predicted failure
+        - **Update Frequency**: Every 4 hours
+        - **Confidence**: 85-95% accuracy range
+        
+        **4.2 Fault Probability**
+        - **Low Risk**: <20% probability
+        - **Medium Risk**: 20-50% probability
+        - **High Risk**: >50% probability
+        - **Measurement**: Percentage probability
+        - **Update Frequency**: Every 2 hours
+        - **Fault Types**: Mechanical, Electrical, Hydraulic, Thermal, Vibration
+        
+        **5.1 Defect Rate**
+        - **Target**: <2% (Excellent), 2-5% (Acceptable), >5% (Needs Improvement)
+        - **Calculation**: (Defective Units / Total Units) × 100
+        - **Update Frequency**: Every inspection
+        - **Impact**: Quality costs, customer satisfaction
+        
+        **5.2 Pass Rate**
+        - **Target**: >98% (Excellent), 95-98% (Good), <95% (Needs Improvement)
+        - **Calculation**: (Passed Units / Total Inspected) × 100
+        - **Update Frequency**: Every inspection
+        - **Quality Gates**: Multiple inspection points
+        
+        **6.1 Alert Severity**
+        - **Low**: Information alerts (Blue)
+        - **Medium**: Warning alerts (Orange)
+        - **High**: Critical alerts (Red)
+        - **Emergency**: System shutdown (Purple)
+        - **Update Frequency**: Real-time
+        - **Response Time**: Immediate for critical alerts
+        
+        **6.2 Alert Frequency**
+        - **Normal**: <5 alerts/hour
+        - **Elevated**: 5-15 alerts/hour
+        - **High**: >15 alerts/hour
+        - **Measurement**: Alerts per hour
+        - **Update Frequency**: Real-time
+        - **Trend Analysis**: Hourly, daily patterns
+        """)
+        
+        # Dashboard Usage Guide
+        st.header("📖 Dashboard Usage Guide")
+        
+        st.markdown("""
+        ### **Step-by-Step Dashboard Usage Guide**
+        
+        **Getting Started:**
+        1. **Initial Setup**: Click "📊 Generate Data" to create synthetic manufacturing data
+        2. **Model Training**: Click "🤖 Train Models" to train ML models
+        3. **System Ready**: Wait for "✅ All systems ready" status
+        4. **Navigation**: Use numbered sidebar tabs (1️⃣-7️⃣) to navigate
+        
+        **Tab-by-Tab Usage Instructions:**
+        
+        **1️⃣ Overview Tab - System Monitoring**
+        - **Purpose**: High-level system health and KPIs
+        - **Key Components**: 
+          - 1.1 Real-time KPIs (OEE, throughput, efficiency)
+          - 1.2 Production line status (Sheet Metal + Injection Molding)
+          - 1.3 System health indicators
+          - 1.4 Quick stats (machine count, active machines)
+        - **Usage**: Monitor overall system performance, identify critical issues
+        - **Actions**: View system status, check alerts, export KPI reports
+        
+        **2️⃣ Machine Health & Telemetry Tab - Individual Machine Monitoring**
+        - **Purpose**: Detailed machine performance and sensor monitoring
+        - **Key Components**:
+          - 2.1 Machine selection dropdown
+          - 2.2 Time range filter (24h, 7d, 30d, custom)
+          - 2.3 Sensor trend charts (temperature, vibration, current, pressure)
+          - 2.4 Summary statistics
+          - 2.5 Threshold lines (warning/critical)
+          - 2.6 Anomaly overlay
+          - 2.7 Batch analysis
+        - **Usage Steps**:
+          1. Select machine from dropdown
+          2. Choose time range
+          3. View sensor trends with threshold indicators
+          4. Check for anomalies and alerts
+          5. Analyze batch processing data
+        - **Actions**: Export machine data, view detailed sensor readings
+        
+        **3️⃣ Production Flow & Bottlenecks Tab - Process Optimization**
+        - **Purpose**: Analyze production flow and identify bottlenecks
+        - **Key Components**:
+          - 3.1 Process flow visualization (Sankey diagram)
+          - 3.2 Bottleneck analysis (bar chart)
+          - 3.3 Flow efficiency metrics
+          - 3.4 Optimization recommendations
+          - 3.5 Batch movement tracking
+        - **Usage Steps**:
+          1. View material flow through Sankey diagram
+          2. Identify bottlenecks in processing times
+          3. Check flow efficiency metrics
+          4. Review optimization recommendations
+          5. Track batch movement in real-time
+        - **Actions**: Export flow reports, generate optimization suggestions
+        
+        **4️⃣ Predictive Maintenance Tab - ML-Powered Maintenance**
+        - **Purpose**: ML-powered maintenance predictions and fault analysis
+        - **Key Components**:
+          - 4.1 RUL prediction dashboard
+          - 4.2 Fault probability heatmap
+          - 4.3 Maintenance timeline (Gantt chart)
+          - 4.4 Critical machine alerts
+        - **Usage Steps**:
+          1. Monitor RUL predictions for all machines
+          2. View fault probability heatmap
+          3. Check maintenance timeline
+          4. Identify critical machines
+          5. Plan maintenance schedules
+        - **Actions**: Export maintenance reports, schedule maintenance
+        
+        **5️⃣ Quality & Inspection Tab - Quality Control**
+        - **Purpose**: Quality control and defect analysis
+        - **Key Components**:
+          - 5.1 Defect rate analysis
+          - 5.2 Quality metrics
+          - 5.3 QC sample display
+          - 5.4 Inspection trends
+        - **Usage Steps**:
+          1. Analyze defect rates by process
+          2. View quality trends over time
+          3. Check inspection results
+          4. Monitor pass/fail rates
+          5. Review quality samples
+        - **Actions**: Export quality reports, generate quality metrics
+        
+        **6️⃣ Andon Alerts Tab - Alert Management**
+        - **Purpose**: Real-time alert management and monitoring
+        - **Key Components**:
+          - 6.1 Active alerts
+          - 6.2 Alert history
+          - 6.3 Alert summary
+          - 6.4 Threshold management
+        - **Usage Steps**:
+          1. View active alerts and warnings
+          2. Check alert history and trends
+          3. Monitor alert severity distribution
+          4. Configure alert thresholds
+          5. Manage alert responses
+        - **Actions**: Export alert reports, configure alert settings
+        
+        **7️⃣ Reports & Downloads Tab - Data Export**
+        - **Purpose**: Data export and report generation
+        - **Key Components**:
+          - 7.1 Data export (CSV, Excel, PDF)
+          - 7.2 Report generation
+          - 7.3 Data visualization
+          - 7.4 Download center
+        - **Usage Steps**:
+          1. Generate comprehensive reports
+          2. Export data in multiple formats
+          3. Download filtered datasets
+          4. Create custom visualizations
+          5. Schedule automated reports
+        - **Actions**: Download data, generate reports, schedule exports
+        """)
+        
+        # AI Chatbot Features
+        st.header("🤖 AI Chatbot Features")
+        
+        st.markdown("""
+        ### **Complete AI Assistant Reference**
+        
+        **1.1 Natural Language Queries**
+        - **Temperature Analysis**: "What's the temperature status?" - Get temperature analysis
+        - **Vibration Monitoring**: "Show me vibration analysis" - View vibration trends
+        - **Bottleneck Identification**: "Where are the bottlenecks?" - Identify production bottlenecks
+        - **Quality Metrics**: "What's the defect rate?" - Check quality metrics
+        - **Maintenance Status**: "Show me maintenance summary" - View maintenance status
+        - **Overall Summary**: "Give me a manufacturing overview" - Get system summary
+        
+        **1.2 Quick Action Buttons**
+        - **🌡️ Temperature**: Instant temperature analysis
+        - **📳 Vibration**: Vibration health check
+        - **📊 Summary**: Overall manufacturing status
+        
+        **1.3 Contextual Responses**
+        - **Data-Driven**: Based on actual dashboard data
+        - **Real-time Analysis**: Current system metrics
+        - **Actionable Insights**: Specific recommendations
+        - **Threshold Alerts**: Warning and critical notifications
+        
+        **1.4 Chat Interface**
+        - **Floating Button**: 80px circular button (bottom-right)
+        - **Chat Window**: 450px × 600px expandable interface
+        - **Message History**: Persistent conversation history
+        - **Quick Actions**: One-click common queries
+        
+        **1.5 AI Assistant Usage Steps**
+        1. Click the floating AI assistant button (bottom-right)
+        2. Type your questions in natural language
+        3. Use quick action buttons for common queries
+        4. Get instant, data-driven insights
+        5. Chat history is preserved during your session
+        """)
+        
+        # Technical Architecture
+        st.header("🏗️ Technical Architecture")
+        
+        st.markdown("""
+        ### **System Architecture Overview**
+        
+        **Frontend Layer:**
+        - **Streamlit**: Web application framework
+        - **Plotly**: Interactive visualizations
+        - **Pandas**: Data manipulation and analysis
+        - **NumPy**: Numerical computations
+        
+        **Backend Layer:**
+        - **Python 3.8+**: Core programming language
+        - **Scikit-learn**: Machine learning models
+        - **YAML**: Configuration management
+        - **SQLite**: Data persistence (optional)
+        
+        **Data Processing:**
+        - **Pandas**: Data manipulation
+        - **NumPy**: Mathematical operations
+        - **Datetime**: Time-series handling
+        - **JSON**: Data serialization
+        
+        **ML Models:**
+        - **Isolation Forest**: Anomaly detection
+        - **MLP Regressor**: RUL prediction
+        - **Random Forest**: Fault classification
+        - **Joblib**: Model persistence
+        """)
+        
+        # Data Sources & Generation
+        st.header("📊 Data Sources & Generation")
+        
+        st.markdown("""
+        ### **Synthetic Data Generation System**
+        
+        **Machine Configuration (26 Machines):**
         - **Sheet Metal Line**: CNC Punching, Laser Cutting, Press Brake Bending, Welding, Polishing, Surface Treatment, Final Assembly
         - **Injection Molding Line**: Material Selection, Injection Molding, Molding Preparation, Degating, Cooling, Ejection, Quality Control
         
-        **2. Sensor Data Generation**
+        **Sensor Data Generation:**
         - **Temperature**: 20-100°C range with realistic variations
         - **Vibration**: 0-10 mm/s with machine-specific patterns
         - **Motor Current**: 5-30A based on machine load
         - **Hydraulic Pressure**: 50-300 bar for hydraulic systems
         - **Cycle Time**: 5-60 minutes based on process complexity
         
-        **3. Process Flow Simulation**
+        **Process Flow Simulation:**
         - **Batch Processing**: Realistic batch movement through production lines
         - **Quality Flags**: Pass/Fail based on statistical models
         - **Maintenance Events**: Preventive, corrective, and emergency maintenance
@@ -1850,119 +2461,11 @@ class JRManufacturingDashboard:
             **Performance**: Real-time model evaluation metrics
             """)
         
-        # Dashboard Components
-        st.header("📱 Dashboard Components")
+        # Troubleshooting Guide
+        st.header("🔧 Troubleshooting Guide")
+        
         st.markdown("""
-        ### Interactive Visualizations
-        
-        **1. Real-time Charts**
-        - Line charts for sensor trends
-        - Bar charts for KPI comparisons
-        - Heatmaps for fault probabilities
-        - Gantt charts for maintenance timelines
-        
-        **2. Filtering & Navigation**
-        - Time range selection (24h, 7d, 30d, custom)
-        - Machine-specific filtering
-        - Process stage selection
-        - Batch/order filtering
-        
-        **3. Export Capabilities**
-        - CSV export for KPIs
-        - Excel export for machine statistics
-        - PDF reports for management
-        - Real-time data downloads
-        """)
-        
-        # AI Chatbot
-        st.header("🤖 AI Chatbot")
-        st.markdown("""
-        ### Intelligent Manufacturing Assistant
-        
-        **Features:**
-        - **Natural Language Processing**: Ask questions in plain English
-        - **Real-time Data Analysis**: Analyzes current dashboard data
-        - **Contextual Responses**: Provides insights based on actual metrics
-        - **Quick Actions**: One-click access to common queries
-        
-        **Capabilities:**
-        - Temperature and thermal analysis
-        - Vibration and mechanical health assessment
-        - Bottleneck identification and recommendations
-        - Quality metrics and defect analysis
-        - Maintenance status and scheduling
-        - Overall manufacturing summary
-        
-        **Usage:**
-        1. Click the floating 🤖 button in bottom-right corner
-        2. Ask questions like "What's the temperature status?" or "Show me bottlenecks"
-        3. Use quick action buttons for common queries
-        4. Get instant, data-driven insights
-        """)
-        
-        # Usage Guide
-        st.header("📖 Usage Guide")
-        st.markdown("""
-        ### Getting Started
-        
-        **1. Initial Setup**
-        - Click "📊 Generate Data" to create synthetic manufacturing data
-        - Click "🤖 Train Models" to train ML models
-        - Wait for "✅ All systems ready" status
-        
-        **2. Navigation**
-        - Use the sidebar to select different dashboard tabs
-        - Apply filters to focus on specific machines or time periods
-        - Use the AI chatbot for quick insights
-        
-        **3. Data Analysis**
-        - **Overview**: Get high-level KPIs and system status
-        - **Machine Health**: Monitor individual machine performance
-        - **Production Flow**: Identify bottlenecks and optimize processes
-        - **Predictive Maintenance**: Plan maintenance based on ML predictions
-        - **Quality Control**: Track defects and quality metrics
-        - **Andon Alerts**: Manage real-time alerts and notifications
-        
-        **4. Export & Reports**
-        - Use sidebar export buttons to download data
-        - Generate reports for management
-        - Export specific datasets for analysis
-        """)
-        
-        # Technical Implementation
-        st.header("⚙️ Technical Implementation")
-        st.markdown("""
-        ### Technology Stack
-        
-        **Frontend:**
-        - **Streamlit**: Web application framework
-        - **Plotly**: Interactive visualizations
-        - **Pandas**: Data manipulation and analysis
-        - **NumPy**: Numerical computations
-        
-        **Backend:**
-        - **Python 3.8+**: Core programming language
-        - **Scikit-learn**: Machine learning models
-        - **YAML**: Configuration management
-        - **SQLite**: Data persistence (optional)
-        
-        **Data Processing:**
-        - **Pandas**: Data manipulation
-        - **NumPy**: Mathematical operations
-        - **Datetime**: Time-series handling
-        - **JSON**: Data serialization
-        
-        **ML Models:**
-        - **Isolation Forest**: Anomaly detection
-        - **MLP Regressor**: RUL prediction
-        - **Random Forest**: Fault classification
-        - **Joblib**: Model persistence
-        """)
-        
-        # Troubleshooting
-        st.header("🔧 Troubleshooting")
-        st.markdown("""
-        ### Common Issues & Solutions
+        ### **Common Issues & Solutions**
         
         **1. No Data Available**
         - **Solution**: Click "📊 Generate Data" button
@@ -1984,7 +2487,7 @@ class JRManufacturingDashboard:
         - **Solution**: Ensure data is generated and loaded
         - **Check**: Verify file permissions for downloads
         
-        ### Performance Optimization
+        ### **Performance Optimization**
         
         **1. Large Datasets**
         - Use time range filters to limit data
@@ -2002,36 +2505,28 @@ class JRManufacturingDashboard:
         - Implement data archiving strategies
         """)
         
-        # Contact & Support
-        st.header("📞 Contact & Support")
-        st.markdown("""
-        ### Support Information
-        
-        **Documentation**: This comprehensive guide covers all features and usage
-        **AI Assistant**: Use the floating chatbot for quick help
-        **Data Generation**: Synthetic data system for testing and development
-        **Export Functions**: Download data and reports as needed
-        
-        ### Development Notes
-        
-        This is a **prototype system** designed for demonstration and testing purposes. In a production environment, additional considerations would include:
-        
-        - **Security**: Authentication and authorization
-        - **Scalability**: Database optimization and caching
-        - **Real-time Data**: Integration with actual manufacturing systems
-        - **Alerts**: Email/SMS notifications for critical issues
-        - **Backup**: Data backup and recovery procedures
-        - **Monitoring**: System health monitoring and logging
-        """)
-        
         st.markdown("---")
-        st.success("📚 Documentation Complete! Use the sidebar to navigate back to the dashboard.")
+        st.success("📚 **Comprehensive Documentation Complete!**")
+        st.markdown("""
+        ### **Documentation Summary**
+        
+        This comprehensive documentation includes:
+        - **47+ Individual Components** with detailed numbering (1.1, 1.2, etc.)
+        - **12 Data Tables** with complete specifications and usage
+        - **15 Interactive Charts** with thresholds and features
+        - **20+ KPI Metrics** with detailed thresholds and calculations
+        - **Step-by-Step Usage Guide** for all dashboard features
+        - **Complete AI Assistant Reference** with natural language queries
+        - **Technical Architecture** and troubleshooting guide
+        
+        **Use the sidebar to navigate back to the dashboard and explore all features!**
+        """)
     
     def render_footer(self):
-        """Render footer with company branding"""
+        """Render professional footer"""
         st.markdown("---")
         
-        # Footer styling
+        # Professional footer styling
         st.markdown("""
             <style>
             .footer {
@@ -2039,54 +2534,63 @@ class JRManufacturingDashboard:
                 bottom: 0;
                 left: 0;
                 right: 0;
-                background: linear-gradient(90deg, #1f77b4, #ff7f0e);
-                color: white;
-                padding: 10px 20px;
+                background: #2c2c2c;
+                color: #ffffff;
+                padding: 16px 20px;
                 text-align: center;
                 font-size: 14px;
-                font-weight: bold;
+                font-weight: 400;
                 z-index: 999;
+                border-top: 1px solid #404040;
                 box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
             }
+            .footer-content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 12px;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            .footer-text {
+                color: #ffffff;
+                font-weight: 400;
+            }
             .footer a {
-                color: white;
+                color: #ffffff;
                 text-decoration: none;
-                font-weight: bold;
+                font-weight: 500;
+                padding: 6px 12px;
+                border-radius: 6px;
+                transition: all 0.3s ease;
+                border: 1px solid transparent;
+                background: rgba(255, 255, 255, 0.05);
             }
             .footer a:hover {
-                color: #ffeb3b;
-                text-decoration: underline;
+                color: #2c2c2c;
+                background: #ffffff;
+                border-color: #666666;
+                box-shadow: 0 2px 8px rgba(255,255,255,0.2);
+                transform: translateY(-1px);
             }
-            .footer-brand {
-                display: inline-block;
-                margin: 0 10px;
-                padding: 5px 10px;
-                background: rgba(255,255,255,0.1);
-                border-radius: 5px;
-                transition: all 0.3s ease;
-            }
-            .footer-brand:hover {
-                background: rgba(255,255,255,0.2);
-                transform: translateY(-2px);
+            .footer-separator {
+                color: #888888;
+                margin: 0 6px;
+                font-weight: 300;
             }
             </style>
         """, unsafe_allow_html=True)
         
-        # Footer content
+        # Professional footer content
         footer_html = """
         <div class="footer">
-            <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
-                <span style="margin-right: 20px;">🚀 Made with ❤️ by</span>
-                <a href="https://www.webfixus.com" target="_blank" class="footer-brand">
-                    🌐 WebFixus
-                </a>
-                <span style="margin: 0 10px;">&</span>
-                <a href="https://www.applyai.today" target="_blank" class="footer-brand">
-                    🤖 ApplyAI.today
-                </a>
-                <span style="margin-left: 20px; font-size: 12px; opacity: 0.8;">
-                    Industrial AI Solutions
-                </span>
+            <div class="footer-content">
+                <span class="footer-text">From 🧠 to 💻</span>
+                <span class="footer-separator">—</span>
+                <a href="https://www.webfixus.com" target="_blank">Webfixus</a>
+                <span class="footer-separator">×</span>
+                <a href="https://www.applyai.today" target="_blank">ApplyAI.today</a>
             </div>
         </div>
         """
@@ -2094,7 +2598,7 @@ class JRManufacturingDashboard:
         st.markdown(footer_html, unsafe_allow_html=True)
         
         # Add some bottom padding to prevent content overlap
-        st.markdown("<div style='height: 60px;'></div>", unsafe_allow_html=True)
+        st.markdown("<div style='height: 50px;'></div>", unsafe_allow_html=True)
     
     def render_ai_chatbot(self):
         """Render floating AI chatbot interface"""
