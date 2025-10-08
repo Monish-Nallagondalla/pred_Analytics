@@ -1,0 +1,762 @@
+# JR Manufacturing Machine Configuration
+# Machine definitions, sensor ranges, and thresholds for realistic data generation
+
+machines:
+  CNC_PUNCH_01:
+    type: "CNC_Punching"
+    manufacturer: "Amada"
+    model: "Vipros 255"
+    location: "Production Line 1"
+    sensors:
+      temperature:
+        range: [20, 80]
+        unit: "°C"
+        threshold_warning: 70
+        threshold_critical: 85
+      vibration:
+        range: [0, 5]
+        unit: "mm/s"
+        threshold_warning: 3.0
+        threshold_critical: 4.5
+      current:
+        range: [0, 15]
+        unit: "A"
+        threshold_warning: 12
+        threshold_critical: 14
+      rpm:
+        range: [0, 2500]
+        unit: "RPM"
+        threshold_warning: 2200
+        threshold_critical: 2400
+      tool_wear:
+        range: [0, 100]
+        unit: "%"
+        threshold_warning: 70
+        threshold_critical: 85
+    maintenance_interval: 500  # hours
+    failure_probability: 0.002  # per hour
+
+  LASER_CUTTER_01:
+    type: "Laser_Cutting"
+    manufacturer: "Bystronic"
+    model: "Xpert 1500"
+    location: "Production Line 1"
+    sensors:
+      temperature:
+        range: [20, 60]
+        unit: "°C"
+        threshold_warning: 50
+        threshold_critical: 65
+      vibration:
+        range: [0, 3]
+        unit: "mm/s"
+        threshold_warning: 2.0
+        threshold_critical: 2.8
+      current:
+        range: [0, 10]
+        unit: "A"
+        threshold_warning: 8
+        threshold_critical: 9.5
+      cutting_speed:
+        range: [0, 500]
+        unit: "mm/s"
+        threshold_warning: 450
+        threshold_critical: 480
+      blade_wear:
+        range: [0, 50]
+        unit: "%"
+        threshold_warning: 35
+        threshold_critical: 45
+    maintenance_interval: 400  # hours
+    failure_probability: 0.0015  # per hour
+
+  BENDER_01:
+    type: "Press_Brake"
+    manufacturer: "Trumpf"
+    model: "TruBend 5130"
+    location: "Production Line 1"
+    sensors:
+      temperature:
+        range: [20, 75]
+        unit: "°C"
+        threshold_warning: 65
+        threshold_critical: 80
+      vibration:
+        range: [0, 4]
+        unit: "mm/s"
+        threshold_warning: 2.5
+        threshold_critical: 3.5
+      current:
+        range: [0, 20]
+        unit: "A"
+        threshold_warning: 16
+        threshold_critical: 18
+      hydraulic_pressure:
+        range: [50, 300]
+        unit: "bar"
+        threshold_warning: 250
+        threshold_critical: 280
+      bending_force:
+        range: [0, 500]
+        unit: "kN"
+        threshold_warning: 400
+        threshold_critical: 450
+    maintenance_interval: 600  # hours
+    failure_probability: 0.0018  # per hour
+
+  WELDER_01:
+    type: "Welding"
+    manufacturer: "Fronius"
+    model: "TPS 5000"
+    location: "Production Line 1"
+    sensors:
+      temperature:
+        range: [20, 50]
+        unit: "°C"
+        threshold_warning: 40
+        threshold_critical: 48
+      vibration:
+        range: [0, 2]
+        unit: "mm/s"
+        threshold_warning: 1.5
+        threshold_critical: 1.8
+      current:
+        range: [0, 25]
+        unit: "A"
+        threshold_warning: 20
+        threshold_critical: 23
+      arc_voltage:
+        range: [18, 30]
+        unit: "V"
+        threshold_warning: 25
+        threshold_critical: 28
+      gas_flow:
+        range: [10, 25]
+        unit: "L/min"
+        threshold_warning: 20
+        threshold_critical: 23
+    maintenance_interval: 300  # hours
+    failure_probability: 0.0025  # per hour
+
+  POLISHER_01:
+    type: "Polishing"
+    manufacturer: "Walter"
+    model: "Helitronic"
+    location: "Production Line 1"
+    sensors:
+      temperature:
+        range: [20, 45]
+        unit: "°C"
+        threshold_warning: 38
+        threshold_critical: 43
+      vibration:
+        range: [0, 6]
+        unit: "mm/s"
+        threshold_warning: 4.0
+        threshold_critical: 5.5
+      current:
+        range: [0, 10]
+        unit: "A"
+        threshold_warning: 8
+        threshold_critical: 9.5
+      rpm:
+        range: [0, 1500]
+        unit: "RPM"
+        threshold_warning: 1300
+        threshold_critical: 1450
+      coolant_flow:
+        range: [0, 10]
+        unit: "L/min"
+        threshold_warning: 8
+        threshold_critical: 9
+    maintenance_interval: 350  # hours
+    failure_probability: 0.0012  # per hour
+
+  Paint_01:
+    type: "Painting"
+    manufacturer: "Wagner"
+    model: "Spraytech"
+    location: "Production Line 1"
+    sensors:
+      temperature:
+        range: [20, 40]
+        unit: "°C"
+        threshold_warning: 35
+        threshold_critical: 38
+      vibration:
+        range: [0, 2]
+        unit: "mm/s"
+        threshold_warning: 1.5
+        threshold_critical: 1.8
+      spray_pressure:
+        range: [1, 5]
+        unit: "bar"
+        threshold_warning: 4.2
+        threshold_critical: 4.8
+      nozzle_temp:
+        range: [20, 60]
+        unit: "°C"
+        threshold_warning: 50
+        threshold_critical: 58
+      coating_thickness:
+        range: [10, 100]
+        unit: "µm"
+        threshold_warning: 80
+        threshold_critical: 95
+      humidity:
+        range: [30, 80]
+        unit: "%"
+        threshold_warning: 70
+        threshold_critical: 75
+    maintenance_interval: 200  # hours
+    failure_probability: 0.001  # per hour
+
+  INJECTION_MOULDING_01:
+    type: "Injection_Molding"
+    manufacturer: "Arburg"
+    model: "Allrounder 470S"
+    location: "Production Line 2"
+    sensors:
+      temperature:
+        range: [20, 80]
+        unit: "°C"
+        threshold_warning: 70
+        threshold_critical: 85
+      vibration:
+        range: [0, 3]
+        unit: "mm/s"
+        threshold_warning: 2.0
+        threshold_critical: 2.8
+      current:
+        range: [0, 20]
+        unit: "A"
+        threshold_warning: 16
+        threshold_critical: 18
+      barrel_temp:
+        range: [150, 300]
+        unit: "°C"
+        threshold_warning: 280
+        threshold_critical: 295
+      screw_speed:
+        range: [0, 150]
+        unit: "RPM"
+        threshold_warning: 130
+        threshold_critical: 145
+      injection_pressure:
+        range: [50, 250]
+        unit: "bar"
+        threshold_warning: 200
+        threshold_critical: 230
+      clamping_force:
+        range: [100, 500]
+        unit: "kN"
+        threshold_warning: 400
+        threshold_critical: 450
+      cycle_time:
+        range: [10, 60]
+        unit: "s"
+        threshold_warning: 50
+        threshold_critical: 55
+    maintenance_interval: 400  # hours
+    failure_probability: 0.002  # per hour
+
+  Assembly_01:
+    type: "Assembly"
+    manufacturer: "Custom"
+    model: "Jig & Fixture Setup"
+    location: "Production Line 2"
+    sensors:
+      temperature:
+        range: [20, 35]
+        unit: "°C"
+        threshold_warning: 30
+        threshold_critical: 33
+      vibration:
+        range: [0, 1]
+        unit: "mm/s"
+        threshold_warning: 0.8
+        threshold_critical: 0.9
+      assembly_time:
+        range: [30, 300]
+        unit: "s"
+        threshold_warning: 250
+        threshold_critical: 280
+      torque_applied:
+        range: [0, 50]
+        unit: "Nm"
+        threshold_warning: 40
+        threshold_critical: 45
+      component_missing:
+        range: [0, 1]
+        unit: "binary"
+        threshold_warning: 0.1
+        threshold_critical: 0.2
+    maintenance_interval: 1000  # hours
+    failure_probability: 0.0005  # per hour
+
+  # Additional Sheet Metal Line Machines
+  MaterialApp_01:
+    type: "Material_Application"
+    manufacturer: "Custom"
+    model: "Requisition Station"
+    location: "Production Line 1"
+    sensors:
+      temperature:
+        range: [20, 30]
+        unit: "°C"
+        threshold_warning: 28
+        threshold_critical: 32
+      material_level:
+        range: [0, 100]
+        unit: "%"
+        threshold_warning: 20
+        threshold_critical: 10
+    maintenance_interval: 2000  # hours
+    failure_probability: 0.0001  # per hour
+
+  Blanking_01:
+    type: "Blanking"
+    manufacturer: "Trumpf"
+    model: "TruPunch 1000"
+    location: "Production Line 1"
+    sensors:
+      temperature:
+        range: [20, 70]
+        unit: "°C"
+        threshold_warning: 60
+        threshold_critical: 75
+      vibration:
+        range: [0, 4]
+        unit: "mm/s"
+        threshold_warning: 3.0
+        threshold_critical: 3.8
+      current:
+        range: [0, 18]
+        unit: "A"
+        threshold_warning: 15
+        threshold_critical: 17
+      tool_wear:
+        range: [0, 100]
+        unit: "%"
+        threshold_warning: 70
+        threshold_critical: 85
+    maintenance_interval: 400  # hours
+    failure_probability: 0.002  # per hour
+
+  Fitter_01:
+    type: "Fitter"
+    manufacturer: "Custom"
+    model: "Riveting Station"
+    location: "Production Line 1"
+    sensors:
+      temperature:
+        range: [20, 40]
+        unit: "°C"
+        threshold_warning: 35
+        threshold_critical: 38
+      vibration:
+        range: [0, 2]
+        unit: "mm/s"
+        threshold_warning: 1.5
+        threshold_critical: 1.8
+      rivet_count:
+        range: [0, 1000]
+        unit: "count"
+        threshold_warning: 800
+        threshold_critical: 950
+    maintenance_interval: 600  # hours
+    failure_probability: 0.001  # per hour
+
+  SemiInspect_01:
+    type: "Semi_Finished_Inspection"
+    manufacturer: "Zeiss"
+    model: "CMM Machine"
+    location: "Production Line 1"
+    sensors:
+      temperature:
+        range: [20, 25]
+        unit: "°C"
+        threshold_warning: 24
+        threshold_critical: 26
+      measurement_accuracy:
+        range: [0, 0.1]
+        unit: "mm"
+        threshold_warning: 0.05
+        threshold_critical: 0.08
+    maintenance_interval: 1000  # hours
+    failure_probability: 0.0005  # per hour
+
+  SilkPrint_01:
+    type: "Silk_Printing"
+    manufacturer: "Custom"
+    model: "Logo Etching Station"
+    location: "Production Line 1"
+    sensors:
+      temperature:
+        range: [20, 50]
+        unit: "°C"
+        threshold_warning: 45
+        threshold_critical: 48
+      ink_flow:
+        range: [0, 10]
+        unit: "ml/min"
+        threshold_warning: 8
+        threshold_critical: 9
+    maintenance_interval: 500  # hours
+    failure_probability: 0.0015  # per hour
+
+  FinalAssy_01:
+    type: "Final_Assembly"
+    manufacturer: "Custom"
+    model: "Screw & Rivet Station"
+    location: "Production Line 1"
+    sensors:
+      temperature:
+        range: [20, 35]
+        unit: "°C"
+        threshold_warning: 32
+        threshold_critical: 34
+      torque_applied:
+        range: [0, 50]
+        unit: "Nm"
+        threshold_warning: 40
+        threshold_critical: 45
+      fastener_count:
+        range: [0, 100]
+        unit: "count"
+        threshold_warning: 80
+        threshold_critical: 95
+    maintenance_interval: 800  # hours
+    failure_probability: 0.001  # per hour
+
+  QualityInspect_01:
+    type: "Quality_Inspection"
+    manufacturer: "Keyence"
+    model: "Vision System"
+    location: "Production Line 1"
+    sensors:
+      temperature:
+        range: [20, 30]
+        unit: "°C"
+        threshold_warning: 28
+        threshold_critical: 32
+      camera_quality:
+        range: [0, 100]
+        unit: "%"
+        threshold_warning: 80
+        threshold_critical: 70
+    maintenance_interval: 1200  # hours
+    failure_probability: 0.0008  # per hour
+
+  Warehouse_01:
+    type: "Warehousing"
+    manufacturer: "Custom"
+    model: "Packaging Station"
+    location: "Production Line 1"
+    sensors:
+      temperature:
+        range: [15, 25]
+        unit: "°C"
+        threshold_warning: 23
+        threshold_critical: 26
+      package_count:
+        range: [0, 1000]
+        unit: "count"
+        threshold_warning: 800
+        threshold_critical: 950
+    maintenance_interval: 1500  # hours
+    failure_probability: 0.0003  # per hour
+
+  Shipment_01:
+    type: "Shipment"
+    manufacturer: "Custom"
+    model: "Loading Station"
+    location: "Production Line 1"
+    sensors:
+      temperature:
+        range: [15, 30]
+        unit: "°C"
+        threshold_warning: 28
+        threshold_critical: 32
+      load_weight:
+        range: [0, 1000]
+        unit: "kg"
+        threshold_warning: 800
+        threshold_critical: 950
+    maintenance_interval: 2000  # hours
+    failure_probability: 0.0002  # per hour
+
+  # Additional Injection Molding Line Machines
+  MouldPrep_01:
+    type: "Mould_Preparation"
+    manufacturer: "Custom"
+    model: "Die Preparation Station"
+    location: "Production Line 2"
+    sensors:
+      temperature:
+        range: [20, 40]
+        unit: "°C"
+        threshold_warning: 35
+        threshold_critical: 38
+      preparation_time:
+        range: [10, 60]
+        unit: "min"
+        threshold_warning: 50
+        threshold_critical: 55
+    maintenance_interval: 1000  # hours
+    failure_probability: 0.0005  # per hour
+
+  MachineSelect_01:
+    type: "Machine_Selection"
+    manufacturer: "Custom"
+    model: "Selection Station"
+    location: "Production Line 2"
+    sensors:
+      temperature:
+        range: [20, 30]
+        unit: "°C"
+        threshold_warning: 28
+        threshold_critical: 32
+      selection_time:
+        range: [5, 30]
+        unit: "s"
+        threshold_warning: 25
+        threshold_critical: 28
+    maintenance_interval: 2000  # hours
+    failure_probability: 0.0001  # per hour
+
+  MaterialSelect_01:
+    type: "Material_Selection"
+    manufacturer: "Custom"
+    model: "Granule Selection Station"
+    location: "Production Line 2"
+    sensors:
+      temperature:
+        range: [20, 35]
+        unit: "°C"
+        threshold_warning: 32
+        threshold_critical: 34
+      material_level:
+        range: [0, 100]
+        unit: "%"
+        threshold_warning: 20
+        threshold_critical: 10
+    maintenance_interval: 1500  # hours
+    failure_probability: 0.0003  # per hour
+
+  Preheating_01:
+    type: "Preheating"
+    manufacturer: "Custom"
+    model: "Preheating Station"
+    location: "Production Line 2"
+    sensors:
+      temperature:
+        range: [20, 80]
+        unit: "°C"
+        threshold_warning: 70
+        threshold_critical: 75
+      heating_time:
+        range: [5, 30]
+        unit: "min"
+        threshold_warning: 25
+        threshold_critical: 28
+    maintenance_interval: 800  # hours
+    failure_probability: 0.001  # per hour
+
+  Cooling_01:
+    type: "Cooling"
+    manufacturer: "Custom"
+    model: "Cooling Station"
+    location: "Production Line 2"
+    sensors:
+      temperature:
+        range: [10, 40]
+        unit: "°C"
+        threshold_warning: 35
+        threshold_critical: 38
+      cooling_time:
+        range: [10, 60]
+        unit: "min"
+        threshold_warning: 50
+        threshold_critical: 55
+    maintenance_interval: 600  # hours
+    failure_probability: 0.0015  # per hour
+
+  Ejection_01:
+    type: "Component_Ejection"
+    manufacturer: "Custom"
+    model: "Ejection Station"
+    location: "Production Line 2"
+    sensors:
+      temperature:
+        range: [20, 50]
+        unit: "°C"
+        threshold_warning: 45
+        threshold_critical: 48
+      ejection_force:
+        range: [0, 100]
+        unit: "N"
+        threshold_warning: 80
+        threshold_critical: 90
+    maintenance_interval: 700  # hours
+    failure_probability: 0.0012  # per hour
+
+  Degating_01:
+    type: "Degating"
+    manufacturer: "Custom"
+    model: "Degating Station"
+    location: "Production Line 2"
+    sensors:
+      temperature:
+        range: [20, 40]
+        unit: "°C"
+        threshold_warning: 35
+        threshold_critical: 38
+      cutting_force:
+        range: [0, 50]
+        unit: "N"
+        threshold_warning: 40
+        threshold_critical: 45
+    maintenance_interval: 500  # hours
+    failure_probability: 0.0018  # per hour
+
+  SurfaceTreat_01:
+    type: "Surface_Treatment"
+    manufacturer: "Custom"
+    model: "Primer Station"
+    location: "Production Line 2"
+    sensors:
+      temperature:
+        range: [20, 60]
+        unit: "°C"
+        threshold_warning: 50
+        threshold_critical: 55
+      coating_thickness:
+        range: [10, 100]
+        unit: "µm"
+        threshold_warning: 80
+        threshold_critical: 95
+    maintenance_interval: 400  # hours
+    failure_probability: 0.002  # per hour
+
+  QCPacking_01:
+    type: "QC_Packing"
+    manufacturer: "Custom"
+    model: "QC & Packing Station"
+    location: "Production Line 2"
+    sensors:
+      temperature:
+        range: [15, 25]
+        unit: "°C"
+        threshold_warning: 23
+        threshold_critical: 26
+      inspection_time:
+        range: [5, 30]
+        unit: "s"
+        threshold_warning: 25
+        threshold_critical: 28
+    maintenance_interval: 1000  # hours
+    failure_probability: 0.0008  # per hour
+
+# Production Flow Configuration - Complete manufacturing process as per project plan
+production_flow:
+  # Sheet Metal Line (14 steps)
+  sheet_metal_sequence:
+    - MATERIAL_APP_01     # Material application → requisition tracking
+    - BLANKING_01          # Blanking → CNC shears, laser cutting
+    - LASER_CUTTER_01     # Laser cutting
+    - CNC_PUNCH_01        # Punching/Cutting → CNC punching, die-cut
+    - BENDER_01           # Bending → Press brakes
+    - FITTER_01           # Fitter → Riveting, mechanical processing
+    - WELDER_01           # Welding → ARC, MIG/TIG, spot welding
+    - POLISHER_01         # Polishing → Surface finishing
+    - PAINTER_01          # Surface treatment → Painting, oxidation
+    - SEMI_INSPECT_01     # Semi-finished inspection → Dimension & appearance check
+    - SILK_PRINT_01       # Silk printing → Logo/text etching
+    - FINAL_ASSY_01       # Final assembly → Screws, rivets, pins
+    - QUALITY_INSPECT_01  # Quality inspection → Final QC
+    - WAREHOUSE_01        # Warehousing/packaging
+    - SHIPMENT_01         # Ready for shipment
+  
+  # Injection Molding Line (10 steps)
+  injection_molding_sequence:
+    - MouldPrep_01        # Moulding/die preparation
+    - MachineSelect_01    # Machine selection
+    - MaterialSelect_01   # Material selection → plastic granules
+    - Preheating_01       # Preheating
+    - InjectionMold_01    # Injection
+    - Cooling_01          # Cooling/curing
+    - Ejection_01         # Component ejection
+    - Degating_01         # Degating
+    - SurfaceTreat_01     # Surface treatment (primer/painting)
+    - QCPacking_01        # QC & packing
+  
+  # Combined sequence for data generation
+  sequence:
+    - MaterialApp_01
+    - Blanking_01
+    - LaserCut_01
+    - CNC_Punch_01
+    - PressBrake_01
+    - Fitter_01
+    - Weld_01
+    - Polish_01
+    - Paint_01
+    - SemiInspect_01
+    - SilkPrint_01
+    - FinalAssy_01
+    - QualityInspect_01
+    - Warehouse_01
+    - Shipment_01
+    - MouldPrep_01
+    - MachineSelect_01
+    - MaterialSelect_01
+    - Preheating_01
+    - InjectionMold_01
+    - Cooling_01
+    - Ejection_01
+    - Degating_01
+    - SurfaceTreat_01
+    - QCPacking_01
+  
+  batch_sizes:
+    min: 50
+    max: 200
+    default: 100
+  
+  shift_patterns:
+    day_shift:
+      start: "08:00"
+      end: "16:00"
+      efficiency: 0.95
+    evening_shift:
+      start: "16:00"
+      end: "24:00"
+      efficiency: 0.90
+    night_shift:
+      start: "00:00"
+      end: "08:00"
+      efficiency: 0.85
+
+# Alert Configuration
+andon_thresholds:
+  temperature:
+    warning: 0.8
+    critical: 0.9
+  vibration:
+    warning: 0.7
+    critical: 0.85
+  current:
+    warning: 0.8
+    critical: 0.9
+  tool_wear:
+    warning: 0.7
+    critical: 0.85
+
+# Data Generation Parameters
+data_generation:
+  days: 30
+  interval_minutes: 1
+  noise_factor: 0.05
+  degradation_rate: 0.001  # per hour
+  failure_probability_base: 0.001  # per hour

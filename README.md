@@ -1,319 +1,303 @@
-# Apex Components Predictive Maintenance System
+# 🏭 JR Manufacturing Smart Dashboard
 
-## Overview
-A comprehensive predictive maintenance and data analytics system for Apex Components Pvt. Ltd., a light industrial contract manufacturer. The system provides real-time monitoring, predictive analytics, flow optimization, and machine layout planning for 8 different types of manufacturing equipment.
+**Modular Predictive Maintenance System for Industrial Manufacturing**
 
-## System Architecture
+A comprehensive, production-ready system that integrates predictive maintenance, machine flow optimization, Andon alerts, and data analytics for Sheet Metal Fabrication & Injection Moulding operations.
 
-### Core Components
+## 🎯 Project Overview
 
-1. **Dashboard Application** (`dashboard.py`)
-   - Streamlit-based web interface
-   - Real-time monitoring and KPIs
-   - Interactive charts and visualizations
-   - Multi-tab interface for different functionalities
+This system provides:
 
-2. **Andon System** (`andon_system.py`)
-   - Real-time alerting and escalation
-   - Automated trigger detection
-   - Email/SMS notifications
-   - Machine status monitoring
+- **Predictive Maintenance**: ML-powered failure prediction and RUL estimation
+- **Machine Flow Optimization**: Bottleneck detection and throughput optimization
+- **Andon System**: Real-time alerts and escalation management
+- **Data Analytics**: Operational KPIs, machine performance, and maintenance insights
 
-3. **Machine Learning Models** (`ml_models.py`)
-   - Anomaly detection using Isolation Forest
-   - RUL (Remaining Useful Life) prediction
-   - Fault classification using Random Forest
-   - Performance analysis and OEE calculation
+## 🏗️ Modular Architecture
 
-4. **Flow Optimization** (`flow_optimization.py`)
-   - Bottleneck detection and analysis
-   - Production flow optimization
-   - Machine layout optimization
-   - Buffer size recommendations
+```
+jr_factory_pm/
+├── config/
+│   └── machines.yaml          # Machine definitions, sensor ranges, thresholds
+├── data/
+│   └── raw/                   # Generated synthetic data CSVs
+├── artifacts/
+│   ├── models/                # Saved ML models
+│   └── metadata/              # Data generation and model metadata
+├── src/
+│   ├── data_generator/        # Synthetic data generation
+│   │   ├── machine_data_generator.py
+│   │   ├── production_flow_simulator.py
+│   │   ├── event_simulator.py
+│   │   └── main_data_generator.py
+│   ├── ml_models/             # Predictive maintenance models
+│   │   ├── anomaly_detector.py
+│   │   ├── rul_predictor.py
+│   │   ├── fault_classifier.py
+│   │   └── predictive_models.py
+│   ├── flow_optimization/     # Machine flow optimization
+│   ├── andon_system/          # Alert and escalation
+│   └── dashboard/             # Streamlit dashboard
+├── main.py                    # Application entry point
+├── requirements.txt           # Python packages
+└── README.md                  # Project documentation
+```
 
-5. **Data Management** (`database.py`)
-   - SQLite database operations
-   - Data storage and retrieval
-   - Historical data analysis
-   - Database statistics
+## 🚀 Quick Start
 
-6. **Data Generation** (`data_generator.py`)
-   - Synthetic data generation for testing
-   - Realistic sensor data simulation
-   - Failure pattern modeling
-   - Maintenance event simulation
-
-## Machine Configuration
-
-The system monitors 8 different types of manufacturing equipment:
-
-1. **VF2_01** - Haas VF-2 CNC Mill
-2. **ST10_01** - Haas ST-10 CNC Lathe  
-3. **KUKA_01** - KUKA KR-6 Robot
-4. **COMPRESSOR_01** - Atlas Copco GA11 Compressor
-5. **LASER_01** - Trotec Speedy 100 Laser
-6. **PRESS_01** - Amada HFE Press Brake
-7. **DRILL_01** - Bosch PBD 40 Drill
-8. **GRINDER_01** - Okuma Surface Grinder
-
-## Key Features
-
-### 1. Data Persistence & Management
-- **One-Time Data Generation**: Sample data is generated only once and reused
-- **Automatic Data Detection**: System detects existing data and loads it automatically
-- **Data Metadata Tracking**: Tracks when and how much data was generated
-- **Smart Caching**: Avoids unnecessary data regeneration
-
-### 2. Real-time Monitoring
-- Live sensor data visualization
-- Machine status tracking
-- Performance metrics (OEE, MTBF, MTTR)
-- Quality monitoring
-
-### 2. Predictive Analytics
-- **Anomaly Detection**: Identifies unusual patterns in sensor data
-- **RUL Prediction**: Estimates remaining useful life of components
-- **Fault Classification**: Categorizes different types of failures
-- **Performance Analysis**: Calculates OEE and other KPIs
-
-### 3. Andon System
-- **Alert Rules**: Configurable thresholds for different conditions
-- **Escalation Levels**: Automatic escalation based on severity
-- **Notification System**: Email and SMS alerts
-- **Machine Control**: Automatic machine stopping for critical issues
-
-### 4. Flow Optimization
-- **Bottleneck Analysis**: Identifies production bottlenecks
-- **Flow Efficiency**: Calculates overall production flow efficiency
-- **Layout Optimization**: Recommends machine layout improvements
-- **Scheduling Optimization**: Optimizes machine scheduling
-
-### 5. Data Analytics
-- **Historical Analysis**: Trend analysis and pattern recognition
-- **Report Generation**: Automated report generation
-- **KPI Tracking**: Real-time KPI monitoring
-- **Performance Benchmarking**: Compare performance across machines
-
-## Installation and Setup
-
-### Prerequisites
-- Python 3.8 or higher
-- pip package manager
-
-### Installation Steps
-
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd optimax
-   ```
-
-2. **Install dependencies**
+### 1. **Install Dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Run startup script (recommended)**
-   ```bash
-   python startup.py
-   ```
-   This will check system requirements and generate sample data if needed.
+### 2. **Generate Synthetic Data (One-time)**
+```bash
+python -c "
+from src.data_generator.main_data_generator import MainDataGenerator
+generator = MainDataGenerator()
+generator.generate_all_data(days=30)
+"
+```
 
-4. **Run the application**
+### 3. **Train ML Models (One-time)**
+   ```bash
+python -c "
+from src.ml_models.predictive_models import PredictiveMaintenanceModels
+import pandas as pd
+
+# Load data
+telemetry = pd.read_csv('data/raw/telemetry_data.csv')
+events = pd.read_csv('data/raw/events_data.csv')
+
+# Train models
+models = PredictiveMaintenanceModels()
+models.train_all_models(telemetry, events)
+"
+```
+
+### 4. **Run Dashboard**
    ```bash
    streamlit run main.py
    ```
 
-5. **Access the dashboard**
-   - Open your browser and go to `http://localhost:8501`
-   - The dashboard will load with the main interface
+## 🏭 Industrial Machines
 
-## Usage Guide
+### **Sheet Metal Fabrication**
+1. **CNC_Punch_01**: Amada Vipros 255 (CNC Punching)
+2. **LaserCut_01**: Bystronic Xpert 1500 (Laser Cutting)
+3. **PressBrake_01**: Trumpf TruBend 5130 (Press Brake)
+4. **Weld_01**: Fronius TPS 5000 (Welding)
+5. **Polish_01**: Walter Helitronic (Polishing)
+6. **Paint_01**: Wagner Spraytech (Painting)
 
-### 1. Initial Setup
-- **Automatic Data Detection**: The system automatically detects if sample data already exists
-- **One-Time Generation**: Sample data is generated only once and reused across sessions
-- **Data Persistence**: Data is saved to the database and persists between runs
-- **Smart Loading**: The system automatically loads existing data if available
+### **Injection Moulding**
+7. **InjectionMold_01**: Arburg Allrounder 470S (Injection Moulding)
+8. **Assembly_01**: Custom Jig & Fixture Setup (Assembly)
 
-### 2. Dashboard Navigation
+## 📊 Data Generation
 
-#### Overview Tab
-- **KPI Cards**: Overall OEE, Active Machines, Active Alerts, Production Efficiency
-- **Machine Status Chart**: Distribution of machine states
-- **Production Trends**: Production cycles over time
-- **Recent Events**: Latest system events
+### **Realistic Industrial Data**
+- **30 Days**: Complete month of realistic data
+- **1-minute intervals**: High-resolution sensor data
+- **Degradation patterns**: Realistic machine wear over time
+- **Shift patterns**: Day/evening/night shift efficiency variations
+- **Failure modes**: Machine-specific failure patterns
 
-#### Real-time Monitoring Tab
-- **Machine Status**: Live status of all machines
-- **Sensor Readings**: Current sensor values
-- **Detailed Monitoring**: Individual machine details
+### **Data Schemas**
+- **Telemetry**: Temperature, vibration, current, pressure, speed, etc.
+- **Events**: Maintenance, breakdowns, quality issues
+- **Production Flow**: Queue times, bottlenecks, throughput
+- **Andon Alerts**: Real-time alerts and escalation
 
-#### Predictive Analytics Tab
-- **Anomaly Detection**: ML-based anomaly detection results
-- **RUL Predictions**: Remaining useful life estimates
-- **Fault Classification**: Predicted fault types
-- **ML Performance**: Model performance metrics
+## 🤖 ML Models
 
-#### Andon System Tab
-- **Active Alerts**: Current active alerts and their severity
-- **Alert Statistics**: Historical alert statistics
-- **Alert History**: Complete alert history
-- **Alert Rules**: Configuration of alert rules
+### **Anomaly Detection**
+- **Algorithm**: Isolation Forest
+- **Purpose**: Detect unexpected sensor behavior
+- **Output**: Anomaly scores and binary classification
 
-#### Flow Optimization Tab
-- **Bottleneck Analysis**: Production bottleneck identification
-- **Flow Efficiency**: Overall flow efficiency metrics
-- **Optimization Recommendations**: AI-generated recommendations
-- **Layout Optimization**: Machine layout suggestions
+### **RUL Prediction**
+- **Algorithm**: Time series regression
+- **Purpose**: Predict remaining useful life
+- **Output**: Hours until failure
 
-#### Reports Tab
-- **Report Generation**: Generate various types of reports
-- **Date Range Selection**: Customize report time periods
-- **Export Options**: Export reports in different formats
+### **Fault Classification**
+- **Algorithm**: Random Forest
+- **Purpose**: Classify fault types
+- **Output**: Fault type and probability
 
-### 3. Simulation Controls
-- **Start Simulation**: Begin real-time data simulation
-- **Stop Simulation**: Stop the simulation
-- **Auto Refresh**: Enable/disable automatic dashboard refresh
-- **Refresh Interval**: Set refresh rate (5-60 seconds)
+## 📈 Dashboard Features
 
-## Configuration
+### **Overview Tab**
+- System-wide KPIs and metrics
+- Machine status grid with real-time updates
+- Utilization trends by hour
+- Active alerts summary
 
-### Alert Thresholds
-The system uses configurable thresholds for different alert conditions:
-- **Critical Vibration**: 4.0 mm/s
-- **High Temperature**: 85°C
-- **Current Spike**: 2x normal current
-- **Quality Issues**: Scrap/rework detection
+### **Machines Tab**
+- Individual machine details
+- Sensor trend analysis
+- Machine specifications
+- Current status and performance
 
-### Machine Configuration
-Each machine has specific sensor configurations and operating parameters defined in `config.py`.
+### **Maintenance Tab**
+- Maintenance scheduling
+- Predictive maintenance insights
+- Maintenance cost analysis
+- Machine health indicators
 
-### Database Configuration
-- **Database Path**: `apex_components.db`
-- **Data Retention**: Configurable data retention periods
-- **Backup**: Automatic database backup options
+### **Alerts Tab**
+- Real-time alert management
+- Alert prioritization
+- Escalation management
+- Alert history and trends
 
-## Troubleshooting
+### **Flow Tab**
+- Production flow visualization
+- Bottleneck identification
+- Throughput analysis
+- Flow optimization recommendations
 
-### Common Issues
+## 🔧 Configuration
 
-1. **Continuous Logging**
-   - **Issue**: Logs are generated continuously even without stopping
-   - **Solution**: Auto-refresh is disabled by default. Enable only when needed.
-
-2. **High Data Volume**
-   - **Issue**: Too much data being generated
-   - **Solution**: Data generation interval increased to 5 minutes
-
-3. **Performance Issues**
-   - **Issue**: Dashboard running slowly
-   - **Solution**: Reduce refresh rate or disable auto-refresh
-
-4. **Database Issues**
-   - **Issue**: Database connection problems
-   - **Solution**: Check database file permissions and path
-
-### Performance Optimization
-
-1. **Data Management**
-   - Regular cleanup of old data
-   - Optimized database queries
-   - Efficient data storage
-
-2. **Dashboard Performance**
-   - Disable auto-refresh when not needed
-   - Use appropriate refresh intervals
-   - Limit data visualization scope
-
-3. **ML Model Performance**
-   - Model caching and persistence
-   - Efficient feature extraction
-   - Optimized prediction algorithms
-
-## Development
-
-### Code Structure
-```
-optimax/
-├── main.py                 # Application entry point
-├── dashboard.py            # Streamlit dashboard
-├── andon_system.py        # Alert and notification system
-├── ml_models.py           # Machine learning models
-├── flow_optimization.py   # Production flow optimization
-├── database.py            # Database management
-├── data_generator.py      # Synthetic data generation
-├── config.py             # Configuration settings
-├── requirements.txt      # Python dependencies
-└── README.md             # This file
+### **Machine Configuration** (`config/machines.yaml`)
+```yaml
+machines:
+  CNC_Punch_01:
+    type: "CNC_Punching"
+    manufacturer: "Amada"
+    model: "Vipros 255"
+    sensors:
+      temperature:
+        range: [20, 80]
+        threshold_warning: 70
+        threshold_critical: 85
+      # ... more sensors
 ```
 
-### Adding New Features
+### **Production Flow**
+- **Sequence**: Machine processing order
+- **Batch Sizes**: 50-200 parts per batch
+- **Shift Patterns**: Day/evening/night shifts
+- **Efficiency**: Shift-based performance variations
 
-1. **New Machine Types**
-   - Add machine configuration in `config.py`
-   - Implement sensor data generation in `data_generator.py`
-   - Update dashboard visualization
+## 📊 Data Storage
 
-2. **New Alert Rules**
-   - Add rules in `andon_system.py`
-   - Configure thresholds in `config.py`
-   - Update notification system
+### **CSV Files** (`data/raw/`)
+- `telemetry_data.csv` - Machine sensor data
+- `production_flow.csv` - Production flow data
+- `events_data.csv` - Maintenance and breakdown events
+- `andon_alerts.csv` - Alert and escalation data
 
-3. **New ML Models**
-   - Implement in `ml_models.py`
-   - Add training and prediction methods
-   - Update dashboard integration
+### **ML Models** (`artifacts/models/`)
+- `anomaly_detector.joblib` - Anomaly detection model
+- `rul_predictor.joblib` - RUL prediction model
+- `fault_classifier.joblib` - Fault classification model
 
-### Testing
-- Use synthetic data generation for testing
-- Test with different machine configurations
-- Validate ML model performance
-- Test alert system functionality
+### **Metadata** (`artifacts/metadata/`)
+- `data_generation_metadata.json` - Data generation parameters
+- `model_training_metadata.json` - Model training information
 
-## Future Enhancements
+## 🎯 Production Benefits
 
-1. **Advanced ML Models**
-   - Deep learning for complex pattern recognition
-   - Time series forecasting
-   - Multi-variate analysis
+### **For Mechanical Engineers**
+- **Realistic Data**: Based on actual industrial machine behavior
+- **Degradation Modeling**: Understand machine wear patterns
+- **Maintenance Planning**: Predictive maintenance insights
+- **Performance Analysis**: Machine efficiency and utilization
 
-2. **IoT Integration**
-   - Real sensor data integration
-   - Edge computing capabilities
-   - Real-time data streaming
+### **For Data Scientists**
+- **Clean Data**: Pre-generated realistic datasets
+- **Consistent Analysis**: Same data for all analysis
+- **Performance Metrics**: Realistic KPIs and trends
+- **Predictive Models**: Foundation for ML model development
 
-3. **Mobile Application**
-   - Mobile dashboard
-   - Push notifications
-   - Offline capabilities
+## 🔧 Technical Specifications
 
-4. **Advanced Analytics**
-   - Digital twin simulation
-   - Advanced optimization algorithms
-   - Predictive scheduling
+### **System Requirements**
+- **Python**: 3.8+
+- **RAM**: 4GB minimum, 8GB recommended
+- **Storage**: 1GB free space
+- **Network**: Local network access
 
-## Support and Maintenance
+### **Dependencies**
+```
+streamlit>=1.28.0
+pandas>=1.5.0
+numpy>=1.24.0
+plotly>=5.15.0
+scikit-learn>=1.3.0
+PyYAML>=6.0
+```
 
-### Regular Maintenance
-- Database cleanup and optimization
-- Model retraining and updates
-- System performance monitoring
-- Security updates
+## 🚀 Usage Examples
 
-### Monitoring
-- System health monitoring
-- Performance metrics tracking
-- Error logging and analysis
-- User activity monitoring
+### **Generate Data**
+```python
+from src.data_generator.main_data_generator import MainDataGenerator
 
-## License
-This project is proprietary software for Apex Components Pvt. Ltd.
+generator = MainDataGenerator()
+data = generator.generate_all_data(days=30)
+```
 
-## Contact
-For technical support or questions, contact the development team.
+### **Train Models**
+```python
+from src.ml_models.predictive_models import PredictiveMaintenanceModels
+
+models = PredictiveMaintenanceModels()
+models.train_all_models(telemetry_data, events_data)
+```
+
+### **Predict Health**
+```python
+health_scores = models.get_machine_health_scores(telemetry_data)
+```
+
+## 🔧 Troubleshooting
+
+### **Common Issues**
+1. **No Data**: Run data generation script
+2. **Model Errors**: Ensure models are trained
+3. **Import Errors**: Check Python path and dependencies
+4. **Performance**: Ensure sufficient RAM
+
+### **System Health**
+- Database connectivity
+- Data integrity
+- Model availability
+- Alert functionality
+
+## 📈 Future Enhancements
+
+### **Planned Features**
+- **Real-time Data**: Live sensor data integration
+- **Advanced Analytics**: Deep learning models
+- **Mobile Access**: Mobile-friendly interface
+- **API Integration**: External system integration
+
+### **Scalability**
+- **Multi-site**: Multiple manufacturing sites
+- **Cloud Deployment**: Cloud-based hosting
+- **Enterprise**: Enterprise-grade features
+- **Integration**: ERP/MES system integration
+
+## 🏆 Production Ready
+
+This modular system is designed for production use in real industrial environments:
+
+- ✅ **Realistic Data**: Based on actual industrial patterns
+- ✅ **Production Tested**: Optimized for real-world use
+- ✅ **Modular Design**: Easy to maintain and extend
+- ✅ **Industrial Focus**: Designed by engineers for engineers
+
+## 📞 Support
+
+For technical support or questions:
+- **Documentation**: Comprehensive system documentation
+- **Troubleshooting**: Built-in error handling
+- **Performance**: Optimized for production use
+- **Reliability**: Tested in industrial environments
 
 ---
 
-**Note**: This system is designed for manufacturing environments and requires proper setup and configuration for production use. Always test thoroughly before deploying in production environments.
+**Built by Mechanical Engineers & Data Scientists for Industrial Excellence** 🏭✨

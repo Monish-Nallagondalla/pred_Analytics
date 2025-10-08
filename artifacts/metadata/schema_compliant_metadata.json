@@ -1,0 +1,17 @@
+{
+  "generation_date": "2025-10-08T06:26:04.777397",
+  "data_summary": {
+    "orders_batch": 303,
+    "machine_inventory": 26,
+    "machine_telemetry": 224640,
+    "process_flow": 6690,
+    "maintenance": 47,
+    "quality_inspection": 1060,
+    "kpis": 144108,
+    "material_inventory": 306,
+    "packaging_shipment": 303,
+    "andon_alerts": 33619
+  },
+  "schema_compliant": true,
+  "project_plan_version": "1.0"
+}

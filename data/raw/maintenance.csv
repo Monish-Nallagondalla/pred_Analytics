@@ -1,0 +1,48 @@
+machine_id,failure_id,failure_type,start_time,end_time,downtime,maintenance_type,parts_replaced,notes
+SemiInspect_01,F_001,Sensor Fault,2025-09-09 16:21:15.732924,2025-09-09 16:58:17.730904,37.033299664705204,Corrective,Sensor,Routine maintenance
+MachineSelect_01,F_002,Breakdown,2025-09-10 00:21:15.732924,2025-09-10 00:54:32.333374,33.276674170133646,Preventive,None,Routine maintenance
+Blanking_01,F_003,Sensor Fault,2025-09-10 17:21:15.732924,2025-09-10 18:37:08.617506,75.88140970765708,Corrective,Sensor,Emergency repair
+BENDER_01,F_004,Breakdown,2025-09-10 21:21:15.732924,2025-09-10 22:05:40.583583,44.41417764472671,Preventive,Hydraulic Hose,Routine maintenance
+MachineSelect_01,F_005,Electrical,2025-09-11 18:21:15.732924,2025-09-11 19:55:55.456817,94.66206487910533,Corrective,Motor,Routine maintenance
+CNC_PUNCH_01,F_006,Breakdown,2025-09-11 18:21:15.732924,2025-09-11 19:30:47.279481,69.52577594579601,Corrective,Sensor,Minor spindle misalignment
+MachineSelect_01,F_007,Wear,2025-09-11 21:21:15.732924,2025-09-11 22:04:05.830093,42.83495282057872,Corrective,None,Minor spindle misalignment
+MaterialApp_01,F_008,Breakdown,2025-09-12 21:21:15.732924,2025-09-12 22:48:41.895707,87.43604638218564,Corrective,Tool Bit,Routine maintenance
+Ejection_01,F_009,Wear,2025-09-13 17:21:15.732924,2025-09-13 18:35:39.015709,74.38804641755054,Corrective,Hydraulic Hose,Routine maintenance
+MaterialApp_01,F_010,Wear,2025-09-14 21:21:15.732924,2025-09-14 23:17:52.861501,116.618809618437,Preventive,Tool Bit,Emergency repair
+Shipment_01,F_011,Wear,2025-09-15 14:21:15.732924,2025-09-15 15:29:34.490405,68.31262468898106,Preventive,Sensor,Emergency repair
+MaterialSelect_01,F_012,Wear,2025-09-15 22:21:15.732924,2025-09-15 22:39:57.649069,18.698602410684355,Preventive,Motor,Minor spindle misalignment
+QualityInspect_01,F_013,Breakdown,2025-09-16 00:21:15.732924,2025-09-16 00:29:51.306790,8.592897769846665,Preventive,None,Routine maintenance
+MaterialSelect_01,F_014,Breakdown,2025-09-17 16:21:15.732924,2025-09-17 16:33:39.546438,12.396891905247582,Corrective,Sensor,Routine maintenance
+Blanking_01,F_015,Breakdown,2025-09-19 02:21:15.732924,2025-09-19 03:52:01.877195,90.76907118832436,Preventive,Tool Bit,Minor spindle misalignment
+MouldPrep_01,F_016,Electrical,2025-09-19 20:21:15.732924,2025-09-19 21:21:57.423773,60.694847483533,Preventive,Sensor,Routine maintenance
+QualityInspect_01,F_017,Electrical,2025-09-20 21:21:15.732924,2025-09-20 22:32:49.116281,71.556389286395,Preventive,Sensor,Emergency repair
+Cooling_01,F_018,Breakdown,2025-09-20 16:21:15.732924,2025-09-20 17:04:00.407079,42.744569253023094,Preventive,Motor,Emergency repair
+Preheating_01,F_019,Electrical,2025-09-20 14:21:15.732924,2025-09-20 16:08:55.638087,107.6650860426031,Corrective,Hydraulic Hose,Emergency repair
+Preheating_01,F_020,Breakdown,2025-09-21 23:21:15.732924,2025-09-22 00:15:39.659956,54.39878386273594,Corrective,Motor,Minor spindle misalignment
+MaterialApp_01,F_021,Breakdown,2025-09-21 16:21:15.732924,2025-09-21 17:48:03.976301,86.80405627683112,Preventive,Hydraulic Hose,Routine maintenance
+MaterialSelect_01,F_022,Sensor Fault,2025-09-21 14:21:15.732924,2025-09-21 14:30:17.583300,9.030839597724434,Preventive,Motor,Minor spindle misalignment
+Fitter_01,F_023,Sensor Fault,2025-09-22 20:21:15.732924,2025-09-22 21:54:58.049888,93.7052827406959,Preventive,None,Emergency repair
+QCPacking_01,F_024,Breakdown,2025-09-22 15:21:15.732924,2025-09-22 16:52:52.680232,91.6157884736329,Preventive,Sensor,Emergency repair
+POLISHER_01,F_025,Electrical,2025-09-22 23:21:15.732924,2025-09-22 23:57:41.499219,36.42943825271223,Preventive,Sensor,Emergency repair
+BENDER_01,F_026,Electrical,2025-09-24 14:21:15.732924,2025-09-24 15:43:17.988756,82.03759719431949,Corrective,Hydraulic Hose,Emergency repair
+INJECTION_MOULDING_01,F_027,Wear,2025-09-26 01:21:15.732924,2025-09-26 01:33:30.248686,12.241929368125165,Preventive,Tool Bit,Emergency repair
+Fitter_01,F_028,Sensor Fault,2025-09-25 18:21:15.732924,2025-09-25 19:23:10.505758,61.91288056986,Preventive,Sensor,Emergency repair
+QCPacking_01,F_029,Electrical,2025-09-26 20:21:15.732924,2025-09-26 20:48:48.733720,27.55001327141312,Corrective,Sensor,Minor spindle misalignment
+WELDER_01,F_030,Breakdown,2025-09-27 02:21:15.732924,2025-09-27 03:06:32.650439,45.28195858884355,Preventive,None,Minor spindle misalignment
+Warehouse_01,F_031,Wear,2025-09-27 18:21:15.732924,2025-09-27 19:57:28.875101,96.21903627929755,Corrective,Motor,Minor spindle misalignment
+WELDER_01,F_032,Breakdown,2025-09-29 00:21:15.732924,2025-09-29 01:49:33.376408,88.29405806099541,Corrective,None,Routine maintenance
+MaterialApp_01,F_033,Breakdown,2025-09-29 01:21:15.732924,2025-09-29 01:31:40.335849,10.410048746231926,Corrective,Sensor,Emergency repair
+SurfaceTreat_01,F_034,Wear,2025-09-28 23:21:15.732924,2025-09-29 00:13:53.376768,52.627397395121385,Corrective,None,Minor spindle misalignment
+Degating_01,F_035,Electrical,2025-09-30 00:21:15.732924,2025-09-30 01:23:40.582025,62.41415168366623,Preventive,Sensor,Minor spindle misalignment
+Preheating_01,F_036,Electrical,2025-09-30 21:21:15.732924,2025-09-30 22:48:26.625201,87.18153795709286,Preventive,None,Routine maintenance
+Cooling_01,F_037,Breakdown,2025-09-30 15:21:15.732924,2025-09-30 15:38:50.841263,17.585138979568292,Corrective,Tool Bit,Routine maintenance
+MouldPrep_01,F_038,Breakdown,2025-10-01 20:21:15.732924,2025-10-01 21:49:27.388971,88.19426744599713,Corrective,None,Emergency repair
+BENDER_01,F_039,Sensor Fault,2025-10-01 16:21:15.732924,2025-10-01 17:40:02.401578,78.77781089315017,Preventive,Sensor,Minor spindle misalignment
+SurfaceTreat_01,F_040,Wear,2025-10-01 21:21:15.732924,2025-10-01 21:29:01.076287,7.755722717054738,Preventive,Tool Bit,Minor spindle misalignment
+MouldPrep_01,F_041,Electrical,2025-10-02 19:21:15.732924,2025-10-02 19:59:29.657360,38.23207393895506,Preventive,Hydraulic Hose,Routine maintenance
+Assembly_01,F_042,Electrical,2025-10-02 15:21:15.732924,2025-10-02 16:35:46.586644,74.51422867197394,Preventive,Tool Bit,Emergency repair
+Warehouse_01,F_043,Electrical,2025-10-03 14:21:15.732924,2025-10-03 14:57:06.347995,35.843584523867435,Preventive,Hydraulic Hose,Minor spindle misalignment
+INJECTION_MOULDING_01,F_044,Sensor Fault,2025-10-04 00:21:15.732924,2025-10-04 02:04:15.203736,102.99118020736674,Corrective,None,Emergency repair
+Preheating_01,F_045,Breakdown,2025-10-03 19:21:15.732924,2025-10-03 20:01:44.507389,40.4795744219164,Corrective,Tool Bit,Emergency repair
+INJECTION_MOULDING_01,F_046,Electrical,2025-10-05 02:21:15.732924,2025-10-05 04:02:00.782232,100.75082180526482,Preventive,Tool Bit,Routine maintenance
+LASER_CUTTER_01,F_047,Breakdown,2025-10-07 22:21:15.732924,2025-10-07 23:05:06.238367,43.84175738714041,Preventive,Hydraulic Hose,Routine maintenance

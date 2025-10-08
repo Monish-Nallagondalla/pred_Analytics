@@ -1,0 +1,1061 @@
+batch_id,inspection_step,inspector,dimension_ok,surface_ok,assembly_ok,defects_found,rework_required,inspection_time
+BATCH_2181,Punching,Inspector_7,False,True,False,None,False,2025-09-08 21:21:15.732924
+BATCH_1000,Final Assembly,Inspector_10,False,True,True,None,False,2025-09-09 01:21:15.732924
+BATCH_1426,Final Assembly,Inspector_6,True,False,True,None,False,2025-09-08 23:21:15.732924
+BATCH_8349,Punching,Inspector_5,True,True,False,None,True,2025-09-08 16:21:15.732924
+BATCH_8879,Final Assembly,Inspector_5,True,True,True,None,False,2025-09-08 20:21:15.732924
+BATCH_3367,Welding,Inspector_8,True,False,False,Burr,False,2025-09-08 22:21:15.732924
+BATCH_9129,Punching,Inspector_3,True,False,True,None,False,2025-09-08 15:21:15.732924
+BATCH_2801,Final Assembly,Inspector_4,True,True,False,None,False,2025-09-08 23:21:15.732924
+BATCH_4909,Final Assembly,Inspector_10,True,False,False,None,False,2025-09-09 00:21:15.732924
+BATCH_3992,Welding,Inspector_2,True,True,False,None,True,2025-09-08 18:21:15.732924
+BATCH_6761,Quality Check,Inspector_2,False,True,True,None,False,2025-09-08 19:21:15.732924
+BATCH_2943,Quality Check,Inspector_7,False,True,True,None,False,2025-09-08 15:21:15.732924
+BATCH_8152,Punching,Inspector_10,False,True,True,None,False,2025-09-08 21:21:15.732924
+BATCH_1405,Quality Check,Inspector_6,False,True,True,None,False,2025-09-08 20:21:15.732924
+BATCH_2082,Final Assembly,Inspector_5,False,True,True,None,False,2025-09-09 00:21:15.732924
+BATCH_5240,Final Assembly,Inspector_4,False,False,True,None,False,2025-09-08 17:21:15.732924
+BATCH_7369,Quality Check,Inspector_8,False,False,True,None,True,2025-09-08 20:21:15.732924
+BATCH_1046,Final Assembly,Inspector_9,False,False,False,None,False,2025-09-08 21:21:15.732924
+BATCH_3857,Welding,Inspector_9,False,True,True,None,False,2025-09-08 17:21:15.732924
+BATCH_5120,Punching,Inspector_5,False,False,True,None,False,2025-09-08 21:21:15.732924
+BATCH_7104,Punching,Inspector_6,True,True,False,None,False,2025-09-08 22:21:15.732924
+BATCH_8010,Final Assembly,Inspector_5,True,True,True,None,False,2025-09-08 20:21:15.732924
+BATCH_4339,Welding,Inspector_7,True,True,True,None,False,2025-09-08 19:21:15.732924
+BATCH_5061,Final Assembly,Inspector_4,True,True,False,None,False,2025-09-08 23:21:15.732924
+BATCH_5354,Welding,Inspector_1,True,True,False,None,False,2025-09-08 17:21:15.732924
+BATCH_5044,Welding,Inspector_8,True,True,False,None,False,2025-09-09 01:21:15.732924
+BATCH_4199,Quality Check,Inspector_4,True,True,False,None,False,2025-09-08 14:21:15.732924
+BATCH_9647,Welding,Inspector_6,True,True,True,None,False,2025-09-08 17:21:15.732924
+BATCH_2689,Final Assembly,Inspector_8,False,True,False,None,False,2025-09-08 17:21:15.732924
+BATCH_6167,Punching,Inspector_9,False,False,True,None,False,2025-09-08 16:21:15.732924
+BATCH_9300,Welding,Inspector_6,True,False,False,None,False,2025-09-08 15:21:15.732924
+BATCH_5123,Final Assembly,Inspector_3,False,False,True,None,False,2025-09-08 16:21:15.732924
+BATCH_5068,Welding,Inspector_7,True,True,False,None,False,2025-09-09 01:21:15.732924
+BATCH_6620,Punching,Inspector_4,False,True,True,None,False,2025-09-08 20:21:15.732924
+BATCH_2708,Welding,Inspector_2,False,False,False,None,False,2025-09-09 02:21:15.732924
+BATCH_2492,Quality Check,Inspector_8,False,True,False,None,False,2025-09-09 00:21:15.732924
+BATCH_8718,Quality Check,Inspector_8,True,False,True,Scratch,False,2025-09-09 02:21:15.732924
+BATCH_1888,Punching,Inspector_6,False,True,True,None,False,2025-09-09 02:21:15.732924
+BATCH_1971,Punching,Inspector_5,False,True,False,None,False,2025-09-08 17:21:15.732924
+BATCH_6470,Welding,Inspector_2,False,False,True,None,False,2025-09-08 18:21:15.732924
+BATCH_8652,Punching,Inspector_4,False,False,True,None,False,2025-09-08 22:21:15.732924
+BATCH_1982,Punching,Inspector_7,False,True,False,None,False,2025-09-08 20:21:15.732924
+BATCH_4797,Final Assembly,Inspector_4,True,True,True,None,False,2025-09-08 19:21:15.732924
+BATCH_9781,Welding,Inspector_1,False,False,True,None,False,2025-09-08 14:21:15.732924
+BATCH_7487,Welding,Inspector_2,False,False,True,None,True,2025-09-08 20:21:15.732924
+BATCH_2557,Quality Check,Inspector_8,True,True,True,None,True,2025-09-08 23:21:15.732924
+BATCH_6772,Punching,Inspector_9,True,True,False,None,False,2025-09-09 22:21:15.732924
+BATCH_9284,Punching,Inspector_6,False,False,True,None,False,2025-09-09 17:21:15.732924
+BATCH_7957,Welding,Inspector_2,False,True,True,None,False,2025-09-09 23:21:15.732924
+BATCH_1124,Quality Check,Inspector_4,True,False,True,None,False,2025-09-09 21:21:15.732924
+BATCH_4571,Welding,Inspector_2,False,False,True,None,False,2025-09-10 02:21:15.732924
+BATCH_2630,Final Assembly,Inspector_8,False,False,False,None,False,2025-09-09 14:21:15.732924
+BATCH_3046,Final Assembly,Inspector_9,False,True,False,None,False,2025-09-09 17:21:15.732924
+BATCH_9776,Quality Check,Inspector_6,True,True,True,None,False,2025-09-09 20:21:15.732924
+BATCH_4621,Quality Check,Inspector_3,True,True,True,None,False,2025-09-10 02:21:15.732924
+BATCH_6672,Quality Check,Inspector_8,False,True,False,None,False,2025-09-09 14:21:15.732924
+BATCH_2510,Quality Check,Inspector_1,True,False,True,None,False,2025-09-10 01:21:15.732924
+BATCH_1339,Final Assembly,Inspector_10,False,True,False,None,False,2025-09-09 23:21:15.732924
+BATCH_5855,Punching,Inspector_10,True,False,True,None,False,2025-09-09 15:21:15.732924
+BATCH_3330,Punching,Inspector_8,False,True,False,None,False,2025-09-10 02:21:15.732924
+BATCH_3241,Punching,Inspector_10,True,False,True,None,False,2025-09-09 17:21:15.732924
+BATCH_4304,Final Assembly,Inspector_9,False,True,False,None,False,2025-09-10 02:21:15.732924
+BATCH_7934,Punching,Inspector_9,True,True,False,None,False,2025-09-10 00:21:15.732924
+BATCH_7260,Punching,Inspector_7,False,False,True,None,False,2025-09-10 01:21:15.732924
+BATCH_5426,Punching,Inspector_10,False,False,False,None,False,2025-09-09 20:21:15.732924
+BATCH_2928,Punching,Inspector_2,True,False,False,None,False,2025-09-09 21:21:15.732924
+BATCH_3294,Quality Check,Inspector_2,True,False,False,None,False,2025-09-10 02:21:15.732924
+BATCH_4573,Quality Check,Inspector_6,True,True,True,None,False,2025-09-09 15:21:15.732924
+BATCH_2949,Final Assembly,Inspector_7,False,True,False,None,False,2025-09-09 18:21:15.732924
+BATCH_5738,Punching,Inspector_8,True,True,False,None,False,2025-09-09 20:21:15.732924
+BATCH_1271,Final Assembly,Inspector_1,True,True,False,None,False,2025-09-10 00:21:15.732924
+BATCH_9688,Welding,Inspector_5,False,True,True,None,False,2025-09-09 19:21:15.732924
+BATCH_5472,Welding,Inspector_8,False,True,False,None,False,2025-09-09 15:21:15.732924
+BATCH_1815,Final Assembly,Inspector_9,False,False,False,None,False,2025-09-10 02:21:15.732924
+BATCH_2547,Punching,Inspector_3,False,True,False,None,False,2025-09-09 14:21:15.732924
+BATCH_4841,Final Assembly,Inspector_5,False,True,False,None,False,2025-09-09 22:21:15.732924
+BATCH_8601,Welding,Inspector_4,True,True,False,Burr,False,2025-09-09 17:21:15.732924
+BATCH_3200,Final Assembly,Inspector_5,False,True,False,None,False,2025-09-11 01:21:15.732924
+BATCH_9676,Punching,Inspector_7,False,False,True,None,False,2025-09-10 14:21:15.732924
+BATCH_5025,Welding,Inspector_6,True,False,False,None,False,2025-09-10 14:21:15.732924
+BATCH_6172,Welding,Inspector_7,False,True,True,Crack,False,2025-09-10 16:21:15.732924
+BATCH_5838,Quality Check,Inspector_3,False,True,False,None,False,2025-09-11 02:21:15.732924
+BATCH_5367,Punching,Inspector_3,True,True,True,None,False,2025-09-10 23:21:15.732924
+BATCH_2868,Punching,Inspector_10,False,True,False,None,False,2025-09-10 15:21:15.732924
+BATCH_1237,Quality Check,Inspector_10,False,False,False,None,False,2025-09-10 15:21:15.732924
+BATCH_1462,Welding,Inspector_9,True,True,False,None,False,2025-09-10 14:21:15.732924
+BATCH_6115,Quality Check,Inspector_4,True,True,False,None,False,2025-09-10 16:21:15.732924
+BATCH_1311,Welding,Inspector_9,True,False,False,None,False,2025-09-10 15:21:15.732924
+BATCH_8324,Welding,Inspector_5,True,False,False,None,False,2025-09-10 19:21:15.732924
+BATCH_4129,Quality Check,Inspector_3,True,False,False,None,False,2025-09-10 19:21:15.732924
+BATCH_6795,Quality Check,Inspector_9,True,True,False,None,False,2025-09-10 18:21:15.732924
+BATCH_3465,Final Assembly,Inspector_8,False,False,False,None,False,2025-09-10 20:21:15.732924
+BATCH_2183,Final Assembly,Inspector_7,False,True,True,None,False,2025-09-11 01:21:15.732924
+BATCH_5820,Punching,Inspector_8,True,True,True,None,False,2025-09-11 02:21:15.732924
+BATCH_3563,Punching,Inspector_5,True,True,False,None,False,2025-09-10 23:21:15.732924
+BATCH_6533,Final Assembly,Inspector_2,True,True,True,None,False,2025-09-10 18:21:15.732924
+BATCH_6843,Punching,Inspector_2,False,True,False,None,False,2025-09-10 17:21:15.732924
+BATCH_1223,Welding,Inspector_8,False,True,False,None,False,2025-09-10 16:21:15.732924
+BATCH_6098,Punching,Inspector_1,False,True,True,None,False,2025-09-10 22:21:15.732924
+BATCH_1640,Welding,Inspector_10,True,True,False,None,False,2025-09-10 15:21:15.732924
+BATCH_8525,Quality Check,Inspector_10,True,False,False,None,False,2025-09-10 15:21:15.732924
+BATCH_7118,Welding,Inspector_5,False,True,False,Crack,False,2025-09-10 16:21:15.732924
+BATCH_4333,Final Assembly,Inspector_5,True,False,False,None,False,2025-09-11 02:21:15.732924
+BATCH_2195,Final Assembly,Inspector_9,True,True,False,None,False,2025-09-10 22:21:15.732924
+BATCH_9415,Welding,Inspector_1,False,True,True,None,True,2025-09-11 17:21:15.732924
+BATCH_1185,Final Assembly,Inspector_2,True,True,False,None,False,2025-09-12 01:21:15.732924
+BATCH_6901,Final Assembly,Inspector_4,False,True,False,None,False,2025-09-11 16:21:15.732924
+BATCH_5341,Punching,Inspector_10,True,False,False,None,False,2025-09-11 23:21:15.732924
+BATCH_8115,Final Assembly,Inspector_7,False,False,True,None,False,2025-09-11 14:21:15.732924
+BATCH_3216,Quality Check,Inspector_6,False,True,True,None,True,2025-09-12 01:21:15.732924
+BATCH_8363,Welding,Inspector_4,False,True,False,None,False,2025-09-11 17:21:15.732924
+BATCH_9187,Quality Check,Inspector_10,True,False,True,None,False,2025-09-11 23:21:15.732924
+BATCH_7785,Quality Check,Inspector_6,False,False,False,None,False,2025-09-11 14:21:15.732924
+BATCH_6191,Punching,Inspector_6,True,False,False,Crack,False,2025-09-11 15:21:15.732924
+BATCH_8772,Welding,Inspector_3,False,False,True,Burr,False,2025-09-11 17:21:15.732924
+BATCH_4066,Welding,Inspector_4,False,True,False,None,False,2025-09-12 00:21:15.732924
+BATCH_1482,Welding,Inspector_2,False,False,False,None,False,2025-09-11 19:21:15.732924
+BATCH_8841,Quality Check,Inspector_5,False,True,True,None,False,2025-09-11 18:21:15.732924
+BATCH_7309,Quality Check,Inspector_5,True,False,False,None,False,2025-09-12 00:21:15.732924
+BATCH_4885,Quality Check,Inspector_4,False,True,False,None,False,2025-09-11 23:21:15.732924
+BATCH_5775,Welding,Inspector_1,True,False,False,None,False,2025-09-11 18:21:15.732924
+BATCH_2255,Final Assembly,Inspector_6,False,False,True,None,False,2025-09-11 22:21:15.732924
+BATCH_4349,Final Assembly,Inspector_10,True,False,True,None,False,2025-09-11 16:21:15.732924
+BATCH_4369,Quality Check,Inspector_10,False,False,False,None,False,2025-09-11 18:21:15.732924
+BATCH_8461,Punching,Inspector_3,True,True,True,None,False,2025-09-11 22:21:15.732924
+BATCH_1217,Final Assembly,Inspector_5,True,False,False,None,False,2025-09-12 02:21:15.732924
+BATCH_8172,Punching,Inspector_4,True,True,False,Scratch,False,2025-09-11 22:21:15.732924
+BATCH_2625,Punching,Inspector_9,False,True,False,None,False,2025-09-11 15:21:15.732924
+BATCH_2923,Final Assembly,Inspector_8,False,False,False,None,False,2025-09-11 17:21:15.732924
+BATCH_5710,Welding,Inspector_1,True,True,True,None,False,2025-09-11 22:21:15.732924
+BATCH_7538,Quality Check,Inspector_10,False,False,False,None,False,2025-09-12 02:21:15.732924
+BATCH_5872,Welding,Inspector_8,True,False,True,None,False,2025-09-11 22:21:15.732924
+BATCH_8983,Punching,Inspector_3,True,False,False,None,False,2025-09-11 14:21:15.732924
+BATCH_4297,Punching,Inspector_4,False,True,False,None,False,2025-09-11 22:21:15.732924
+BATCH_3206,Welding,Inspector_3,True,True,False,None,False,2025-09-11 16:21:15.732924
+BATCH_3473,Quality Check,Inspector_6,True,False,True,None,False,2025-09-11 15:21:15.732924
+BATCH_8466,Punching,Inspector_9,False,True,False,None,False,2025-09-11 21:21:15.732924
+BATCH_9057,Quality Check,Inspector_4,False,True,True,None,False,2025-09-11 21:21:15.732924
+BATCH_1116,Quality Check,Inspector_10,True,False,True,None,False,2025-09-11 18:21:15.732924
+BATCH_3319,Quality Check,Inspector_5,True,True,False,None,False,2025-09-12 00:21:15.732924
+BATCH_6804,Quality Check,Inspector_10,False,False,False,None,False,2025-09-11 14:21:15.732924
+BATCH_4680,Final Assembly,Inspector_8,False,False,False,None,False,2025-09-11 17:21:15.732924
+BATCH_2925,Quality Check,Inspector_1,True,False,True,None,False,2025-09-11 18:21:15.732924
+BATCH_7971,Final Assembly,Inspector_4,False,True,False,None,False,2025-09-11 18:21:15.732924
+BATCH_6458,Final Assembly,Inspector_2,False,False,False,None,False,2025-09-12 00:21:15.732924
+BATCH_2112,Final Assembly,Inspector_2,True,False,True,None,False,2025-09-12 02:21:15.732924
+BATCH_7964,Final Assembly,Inspector_3,True,False,False,None,False,2025-09-11 17:21:15.732924
+BATCH_9051,Welding,Inspector_7,False,True,True,None,False,2025-09-11 17:21:15.732924
+BATCH_2627,Quality Check,Inspector_6,True,False,False,None,False,2025-09-12 02:21:15.732924
+BATCH_7145,Welding,Inspector_7,True,False,False,None,False,2025-09-11 23:21:15.732924
+BATCH_2278,Final Assembly,Inspector_2,True,True,True,None,False,2025-09-12 18:21:15.732924
+BATCH_6988,Welding,Inspector_7,True,False,False,None,False,2025-09-12 17:21:15.732924
+BATCH_8673,Punching,Inspector_8,True,False,True,None,False,2025-09-13 01:21:15.732924
+BATCH_1905,Punching,Inspector_8,False,False,False,None,False,2025-09-12 18:21:15.732924
+BATCH_7841,Welding,Inspector_9,True,True,True,None,False,2025-09-13 01:21:15.732924
+BATCH_3524,Punching,Inspector_5,False,True,False,None,False,2025-09-13 02:21:15.732924
+BATCH_9817,Final Assembly,Inspector_1,False,True,True,None,False,2025-09-12 14:21:15.732924
+BATCH_7144,Punching,Inspector_1,False,False,True,None,False,2025-09-12 21:21:15.732924
+BATCH_5248,Quality Check,Inspector_7,True,False,False,None,False,2025-09-12 20:21:15.732924
+BATCH_1656,Welding,Inspector_7,False,True,True,None,False,2025-09-12 15:21:15.732924
+BATCH_2260,Welding,Inspector_9,True,True,False,None,False,2025-09-13 00:21:15.732924
+BATCH_3697,Punching,Inspector_1,False,False,True,None,False,2025-09-12 20:21:15.732924
+BATCH_5258,Welding,Inspector_6,True,False,False,None,False,2025-09-13 02:21:15.732924
+BATCH_1183,Quality Check,Inspector_6,False,True,True,None,False,2025-09-13 02:21:15.732924
+BATCH_9372,Quality Check,Inspector_1,True,False,False,None,False,2025-09-12 18:21:15.732924
+BATCH_3804,Quality Check,Inspector_6,False,True,False,None,False,2025-09-12 23:21:15.732924
+BATCH_5605,Quality Check,Inspector_5,False,False,True,None,False,2025-09-12 23:21:15.732924
+BATCH_7383,Welding,Inspector_8,True,True,True,None,False,2025-09-13 00:21:15.732924
+BATCH_6780,Final Assembly,Inspector_6,False,True,False,None,False,2025-09-12 22:21:15.732924
+BATCH_1624,Welding,Inspector_6,False,False,True,None,False,2025-09-12 14:21:15.732924
+BATCH_7338,Punching,Inspector_5,False,True,False,None,False,2025-09-12 23:21:15.732924
+BATCH_6220,Punching,Inspector_5,False,True,False,None,False,2025-09-13 00:21:15.732924
+BATCH_2911,Quality Check,Inspector_5,True,False,True,None,False,2025-09-12 15:21:15.732924
+BATCH_7685,Final Assembly,Inspector_8,False,False,True,None,False,2025-09-12 15:21:15.732924
+BATCH_8200,Punching,Inspector_1,False,False,False,None,False,2025-09-13 02:21:15.732924
+BATCH_5537,Final Assembly,Inspector_10,False,True,False,None,False,2025-09-12 19:21:15.732924
+BATCH_3500,Final Assembly,Inspector_9,False,True,True,None,False,2025-09-12 23:21:15.732924
+BATCH_5378,Punching,Inspector_3,False,True,False,None,False,2025-09-12 17:21:15.732924
+BATCH_3106,Final Assembly,Inspector_5,False,True,False,None,False,2025-09-12 19:21:15.732924
+BATCH_2961,Welding,Inspector_5,True,False,True,None,False,2025-09-13 00:21:15.732924
+BATCH_6771,Final Assembly,Inspector_2,False,True,False,None,False,2025-09-12 15:21:15.732924
+BATCH_4830,Quality Check,Inspector_7,False,True,False,None,False,2025-09-13 00:21:15.732924
+BATCH_6332,Quality Check,Inspector_8,True,False,True,Burr,False,2025-09-13 01:21:15.732924
+BATCH_8633,Welding,Inspector_9,False,True,False,None,False,2025-09-13 01:21:15.732924
+BATCH_7101,Final Assembly,Inspector_4,False,False,True,None,False,2025-09-12 16:21:15.732924
+BATCH_7464,Welding,Inspector_10,True,False,True,None,False,2025-09-12 19:21:15.732924
+BATCH_6392,Final Assembly,Inspector_10,True,False,True,None,False,2025-09-14 01:21:15.732924
+BATCH_8289,Welding,Inspector_6,True,True,False,None,False,2025-09-13 21:21:15.732924
+BATCH_6178,Welding,Inspector_10,False,True,True,None,False,2025-09-14 02:21:15.732924
+BATCH_5794,Punching,Inspector_2,True,True,True,None,False,2025-09-13 21:21:15.732924
+BATCH_4060,Quality Check,Inspector_7,True,False,True,None,False,2025-09-13 14:21:15.732924
+BATCH_6302,Welding,Inspector_3,True,True,False,None,False,2025-09-14 01:21:15.732924
+BATCH_7235,Final Assembly,Inspector_6,False,False,True,None,False,2025-09-13 15:21:15.732924
+BATCH_2958,Punching,Inspector_10,True,True,False,None,False,2025-09-13 14:21:15.732924
+BATCH_3779,Punching,Inspector_6,True,True,True,None,False,2025-09-13 20:21:15.732924
+BATCH_4968,Welding,Inspector_8,False,False,False,None,False,2025-09-14 02:21:15.732924
+BATCH_3386,Punching,Inspector_4,False,True,True,None,False,2025-09-14 01:21:15.732924
+BATCH_8592,Quality Check,Inspector_5,True,True,False,None,False,2025-09-13 18:21:15.732924
+BATCH_9146,Quality Check,Inspector_1,True,False,True,None,False,2025-09-14 01:21:15.732924
+BATCH_1945,Final Assembly,Inspector_7,True,False,False,None,False,2025-09-13 16:21:15.732924
+BATCH_1899,Final Assembly,Inspector_8,True,False,False,None,False,2025-09-13 14:21:15.732924
+BATCH_8413,Quality Check,Inspector_6,False,True,False,None,False,2025-09-13 23:21:15.732924
+BATCH_7598,Quality Check,Inspector_5,False,True,True,None,False,2025-09-13 20:21:15.732924
+BATCH_9265,Welding,Inspector_5,False,True,False,None,False,2025-09-14 00:21:15.732924
+BATCH_9825,Welding,Inspector_9,True,False,True,None,False,2025-09-13 16:21:15.732924
+BATCH_8913,Punching,Inspector_5,False,True,True,None,False,2025-09-14 00:21:15.732924
+BATCH_6723,Welding,Inspector_7,False,True,False,None,False,2025-09-13 21:21:15.732924
+BATCH_8186,Quality Check,Inspector_10,False,True,False,Burr,False,2025-09-13 15:21:15.732924
+BATCH_6265,Welding,Inspector_1,True,False,False,None,False,2025-09-13 16:21:15.732924
+BATCH_1242,Final Assembly,Inspector_8,False,False,False,None,False,2025-09-13 21:21:15.732924
+BATCH_5642,Punching,Inspector_10,True,True,True,None,False,2025-09-13 16:21:15.732924
+BATCH_3447,Quality Check,Inspector_6,False,True,False,None,False,2025-09-13 14:21:15.732924
+BATCH_7154,Final Assembly,Inspector_4,True,True,False,None,False,2025-09-13 22:21:15.732924
+BATCH_5664,Welding,Inspector_2,False,False,False,None,False,2025-09-13 19:21:15.732924
+BATCH_8820,Punching,Inspector_5,True,True,True,Scratch,False,2025-09-13 22:21:15.732924
+BATCH_4591,Punching,Inspector_7,False,False,False,None,False,2025-09-13 21:21:15.732924
+BATCH_1046,Punching,Inspector_5,False,False,False,None,False,2025-09-13 15:21:15.732924
+BATCH_1814,Punching,Inspector_3,True,True,False,None,False,2025-09-14 02:21:15.732924
+BATCH_4948,Welding,Inspector_6,False,True,False,None,False,2025-09-14 01:21:15.732924
+BATCH_8617,Welding,Inspector_9,False,False,False,None,False,2025-09-13 19:21:15.732924
+BATCH_3252,Punching,Inspector_10,True,False,True,None,False,2025-09-13 21:21:15.732924
+BATCH_8984,Welding,Inspector_10,False,True,True,None,False,2025-09-13 20:21:15.732924
+BATCH_6523,Final Assembly,Inspector_9,True,True,True,None,False,2025-09-13 19:21:15.732924
+BATCH_4974,Punching,Inspector_8,False,False,False,None,False,2025-09-13 17:21:15.732924
+BATCH_1482,Quality Check,Inspector_6,False,True,False,Burr,False,2025-09-13 21:21:15.732924
+BATCH_2444,Welding,Inspector_4,False,False,True,Crack,False,2025-09-13 23:21:15.732924
+BATCH_7013,Welding,Inspector_8,True,False,False,None,False,2025-09-13 22:21:15.732924
+BATCH_1224,Punching,Inspector_9,True,False,False,None,False,2025-09-13 15:21:15.732924
+BATCH_3686,Welding,Inspector_4,True,True,False,None,False,2025-09-13 16:21:15.732924
+BATCH_5209,Final Assembly,Inspector_6,True,False,False,None,False,2025-09-13 14:21:15.732924
+BATCH_8114,Final Assembly,Inspector_7,True,True,True,None,False,2025-09-14 02:21:15.732924
+BATCH_4945,Punching,Inspector_7,False,False,False,None,False,2025-09-13 18:21:15.732924
+BATCH_6372,Punching,Inspector_6,True,False,True,None,False,2025-09-14 01:21:15.732924
+BATCH_5614,Final Assembly,Inspector_3,True,False,False,None,False,2025-09-14 18:21:15.732924
+BATCH_4477,Welding,Inspector_4,False,True,True,None,False,2025-09-14 22:21:15.732924
+BATCH_5781,Quality Check,Inspector_2,False,False,False,None,False,2025-09-15 00:21:15.732924
+BATCH_3907,Welding,Inspector_6,True,False,True,None,False,2025-09-14 14:21:15.732924
+BATCH_8612,Final Assembly,Inspector_6,False,True,False,None,False,2025-09-15 00:21:15.732924
+BATCH_7490,Quality Check,Inspector_3,True,True,False,Burr,False,2025-09-14 17:21:15.732924
+BATCH_3244,Punching,Inspector_9,False,True,True,None,False,2025-09-14 16:21:15.732924
+BATCH_6567,Punching,Inspector_5,True,True,False,None,False,2025-09-15 02:21:15.732924
+BATCH_9095,Punching,Inspector_6,False,False,True,None,False,2025-09-14 21:21:15.732924
+BATCH_7238,Quality Check,Inspector_8,False,True,True,None,False,2025-09-15 00:21:15.732924
+BATCH_8935,Punching,Inspector_9,True,True,False,None,False,2025-09-14 18:21:15.732924
+BATCH_1563,Punching,Inspector_5,False,False,False,None,False,2025-09-14 22:21:15.732924
+BATCH_6455,Quality Check,Inspector_4,True,True,False,None,False,2025-09-14 17:21:15.732924
+BATCH_2557,Punching,Inspector_8,True,True,True,Crack,False,2025-09-14 21:21:15.732924
+BATCH_5334,Welding,Inspector_6,False,False,True,None,True,2025-09-14 16:21:15.732924
+BATCH_7983,Quality Check,Inspector_3,True,False,False,None,False,2025-09-14 17:21:15.732924
+BATCH_6582,Quality Check,Inspector_9,True,False,False,None,False,2025-09-14 19:21:15.732924
+BATCH_3854,Final Assembly,Inspector_10,True,True,True,None,False,2025-09-15 00:21:15.732924
+BATCH_7899,Final Assembly,Inspector_5,True,True,True,None,False,2025-09-14 18:21:15.732924
+BATCH_6842,Punching,Inspector_7,False,False,False,None,True,2025-09-14 20:21:15.732924
+BATCH_1805,Punching,Inspector_1,False,False,False,None,False,2025-09-14 21:21:15.732924
+BATCH_6894,Punching,Inspector_4,True,True,True,None,False,2025-09-14 21:21:15.732924
+BATCH_3769,Welding,Inspector_2,True,True,True,None,False,2025-09-14 19:21:15.732924
+BATCH_5375,Quality Check,Inspector_3,False,True,True,None,False,2025-09-14 19:21:15.732924
+BATCH_6028,Welding,Inspector_7,True,True,True,None,False,2025-09-14 14:21:15.732924
+BATCH_2547,Punching,Inspector_2,False,True,True,None,False,2025-09-14 16:21:15.732924
+BATCH_3808,Quality Check,Inspector_9,False,True,True,None,False,2025-09-14 14:21:15.732924
+BATCH_6820,Welding,Inspector_10,True,False,False,None,False,2025-09-14 14:21:15.732924
+BATCH_2120,Final Assembly,Inspector_5,True,True,True,Crack,False,2025-09-14 15:21:15.732924
+BATCH_6299,Punching,Inspector_9,False,False,False,None,False,2025-09-15 00:21:15.732924
+BATCH_6768,Welding,Inspector_1,False,True,False,None,False,2025-09-16 02:21:15.732924
+BATCH_5700,Quality Check,Inspector_10,True,False,False,None,False,2025-09-15 22:21:15.732924
+BATCH_4273,Punching,Inspector_10,False,True,False,None,False,2025-09-15 23:21:15.732924
+BATCH_8239,Punching,Inspector_7,False,False,True,None,False,2025-09-15 23:21:15.732924
+BATCH_5817,Final Assembly,Inspector_1,True,False,True,None,False,2025-09-15 20:21:15.732924
+BATCH_6050,Punching,Inspector_5,True,False,False,None,False,2025-09-15 19:21:15.732924
+BATCH_6972,Quality Check,Inspector_7,True,True,True,None,False,2025-09-15 22:21:15.732924
+BATCH_4898,Punching,Inspector_1,True,True,False,None,False,2025-09-15 20:21:15.732924
+BATCH_9478,Final Assembly,Inspector_9,True,True,False,Scratch,False,2025-09-16 00:21:15.732924
+BATCH_1358,Welding,Inspector_3,False,True,False,Crack,False,2025-09-15 14:21:15.732924
+BATCH_7169,Quality Check,Inspector_5,False,True,True,Crack,False,2025-09-15 21:21:15.732924
+BATCH_3312,Final Assembly,Inspector_8,True,False,True,None,False,2025-09-15 23:21:15.732924
+BATCH_2395,Punching,Inspector_9,False,True,True,None,False,2025-09-15 17:21:15.732924
+BATCH_4162,Welding,Inspector_2,False,True,True,None,False,2025-09-15 16:21:15.732924
+BATCH_9077,Punching,Inspector_4,True,False,False,None,False,2025-09-16 02:21:15.732924
+BATCH_1490,Quality Check,Inspector_1,True,True,True,None,False,2025-09-16 00:21:15.732924
+BATCH_1231,Final Assembly,Inspector_3,True,False,False,None,False,2025-09-15 18:21:15.732924
+BATCH_7614,Final Assembly,Inspector_3,True,False,False,None,False,2025-09-16 00:21:15.732924
+BATCH_3609,Welding,Inspector_10,True,True,True,None,False,2025-09-15 22:21:15.732924
+BATCH_6955,Quality Check,Inspector_2,False,True,False,None,False,2025-09-15 20:21:15.732924
+BATCH_8938,Punching,Inspector_1,False,True,True,None,False,2025-09-15 21:21:15.732924
+BATCH_2538,Final Assembly,Inspector_5,False,True,True,Burr,False,2025-09-16 00:21:15.732924
+BATCH_2224,Welding,Inspector_10,False,False,True,None,False,2025-09-15 14:21:15.732924
+BATCH_6262,Welding,Inspector_1,True,False,False,None,False,2025-09-15 14:21:15.732924
+BATCH_5938,Welding,Inspector_7,True,False,False,None,False,2025-09-15 19:21:15.732924
+BATCH_8577,Punching,Inspector_5,True,False,False,None,False,2025-09-16 01:21:15.732924
+BATCH_1114,Final Assembly,Inspector_2,False,True,True,None,False,2025-09-15 19:21:15.732924
+BATCH_7731,Quality Check,Inspector_3,True,False,True,None,False,2025-09-16 00:21:15.732924
+BATCH_8299,Welding,Inspector_2,False,True,True,None,False,2025-09-15 18:21:15.732924
+BATCH_5679,Welding,Inspector_10,True,False,False,None,False,2025-09-16 02:21:15.732924
+BATCH_8508,Punching,Inspector_3,True,True,False,None,False,2025-09-15 16:21:15.732924
+BATCH_3001,Final Assembly,Inspector_2,False,False,True,None,False,2025-09-15 16:21:15.732924
+BATCH_7558,Welding,Inspector_2,True,True,True,None,False,2025-09-15 17:21:15.732924
+BATCH_8828,Punching,Inspector_5,False,True,True,None,False,2025-09-16 02:21:15.732924
+BATCH_6944,Quality Check,Inspector_8,True,True,False,None,False,2025-09-15 21:21:15.732924
+BATCH_9658,Final Assembly,Inspector_1,False,False,True,None,False,2025-09-15 20:21:15.732924
+BATCH_8920,Punching,Inspector_8,False,True,False,None,False,2025-09-15 21:21:15.732924
+BATCH_6477,Final Assembly,Inspector_1,False,False,False,None,False,2025-09-15 21:21:15.732924
+BATCH_8346,Punching,Inspector_10,True,True,False,None,False,2025-09-16 00:21:15.732924
+BATCH_1209,Welding,Inspector_6,True,False,True,Crack,False,2025-09-15 16:21:15.732924
+BATCH_7640,Welding,Inspector_9,False,True,False,None,False,2025-09-15 18:21:15.732924
+BATCH_4690,Welding,Inspector_3,False,True,False,Burr,False,2025-09-15 17:21:15.732924
+BATCH_5883,Final Assembly,Inspector_8,False,True,False,None,False,2025-09-15 14:21:15.732924
+BATCH_5127,Quality Check,Inspector_4,True,True,False,None,False,2025-09-16 00:21:15.732924
+BATCH_4363,Welding,Inspector_3,False,True,True,None,False,2025-09-16 23:21:15.732924
+BATCH_9420,Quality Check,Inspector_5,False,False,True,Scratch,False,2025-09-16 15:21:15.732924
+BATCH_2052,Punching,Inspector_1,True,True,False,None,False,2025-09-16 18:21:15.732924
+BATCH_7146,Quality Check,Inspector_1,False,False,False,None,False,2025-09-16 23:21:15.732924
+BATCH_6932,Final Assembly,Inspector_7,True,True,False,None,False,2025-09-17 01:21:15.732924
+BATCH_4321,Welding,Inspector_10,False,False,False,Scratch,False,2025-09-16 21:21:15.732924
+BATCH_5580,Welding,Inspector_6,True,False,False,None,False,2025-09-16 22:21:15.732924
+BATCH_9569,Quality Check,Inspector_3,False,False,True,None,False,2025-09-16 15:21:15.732924
+BATCH_4217,Final Assembly,Inspector_3,True,True,False,None,False,2025-09-17 00:21:15.732924
+BATCH_8661,Welding,Inspector_4,False,True,False,None,False,2025-09-16 20:21:15.732924
+BATCH_1781,Final Assembly,Inspector_3,True,True,False,None,False,2025-09-16 20:21:15.732924
+BATCH_5376,Welding,Inspector_8,False,True,True,None,False,2025-09-16 23:21:15.732924
+BATCH_8787,Welding,Inspector_9,False,True,False,None,False,2025-09-16 23:21:15.732924
+BATCH_9064,Punching,Inspector_8,True,True,False,None,False,2025-09-16 23:21:15.732924
+BATCH_6484,Final Assembly,Inspector_8,False,False,False,None,False,2025-09-16 14:21:15.732924
+BATCH_9967,Final Assembly,Inspector_5,True,True,False,None,False,2025-09-16 17:21:15.732924
+BATCH_9144,Welding,Inspector_4,True,False,False,None,False,2025-09-16 23:21:15.732924
+BATCH_3912,Welding,Inspector_3,True,True,False,None,False,2025-09-17 02:21:15.732924
+BATCH_5691,Punching,Inspector_6,True,False,False,None,False,2025-09-17 00:21:15.732924
+BATCH_3488,Final Assembly,Inspector_3,True,False,True,None,False,2025-09-17 02:21:15.732924
+BATCH_8463,Quality Check,Inspector_2,True,True,True,None,False,2025-09-16 20:21:15.732924
+BATCH_1107,Final Assembly,Inspector_1,False,True,False,None,False,2025-09-17 01:21:15.732924
+BATCH_8408,Final Assembly,Inspector_4,False,True,False,None,False,2025-09-16 21:21:15.732924
+BATCH_3272,Punching,Inspector_8,True,True,True,None,False,2025-09-16 21:21:15.732924
+BATCH_8433,Welding,Inspector_7,True,True,False,None,False,2025-09-17 01:21:15.732924
+BATCH_2977,Welding,Inspector_6,False,False,True,None,False,2025-09-16 19:21:15.732924
+BATCH_9391,Punching,Inspector_10,True,True,False,None,False,2025-09-16 20:21:15.732924
+BATCH_6294,Welding,Inspector_5,False,False,False,None,False,2025-09-16 21:21:15.732924
+BATCH_9884,Punching,Inspector_1,False,False,True,None,False,2025-09-16 14:21:15.732924
+BATCH_9601,Welding,Inspector_1,False,False,False,None,False,2025-09-16 14:21:15.732924
+BATCH_8581,Welding,Inspector_9,False,True,False,None,False,2025-09-16 20:21:15.732924
+BATCH_4182,Quality Check,Inspector_5,True,True,True,None,False,2025-09-17 23:21:15.732924
+BATCH_7587,Punching,Inspector_7,False,True,False,None,False,2025-09-17 20:21:15.732924
+BATCH_7817,Quality Check,Inspector_10,False,True,True,None,False,2025-09-17 19:21:15.732924
+BATCH_7950,Final Assembly,Inspector_6,False,False,False,None,False,2025-09-17 22:21:15.732924
+BATCH_7497,Final Assembly,Inspector_10,False,True,False,None,False,2025-09-18 00:21:15.732924
+BATCH_6522,Final Assembly,Inspector_4,False,True,False,None,False,2025-09-17 14:21:15.732924
+BATCH_1193,Welding,Inspector_9,True,False,True,None,False,2025-09-17 22:21:15.732924
+BATCH_7074,Welding,Inspector_9,False,False,False,None,False,2025-09-18 02:21:15.732924
+BATCH_6258,Quality Check,Inspector_4,False,False,True,None,False,2025-09-17 18:21:15.732924
+BATCH_7577,Final Assembly,Inspector_10,True,False,False,None,False,2025-09-17 21:21:15.732924
+BATCH_7488,Welding,Inspector_5,True,True,False,None,False,2025-09-17 14:21:15.732924
+BATCH_4965,Quality Check,Inspector_9,True,False,False,None,False,2025-09-17 14:21:15.732924
+BATCH_9814,Punching,Inspector_6,True,False,False,Crack,False,2025-09-17 17:21:15.732924
+BATCH_4262,Punching,Inspector_2,True,False,True,None,False,2025-09-17 16:21:15.732924
+BATCH_2820,Final Assembly,Inspector_2,True,False,True,None,False,2025-09-17 22:21:15.732924
+BATCH_6553,Quality Check,Inspector_5,True,False,False,None,False,2025-09-18 01:21:15.732924
+BATCH_5087,Punching,Inspector_7,True,False,True,None,False,2025-09-17 23:21:15.732924
+BATCH_6470,Welding,Inspector_9,True,True,True,None,False,2025-09-17 16:21:15.732924
+BATCH_9203,Punching,Inspector_6,False,True,False,None,False,2025-09-17 20:21:15.732924
+BATCH_7678,Quality Check,Inspector_10,True,False,True,None,False,2025-09-17 22:21:15.732924
+BATCH_3597,Final Assembly,Inspector_7,False,False,True,None,False,2025-09-18 00:21:15.732924
+BATCH_6637,Punching,Inspector_2,False,False,False,None,False,2025-09-17 23:21:15.732924
+BATCH_6065,Final Assembly,Inspector_4,True,True,False,None,False,2025-09-18 01:21:15.732924
+BATCH_6758,Quality Check,Inspector_9,False,True,False,None,False,2025-09-17 15:21:15.732924
+BATCH_4649,Quality Check,Inspector_1,False,True,True,None,False,2025-09-17 19:21:15.732924
+BATCH_6697,Welding,Inspector_9,False,False,True,None,False,2025-09-18 00:21:15.732924
+BATCH_8983,Punching,Inspector_2,False,True,False,None,False,2025-09-17 20:21:15.732924
+BATCH_4639,Quality Check,Inspector_10,True,True,False,None,False,2025-09-17 22:21:15.732924
+BATCH_3823,Quality Check,Inspector_5,False,False,False,None,False,2025-09-17 15:21:15.732924
+BATCH_7125,Punching,Inspector_6,False,False,True,Burr,False,2025-09-17 16:21:15.732924
+BATCH_1095,Welding,Inspector_9,True,False,False,None,False,2025-09-17 17:21:15.732924
+BATCH_8441,Quality Check,Inspector_10,False,True,True,None,False,2025-09-17 20:21:15.732924
+BATCH_3839,Quality Check,Inspector_9,True,False,False,None,False,2025-09-17 22:21:15.732924
+BATCH_6882,Quality Check,Inspector_5,True,False,False,None,False,2025-09-17 21:21:15.732924
+BATCH_3038,Welding,Inspector_3,True,False,True,None,False,2025-09-17 21:21:15.732924
+BATCH_6835,Quality Check,Inspector_1,True,True,True,None,False,2025-09-17 18:21:15.732924
+BATCH_4402,Punching,Inspector_7,True,False,True,None,False,2025-09-17 15:21:15.732924
+BATCH_1432,Final Assembly,Inspector_3,False,True,False,None,False,2025-09-17 23:21:15.732924
+BATCH_8443,Final Assembly,Inspector_3,True,False,True,None,False,2025-09-17 23:21:15.732924
+BATCH_4891,Final Assembly,Inspector_9,True,True,True,None,False,2025-09-17 18:21:15.732924
+BATCH_6718,Welding,Inspector_1,True,True,True,None,False,2025-09-18 01:21:15.732924
+BATCH_6798,Punching,Inspector_5,True,True,True,None,False,2025-09-18 16:21:15.732924
+BATCH_6614,Welding,Inspector_2,False,False,True,None,False,2025-09-18 23:21:15.732924
+BATCH_9895,Welding,Inspector_3,True,True,True,None,False,2025-09-18 17:21:15.732924
+BATCH_5525,Final Assembly,Inspector_5,False,True,True,None,False,2025-09-19 00:21:15.732924
+BATCH_7779,Quality Check,Inspector_3,False,False,False,None,False,2025-09-18 14:21:15.732924
+BATCH_8406,Final Assembly,Inspector_3,False,True,False,None,False,2025-09-18 16:21:15.732924
+BATCH_6416,Punching,Inspector_8,False,False,True,None,False,2025-09-18 14:21:15.732924
+BATCH_9805,Welding,Inspector_8,False,True,True,None,False,2025-09-18 22:21:15.732924
+BATCH_4275,Quality Check,Inspector_6,True,True,False,None,False,2025-09-18 23:21:15.732924
+BATCH_4421,Final Assembly,Inspector_10,True,True,True,None,False,2025-09-18 15:21:15.732924
+BATCH_2637,Quality Check,Inspector_5,True,False,True,None,False,2025-09-19 00:21:15.732924
+BATCH_2634,Punching,Inspector_2,True,False,True,None,False,2025-09-18 18:21:15.732924
+BATCH_9795,Final Assembly,Inspector_5,False,False,False,None,False,2025-09-18 18:21:15.732924
+BATCH_8217,Final Assembly,Inspector_4,True,True,False,None,False,2025-09-19 01:21:15.732924
+BATCH_9618,Quality Check,Inspector_7,False,True,False,None,False,2025-09-18 19:21:15.732924
+BATCH_6780,Punching,Inspector_7,True,True,True,None,False,2025-09-18 15:21:15.732924
+BATCH_8755,Quality Check,Inspector_6,True,False,False,Burr,False,2025-09-18 14:21:15.732924
+BATCH_3382,Final Assembly,Inspector_4,False,True,True,None,False,2025-09-18 15:21:15.732924
+BATCH_6290,Final Assembly,Inspector_5,True,False,False,None,False,2025-09-19 02:21:15.732924
+BATCH_7044,Final Assembly,Inspector_2,False,False,False,None,False,2025-09-18 20:21:15.732924
+BATCH_2673,Welding,Inspector_6,False,False,False,None,False,2025-09-18 22:21:15.732924
+BATCH_8208,Final Assembly,Inspector_10,True,False,True,None,False,2025-09-18 14:21:15.732924
+BATCH_2800,Punching,Inspector_3,True,False,True,None,False,2025-09-18 18:21:15.732924
+BATCH_3491,Punching,Inspector_3,False,False,False,None,False,2025-09-18 15:21:15.732924
+BATCH_9600,Final Assembly,Inspector_3,True,True,False,None,False,2025-09-19 02:21:15.732924
+BATCH_1138,Punching,Inspector_8,True,True,True,None,False,2025-09-19 00:21:15.732924
+BATCH_2443,Welding,Inspector_7,False,False,True,None,False,2025-09-18 18:21:15.732924
+BATCH_6429,Final Assembly,Inspector_4,True,False,True,None,False,2025-09-18 20:21:15.732924
+BATCH_7724,Welding,Inspector_3,False,False,True,Burr,False,2025-09-18 16:21:15.732924
+BATCH_7975,Quality Check,Inspector_5,True,True,True,None,False,2025-09-19 16:21:15.732924
+BATCH_8990,Final Assembly,Inspector_8,True,True,True,None,False,2025-09-19 14:21:15.732924
+BATCH_4431,Quality Check,Inspector_1,True,False,False,None,False,2025-09-20 01:21:15.732924
+BATCH_4348,Final Assembly,Inspector_1,False,False,False,None,False,2025-09-19 14:21:15.732924
+BATCH_1770,Welding,Inspector_6,False,False,False,None,False,2025-09-19 16:21:15.732924
+BATCH_6632,Punching,Inspector_5,False,True,False,None,False,2025-09-19 16:21:15.732924
+BATCH_9312,Welding,Inspector_9,True,False,True,None,False,2025-09-19 16:21:15.732924
+BATCH_9202,Welding,Inspector_4,True,False,False,None,True,2025-09-19 18:21:15.732924
+BATCH_4407,Welding,Inspector_8,False,False,True,None,False,2025-09-19 22:21:15.732924
+BATCH_1419,Quality Check,Inspector_9,False,False,True,None,False,2025-09-19 21:21:15.732924
+BATCH_9878,Welding,Inspector_6,False,True,False,None,False,2025-09-20 02:21:15.732924
+BATCH_3724,Welding,Inspector_6,True,False,False,None,False,2025-09-19 19:21:15.732924
+BATCH_8044,Final Assembly,Inspector_5,True,True,False,None,False,2025-09-19 20:21:15.732924
+BATCH_8306,Final Assembly,Inspector_3,True,False,False,None,False,2025-09-20 02:21:15.732924
+BATCH_7531,Punching,Inspector_5,False,False,False,None,False,2025-09-19 19:21:15.732924
+BATCH_8833,Punching,Inspector_10,True,True,True,None,False,2025-09-19 17:21:15.732924
+BATCH_3768,Final Assembly,Inspector_8,False,True,True,None,False,2025-09-19 18:21:15.732924
+BATCH_2875,Final Assembly,Inspector_3,False,False,True,None,False,2025-09-20 01:21:15.732924
+BATCH_7860,Quality Check,Inspector_1,False,False,False,None,False,2025-09-19 21:21:15.732924
+BATCH_9781,Quality Check,Inspector_6,False,True,False,None,False,2025-09-20 01:21:15.732924
+BATCH_5194,Final Assembly,Inspector_3,False,False,True,None,False,2025-09-20 01:21:15.732924
+BATCH_9605,Punching,Inspector_9,False,False,True,None,False,2025-09-19 20:21:15.732924
+BATCH_7987,Final Assembly,Inspector_1,False,False,False,None,False,2025-09-21 00:21:15.732924
+BATCH_6219,Final Assembly,Inspector_9,False,True,True,None,False,2025-09-20 20:21:15.732924
+BATCH_4395,Punching,Inspector_10,True,False,True,None,False,2025-09-20 18:21:15.732924
+BATCH_4583,Quality Check,Inspector_6,True,True,False,None,False,2025-09-20 16:21:15.732924
+BATCH_6183,Punching,Inspector_3,True,False,False,None,False,2025-09-20 23:21:15.732924
+BATCH_1195,Welding,Inspector_6,True,False,True,None,False,2025-09-20 15:21:15.732924
+BATCH_8358,Punching,Inspector_9,True,True,True,None,False,2025-09-20 19:21:15.732924
+BATCH_4010,Punching,Inspector_2,False,True,False,None,False,2025-09-20 17:21:15.732924
+BATCH_1141,Final Assembly,Inspector_8,True,False,False,None,False,2025-09-20 19:21:15.732924
+BATCH_5308,Punching,Inspector_5,True,False,True,None,False,2025-09-20 22:21:15.732924
+BATCH_3074,Punching,Inspector_9,False,False,True,None,False,2025-09-20 20:21:15.732924
+BATCH_9943,Punching,Inspector_9,True,True,True,Crack,False,2025-09-21 00:21:15.732924
+BATCH_5310,Final Assembly,Inspector_3,True,False,True,None,True,2025-09-20 15:21:15.732924
+BATCH_7247,Quality Check,Inspector_2,True,False,False,Crack,False,2025-09-21 01:21:15.732924
+BATCH_8919,Final Assembly,Inspector_1,True,False,True,Scratch,False,2025-09-20 18:21:15.732924
+BATCH_4131,Quality Check,Inspector_3,False,False,False,None,False,2025-09-20 20:21:15.732924
+BATCH_5278,Welding,Inspector_6,True,True,True,None,False,2025-09-20 17:21:15.732924
+BATCH_7590,Quality Check,Inspector_7,True,True,False,None,False,2025-09-20 18:21:15.732924
+BATCH_7440,Final Assembly,Inspector_5,False,False,True,None,False,2025-09-20 20:21:15.732924
+BATCH_7815,Final Assembly,Inspector_3,True,False,False,None,False,2025-09-20 18:21:15.732924
+BATCH_5619,Quality Check,Inspector_1,True,False,False,None,False,2025-09-20 23:21:15.732924
+BATCH_3002,Punching,Inspector_2,True,False,False,None,False,2025-09-20 23:21:15.732924
+BATCH_8763,Final Assembly,Inspector_7,True,True,True,None,False,2025-09-20 19:21:15.732924
+BATCH_2631,Quality Check,Inspector_3,True,False,False,None,False,2025-09-21 22:21:15.732924
+BATCH_1863,Final Assembly,Inspector_5,True,True,False,None,False,2025-09-21 14:21:15.732924
+BATCH_1618,Welding,Inspector_8,True,False,True,None,False,2025-09-22 01:21:15.732924
+BATCH_7246,Final Assembly,Inspector_6,True,True,False,None,False,2025-09-21 18:21:15.732924
+BATCH_3489,Welding,Inspector_3,True,False,True,Burr,False,2025-09-21 22:21:15.732924
+BATCH_8262,Final Assembly,Inspector_4,False,True,True,None,False,2025-09-22 01:21:15.732924
+BATCH_9955,Welding,Inspector_5,False,False,True,None,False,2025-09-21 20:21:15.732924
+BATCH_6600,Quality Check,Inspector_7,False,True,False,None,False,2025-09-22 01:21:15.732924
+BATCH_9737,Punching,Inspector_8,True,False,True,Burr,False,2025-09-21 23:21:15.732924
+BATCH_9481,Punching,Inspector_5,True,False,False,None,False,2025-09-21 23:21:15.732924
+BATCH_7032,Final Assembly,Inspector_5,False,True,True,None,False,2025-09-22 01:21:15.732924
+BATCH_7208,Quality Check,Inspector_7,True,False,True,None,False,2025-09-21 22:21:15.732924
+BATCH_1585,Welding,Inspector_1,True,True,False,None,False,2025-09-21 17:21:15.732924
+BATCH_4709,Final Assembly,Inspector_2,False,False,False,None,False,2025-09-21 19:21:15.732924
+BATCH_4583,Punching,Inspector_8,True,True,False,None,False,2025-09-21 14:21:15.732924
+BATCH_7727,Quality Check,Inspector_5,True,False,False,None,False,2025-09-22 01:21:15.732924
+BATCH_7147,Punching,Inspector_3,True,False,False,None,False,2025-09-21 16:21:15.732924
+BATCH_7691,Welding,Inspector_7,True,False,False,None,False,2025-09-22 01:21:15.732924
+BATCH_4478,Punching,Inspector_3,True,False,False,None,False,2025-09-21 21:21:15.732924
+BATCH_2265,Final Assembly,Inspector_10,True,False,True,None,False,2025-09-21 19:21:15.732924
+BATCH_5390,Welding,Inspector_1,False,True,False,Burr,False,2025-09-21 19:21:15.732924
+BATCH_2215,Quality Check,Inspector_2,False,False,True,None,False,2025-09-22 01:21:15.732924
+BATCH_6678,Quality Check,Inspector_8,False,True,False,None,False,2025-09-21 19:21:15.732924
+BATCH_9468,Punching,Inspector_2,False,False,True,None,False,2025-09-21 18:21:15.732924
+BATCH_7787,Punching,Inspector_2,False,False,True,None,False,2025-09-22 00:21:15.732924
+BATCH_6368,Final Assembly,Inspector_10,False,False,False,None,False,2025-09-22 22:21:15.732924
+BATCH_5601,Final Assembly,Inspector_6,False,True,False,None,False,2025-09-23 00:21:15.732924
+BATCH_9400,Final Assembly,Inspector_8,False,True,False,None,False,2025-09-22 23:21:15.732924
+BATCH_6523,Quality Check,Inspector_1,False,False,False,None,False,2025-09-22 23:21:15.732924
+BATCH_1448,Quality Check,Inspector_2,False,True,True,None,False,2025-09-22 14:21:15.732924
+BATCH_6115,Punching,Inspector_3,False,True,True,None,False,2025-09-22 22:21:15.732924
+BATCH_9533,Welding,Inspector_2,False,True,False,None,False,2025-09-22 19:21:15.732924
+BATCH_7615,Quality Check,Inspector_3,True,False,True,None,False,2025-09-22 23:21:15.732924
+BATCH_8744,Final Assembly,Inspector_5,True,False,True,None,False,2025-09-23 01:21:15.732924
+BATCH_5290,Punching,Inspector_10,True,True,False,None,False,2025-09-22 16:21:15.732924
+BATCH_5306,Welding,Inspector_7,True,False,False,None,False,2025-09-23 01:21:15.732924
+BATCH_6244,Welding,Inspector_4,True,True,True,None,False,2025-09-22 20:21:15.732924
+BATCH_4906,Punching,Inspector_10,False,False,False,None,False,2025-09-22 14:21:15.732924
+BATCH_8509,Quality Check,Inspector_8,False,False,True,None,False,2025-09-22 18:21:15.732924
+BATCH_1665,Quality Check,Inspector_8,True,True,False,None,False,2025-09-22 22:21:15.732924
+BATCH_4742,Punching,Inspector_9,False,False,False,None,False,2025-09-22 17:21:15.732924
+BATCH_2252,Punching,Inspector_10,False,True,False,None,False,2025-09-22 17:21:15.732924
+BATCH_2132,Quality Check,Inspector_10,False,False,True,Crack,False,2025-09-22 20:21:15.732924
+BATCH_3591,Quality Check,Inspector_3,True,True,True,None,False,2025-09-23 00:21:15.732924
+BATCH_6645,Welding,Inspector_2,False,True,True,None,False,2025-09-22 22:21:15.732924
+BATCH_5250,Punching,Inspector_2,True,False,False,None,False,2025-09-22 22:21:15.732924
+BATCH_6600,Final Assembly,Inspector_6,True,True,True,None,False,2025-09-23 02:21:15.732924
+BATCH_8530,Punching,Inspector_7,False,True,False,Crack,False,2025-09-22 23:21:15.732924
+BATCH_8994,Quality Check,Inspector_1,False,False,False,None,False,2025-09-22 21:21:15.732924
+BATCH_3129,Punching,Inspector_8,True,True,True,None,False,2025-09-23 01:21:15.732924
+BATCH_5316,Final Assembly,Inspector_9,True,False,False,None,False,2025-09-22 16:21:15.732924
+BATCH_2591,Quality Check,Inspector_7,False,True,False,None,False,2025-09-22 14:21:15.732924
+BATCH_9865,Welding,Inspector_1,False,False,True,None,False,2025-09-22 23:21:15.732924
+BATCH_5229,Quality Check,Inspector_10,True,False,True,None,False,2025-09-23 00:21:15.732924
+BATCH_9400,Quality Check,Inspector_6,False,True,False,None,False,2025-09-22 17:21:15.732924
+BATCH_2348,Final Assembly,Inspector_10,False,True,True,None,False,2025-09-22 14:21:15.732924
+BATCH_9009,Welding,Inspector_9,True,True,True,None,False,2025-09-22 20:21:15.732924
+BATCH_6313,Final Assembly,Inspector_2,True,False,True,None,False,2025-09-22 23:21:15.732924
+BATCH_8502,Quality Check,Inspector_6,True,False,True,None,False,2025-09-22 20:21:15.732924
+BATCH_3985,Quality Check,Inspector_5,False,True,True,None,False,2025-09-23 02:21:15.732924
+BATCH_3191,Welding,Inspector_10,True,False,False,None,False,2025-09-22 21:21:15.732924
+BATCH_9276,Welding,Inspector_9,False,True,False,Crack,False,2025-09-23 19:21:15.732924
+BATCH_7867,Punching,Inspector_4,True,False,False,None,False,2025-09-23 19:21:15.732924
+BATCH_4973,Welding,Inspector_1,True,True,False,None,False,2025-09-23 21:21:15.732924
+BATCH_6536,Welding,Inspector_9,True,False,True,None,False,2025-09-23 19:21:15.732924
+BATCH_7295,Final Assembly,Inspector_6,True,False,True,None,False,2025-09-24 02:21:15.732924
+BATCH_2332,Welding,Inspector_9,True,False,True,None,False,2025-09-23 19:21:15.732924
+BATCH_5481,Welding,Inspector_2,True,False,True,Burr,False,2025-09-24 01:21:15.732924
+BATCH_1683,Welding,Inspector_1,False,False,True,None,False,2025-09-24 00:21:15.732924
+BATCH_6010,Welding,Inspector_8,False,False,True,None,False,2025-09-24 02:21:15.732924
+BATCH_2504,Final Assembly,Inspector_5,False,False,False,Crack,False,2025-09-23 23:21:15.732924
+BATCH_2308,Welding,Inspector_8,True,True,True,None,True,2025-09-24 02:21:15.732924
+BATCH_6315,Punching,Inspector_6,True,False,False,None,False,2025-09-23 19:21:15.732924
+BATCH_9556,Welding,Inspector_3,False,False,False,None,False,2025-09-24 00:21:15.732924
+BATCH_9646,Welding,Inspector_7,True,False,True,None,False,2025-09-23 21:21:15.732924
+BATCH_5693,Final Assembly,Inspector_3,False,False,True,None,False,2025-09-24 02:21:15.732924
+BATCH_4412,Welding,Inspector_4,True,False,False,None,False,2025-09-23 17:21:15.732924
+BATCH_5363,Final Assembly,Inspector_10,True,True,False,None,False,2025-09-23 16:21:15.732924
+BATCH_8606,Quality Check,Inspector_3,False,False,False,None,False,2025-09-23 14:21:15.732924
+BATCH_7580,Punching,Inspector_1,True,False,True,None,False,2025-09-23 18:21:15.732924
+BATCH_1744,Quality Check,Inspector_3,False,False,False,None,False,2025-09-24 02:21:15.732924
+BATCH_4646,Final Assembly,Inspector_9,False,True,False,None,False,2025-09-23 22:21:15.732924
+BATCH_8173,Final Assembly,Inspector_9,False,False,False,None,False,2025-09-24 02:21:15.732924
+BATCH_2975,Welding,Inspector_1,True,True,True,None,False,2025-09-23 15:21:15.732924
+BATCH_8141,Welding,Inspector_7,True,False,True,None,False,2025-09-23 19:21:15.732924
+BATCH_2910,Quality Check,Inspector_7,True,True,True,Burr,True,2025-09-23 20:21:15.732924
+BATCH_3684,Welding,Inspector_5,True,True,False,None,False,2025-09-23 15:21:15.732924
+BATCH_6730,Welding,Inspector_6,True,True,False,None,False,2025-09-25 01:21:15.732924
+BATCH_7130,Welding,Inspector_9,True,False,False,None,False,2025-09-24 18:21:15.732924
+BATCH_7437,Punching,Inspector_4,True,False,False,Burr,False,2025-09-24 22:21:15.732924
+BATCH_7128,Quality Check,Inspector_6,False,True,True,None,False,2025-09-25 02:21:15.732924
+BATCH_7002,Final Assembly,Inspector_4,False,True,False,None,False,2025-09-25 02:21:15.732924
+BATCH_6997,Final Assembly,Inspector_7,True,False,True,None,False,2025-09-24 22:21:15.732924
+BATCH_6952,Punching,Inspector_5,True,True,False,None,False,2025-09-25 00:21:15.732924
+BATCH_9745,Punching,Inspector_6,False,True,True,None,False,2025-09-24 20:21:15.732924
+BATCH_4217,Punching,Inspector_1,False,False,False,None,False,2025-09-25 01:21:15.732924
+BATCH_3334,Quality Check,Inspector_3,True,False,True,None,False,2025-09-24 23:21:15.732924
+BATCH_6618,Final Assembly,Inspector_1,False,True,False,None,False,2025-09-24 15:21:15.732924
+BATCH_9737,Final Assembly,Inspector_7,False,True,False,None,False,2025-09-24 23:21:15.732924
+BATCH_6723,Final Assembly,Inspector_6,False,False,True,None,False,2025-09-24 15:21:15.732924
+BATCH_6421,Quality Check,Inspector_9,True,False,True,None,False,2025-09-25 02:21:15.732924
+BATCH_2428,Welding,Inspector_2,True,False,True,None,False,2025-09-24 20:21:15.732924
+BATCH_5204,Welding,Inspector_10,True,False,False,None,False,2025-09-24 20:21:15.732924
+BATCH_2288,Welding,Inspector_6,True,False,False,Burr,False,2025-09-24 22:21:15.732924
+BATCH_4639,Welding,Inspector_4,True,False,False,None,False,2025-09-24 20:21:15.732924
+BATCH_1749,Welding,Inspector_6,True,True,True,None,False,2025-09-24 15:21:15.732924
+BATCH_3363,Punching,Inspector_10,True,True,False,None,False,2025-09-24 15:21:15.732924
+BATCH_4631,Final Assembly,Inspector_3,False,False,False,None,False,2025-09-26 02:21:15.732924
+BATCH_5157,Welding,Inspector_4,False,True,True,None,False,2025-09-25 17:21:15.732924
+BATCH_3040,Quality Check,Inspector_6,True,True,True,None,False,2025-09-25 17:21:15.732924
+BATCH_6181,Punching,Inspector_10,True,True,False,None,False,2025-09-25 23:21:15.732924
+BATCH_4682,Welding,Inspector_3,False,True,True,None,False,2025-09-26 01:21:15.732924
+BATCH_7814,Punching,Inspector_6,True,False,True,None,False,2025-09-25 20:21:15.732924
+BATCH_1646,Punching,Inspector_9,False,False,False,None,False,2025-09-25 15:21:15.732924
+BATCH_5848,Final Assembly,Inspector_1,True,False,False,Crack,False,2025-09-25 15:21:15.732924
+BATCH_2050,Punching,Inspector_8,False,True,True,None,False,2025-09-26 00:21:15.732924
+BATCH_2018,Final Assembly,Inspector_10,True,False,True,None,False,2025-09-26 02:21:15.732924
+BATCH_9474,Punching,Inspector_10,True,False,False,None,True,2025-09-25 16:21:15.732924
+BATCH_4642,Quality Check,Inspector_1,False,True,False,None,False,2025-09-25 14:21:15.732924
+BATCH_6377,Quality Check,Inspector_9,False,False,True,None,False,2025-09-25 21:21:15.732924
+BATCH_3534,Quality Check,Inspector_8,True,True,False,None,False,2025-09-25 19:21:15.732924
+BATCH_3883,Final Assembly,Inspector_5,False,True,False,None,False,2025-09-25 15:21:15.732924
+BATCH_5398,Final Assembly,Inspector_4,True,True,False,None,False,2025-09-25 16:21:15.732924
+BATCH_8895,Final Assembly,Inspector_8,False,False,True,None,False,2025-09-26 02:21:15.732924
+BATCH_4618,Quality Check,Inspector_10,True,True,False,None,False,2025-09-25 21:21:15.732924
+BATCH_8576,Quality Check,Inspector_4,False,False,True,None,False,2025-09-26 00:21:15.732924
+BATCH_5210,Final Assembly,Inspector_10,False,False,False,None,False,2025-09-25 22:21:15.732924
+BATCH_2750,Welding,Inspector_4,True,False,True,None,False,2025-09-25 18:21:15.732924
+BATCH_9842,Welding,Inspector_9,False,True,True,None,False,2025-09-25 18:21:15.732924
+BATCH_8919,Welding,Inspector_6,True,True,True,None,False,2025-09-26 00:21:15.732924
+BATCH_4649,Final Assembly,Inspector_1,False,True,True,None,False,2025-09-25 22:21:15.732924
+BATCH_3975,Final Assembly,Inspector_3,True,False,False,None,False,2025-09-25 18:21:15.732924
+BATCH_5770,Final Assembly,Inspector_6,True,False,True,None,False,2025-09-25 22:21:15.732924
+BATCH_5845,Quality Check,Inspector_1,False,True,True,None,False,2025-09-26 00:21:15.732924
+BATCH_6224,Welding,Inspector_9,False,False,False,None,False,2025-09-25 16:21:15.732924
+BATCH_3760,Final Assembly,Inspector_10,False,False,False,None,False,2025-09-26 01:21:15.732924
+BATCH_5728,Final Assembly,Inspector_2,False,False,False,None,False,2025-09-25 23:21:15.732924
+BATCH_5445,Final Assembly,Inspector_6,False,False,False,None,False,2025-09-26 00:21:15.732924
+BATCH_1084,Punching,Inspector_6,True,True,False,None,False,2025-09-25 16:21:15.732924
+BATCH_5862,Welding,Inspector_9,True,False,False,None,False,2025-09-26 01:21:15.732924
+BATCH_4351,Punching,Inspector_2,False,False,True,None,False,2025-09-25 20:21:15.732924
+BATCH_7456,Punching,Inspector_8,True,True,True,Scratch,False,2025-09-25 14:21:15.732924
+BATCH_3511,Final Assembly,Inspector_10,False,True,False,None,False,2025-09-25 15:21:15.732924
+BATCH_8405,Final Assembly,Inspector_8,False,False,False,None,True,2025-09-25 20:21:15.732924
+BATCH_7836,Punching,Inspector_5,True,False,True,None,False,2025-09-26 01:21:15.732924
+BATCH_1609,Welding,Inspector_10,True,False,True,None,False,2025-09-25 21:21:15.732924
+BATCH_7524,Punching,Inspector_8,False,True,False,None,False,2025-09-26 00:21:15.732924
+BATCH_3348,Welding,Inspector_5,False,True,True,None,False,2025-09-25 15:21:15.732924
+BATCH_8648,Final Assembly,Inspector_3,True,True,True,None,False,2025-09-26 02:21:15.732924
+BATCH_9038,Welding,Inspector_1,False,False,True,None,False,2025-09-25 21:21:15.732924
+BATCH_8572,Punching,Inspector_9,True,True,True,None,False,2025-09-25 22:21:15.732924
+BATCH_8983,Punching,Inspector_7,True,True,True,None,False,2025-09-27 00:21:15.732924
+BATCH_8464,Final Assembly,Inspector_3,False,True,False,None,True,2025-09-26 21:21:15.732924
+BATCH_9798,Final Assembly,Inspector_9,True,True,True,Crack,False,2025-09-26 16:21:15.732924
+BATCH_2092,Welding,Inspector_5,False,True,True,None,False,2025-09-26 16:21:15.732924
+BATCH_4395,Welding,Inspector_3,True,False,False,None,False,2025-09-26 16:21:15.732924
+BATCH_1795,Quality Check,Inspector_7,False,False,True,None,False,2025-09-26 16:21:15.732924
+BATCH_8218,Punching,Inspector_1,True,False,False,Burr,False,2025-09-26 19:21:15.732924
+BATCH_3315,Quality Check,Inspector_5,False,False,False,None,False,2025-09-26 21:21:15.732924
+BATCH_7308,Welding,Inspector_5,False,True,True,None,False,2025-09-26 18:21:15.732924
+BATCH_4657,Quality Check,Inspector_5,True,True,True,None,False,2025-09-26 14:21:15.732924
+BATCH_7498,Quality Check,Inspector_2,True,False,True,None,False,2025-09-27 00:21:15.732924
+BATCH_4008,Final Assembly,Inspector_5,True,False,True,None,False,2025-09-27 01:21:15.732924
+BATCH_1070,Punching,Inspector_8,False,False,True,Crack,False,2025-09-26 22:21:15.732924
+BATCH_2714,Final Assembly,Inspector_10,False,True,False,None,True,2025-09-26 20:21:15.732924
+BATCH_9956,Final Assembly,Inspector_10,False,True,False,None,False,2025-09-26 18:21:15.732924
+BATCH_9141,Quality Check,Inspector_8,True,False,True,None,True,2025-09-26 23:21:15.732924
+BATCH_9738,Final Assembly,Inspector_8,True,True,False,None,False,2025-09-26 21:21:15.732924
+BATCH_7896,Quality Check,Inspector_2,True,False,False,Scratch,False,2025-09-26 18:21:15.732924
+BATCH_9487,Quality Check,Inspector_7,True,False,True,None,False,2025-09-26 15:21:15.732924
+BATCH_4964,Final Assembly,Inspector_8,False,False,False,None,False,2025-09-26 16:21:15.732924
+BATCH_7982,Welding,Inspector_9,False,False,True,None,False,2025-09-26 19:21:15.732924
+BATCH_8155,Welding,Inspector_7,True,False,True,None,False,2025-09-26 22:21:15.732924
+BATCH_8940,Welding,Inspector_3,False,False,False,None,False,2025-09-26 14:21:15.732924
+BATCH_5333,Welding,Inspector_6,True,True,False,None,False,2025-09-26 19:21:15.732924
+BATCH_5562,Welding,Inspector_4,True,True,False,None,False,2025-09-27 00:21:15.732924
+BATCH_3052,Welding,Inspector_10,True,False,False,None,False,2025-09-27 00:21:15.732924
+BATCH_6326,Final Assembly,Inspector_1,True,False,True,None,False,2025-09-26 14:21:15.732924
+BATCH_3128,Welding,Inspector_4,True,True,True,None,False,2025-09-26 19:21:15.732924
+BATCH_2421,Welding,Inspector_10,False,True,False,None,False,2025-09-26 16:21:15.732924
+BATCH_6431,Final Assembly,Inspector_7,True,True,False,None,False,2025-09-26 17:21:15.732924
+BATCH_8772,Quality Check,Inspector_9,True,False,False,None,False,2025-09-26 19:21:15.732924
+BATCH_5535,Punching,Inspector_5,False,True,True,None,False,2025-09-26 16:21:15.732924
+BATCH_5001,Quality Check,Inspector_5,False,True,True,None,False,2025-09-27 23:21:15.732924
+BATCH_6593,Welding,Inspector_10,True,False,False,None,False,2025-09-28 00:21:15.732924
+BATCH_3452,Quality Check,Inspector_4,False,False,True,None,False,2025-09-27 23:21:15.732924
+BATCH_7918,Final Assembly,Inspector_3,True,True,False,None,False,2025-09-27 22:21:15.732924
+BATCH_7031,Final Assembly,Inspector_5,True,False,True,None,False,2025-09-28 00:21:15.732924
+BATCH_9408,Quality Check,Inspector_9,True,True,False,None,False,2025-09-27 23:21:15.732924
+BATCH_2935,Quality Check,Inspector_7,True,True,False,Crack,False,2025-09-28 02:21:15.732924
+BATCH_9797,Final Assembly,Inspector_6,False,False,True,None,False,2025-09-27 16:21:15.732924
+BATCH_2047,Final Assembly,Inspector_1,True,False,False,None,False,2025-09-27 19:21:15.732924
+BATCH_9623,Punching,Inspector_8,True,True,False,None,False,2025-09-28 01:21:15.732924
+BATCH_1451,Final Assembly,Inspector_5,False,True,False,None,False,2025-09-27 22:21:15.732924
+BATCH_5744,Quality Check,Inspector_10,True,False,True,None,False,2025-09-27 16:21:15.732924
+BATCH_7087,Punching,Inspector_1,True,False,True,None,False,2025-09-27 16:21:15.732924
+BATCH_2734,Final Assembly,Inspector_9,True,False,False,None,False,2025-09-28 01:21:15.732924
+BATCH_8293,Punching,Inspector_6,True,False,True,None,False,2025-09-27 17:21:15.732924
+BATCH_1294,Welding,Inspector_5,True,True,False,None,False,2025-09-27 17:21:15.732924
+BATCH_5456,Welding,Inspector_9,False,False,True,None,False,2025-09-28 00:21:15.732924
+BATCH_5242,Quality Check,Inspector_7,True,True,False,None,False,2025-09-27 23:21:15.732924
+BATCH_6398,Welding,Inspector_7,True,False,False,None,False,2025-09-27 14:21:15.732924
+BATCH_7422,Final Assembly,Inspector_7,False,False,True,None,False,2025-09-27 19:21:15.732924
+BATCH_4726,Final Assembly,Inspector_5,True,False,False,Scratch,False,2025-09-27 19:21:15.732924
+BATCH_5201,Quality Check,Inspector_8,False,False,True,None,False,2025-09-27 21:21:15.732924
+BATCH_7721,Punching,Inspector_10,True,True,False,None,False,2025-09-27 20:21:15.732924
+BATCH_5383,Welding,Inspector_6,False,True,True,None,False,2025-09-27 18:21:15.732924
+BATCH_7613,Final Assembly,Inspector_1,False,True,True,Burr,False,2025-09-28 02:21:15.732924
+BATCH_1844,Final Assembly,Inspector_6,False,True,True,None,False,2025-09-27 16:21:15.732924
+BATCH_2922,Quality Check,Inspector_7,False,False,False,None,False,2025-09-27 19:21:15.732924
+BATCH_8967,Punching,Inspector_6,True,False,False,None,False,2025-09-28 00:21:15.732924
+BATCH_8752,Final Assembly,Inspector_8,False,True,True,Crack,False,2025-09-27 20:21:15.732924
+BATCH_4548,Final Assembly,Inspector_2,True,True,False,None,False,2025-09-27 18:21:15.732924
+BATCH_4104,Punching,Inspector_10,False,True,True,None,False,2025-09-27 20:21:15.732924
+BATCH_6229,Welding,Inspector_9,False,False,False,None,False,2025-09-27 19:21:15.732924
+BATCH_5305,Punching,Inspector_10,True,False,False,None,False,2025-09-27 15:21:15.732924
+BATCH_4640,Final Assembly,Inspector_6,True,False,True,None,False,2025-09-28 01:21:15.732924
+BATCH_8963,Punching,Inspector_10,False,True,True,None,False,2025-09-27 21:21:15.732924
+BATCH_9812,Punching,Inspector_4,True,True,True,None,False,2025-09-27 16:21:15.732924
+BATCH_1766,Welding,Inspector_1,False,True,False,None,False,2025-09-28 02:21:15.732924
+BATCH_5411,Quality Check,Inspector_6,True,True,False,None,False,2025-09-27 19:21:15.732924
+BATCH_6230,Punching,Inspector_2,True,False,False,None,False,2025-09-27 18:21:15.732924
+BATCH_1246,Punching,Inspector_9,False,False,True,None,False,2025-09-27 16:21:15.732924
+BATCH_8616,Welding,Inspector_5,False,False,False,None,False,2025-09-28 02:21:15.732924
+BATCH_6890,Punching,Inspector_10,False,True,False,None,False,2025-09-27 22:21:15.732924
+BATCH_3249,Welding,Inspector_5,False,True,True,None,False,2025-09-27 19:21:15.732924
+BATCH_5954,Punching,Inspector_10,False,True,True,None,False,2025-09-27 23:21:15.732924
+BATCH_2486,Welding,Inspector_2,False,True,True,None,False,2025-09-27 21:21:15.732924
+BATCH_7484,Final Assembly,Inspector_3,True,True,False,None,False,2025-09-27 19:21:15.732924
+BATCH_4861,Quality Check,Inspector_9,False,False,False,None,False,2025-09-28 19:21:15.732924
+BATCH_4342,Welding,Inspector_3,True,True,True,None,False,2025-09-28 15:21:15.732924
+BATCH_2000,Quality Check,Inspector_3,False,False,True,None,False,2025-09-28 16:21:15.732924
+BATCH_1859,Quality Check,Inspector_9,False,False,False,None,False,2025-09-28 20:21:15.732924
+BATCH_1895,Final Assembly,Inspector_8,True,False,False,None,False,2025-09-28 21:21:15.732924
+BATCH_6558,Quality Check,Inspector_7,True,False,False,None,False,2025-09-28 16:21:15.732924
+BATCH_8930,Final Assembly,Inspector_5,True,False,False,None,False,2025-09-29 01:21:15.732924
+BATCH_4698,Punching,Inspector_7,False,False,False,None,False,2025-09-28 15:21:15.732924
+BATCH_4782,Quality Check,Inspector_10,False,False,False,None,False,2025-09-28 15:21:15.732924
+BATCH_9104,Quality Check,Inspector_10,True,True,True,None,False,2025-09-29 01:21:15.732924
+BATCH_8628,Welding,Inspector_5,True,False,False,None,False,2025-09-28 21:21:15.732924
+BATCH_6780,Quality Check,Inspector_2,False,True,True,None,False,2025-09-28 21:21:15.732924
+BATCH_7273,Quality Check,Inspector_3,False,True,True,Scratch,False,2025-09-28 22:21:15.732924
+BATCH_5779,Punching,Inspector_2,True,False,True,None,False,2025-09-28 19:21:15.732924
+BATCH_2556,Quality Check,Inspector_2,True,True,False,None,False,2025-09-29 01:21:15.732924
+BATCH_4384,Final Assembly,Inspector_4,False,False,False,None,False,2025-09-28 19:21:15.732924
+BATCH_5740,Welding,Inspector_2,False,True,True,None,False,2025-09-28 19:21:15.732924
+BATCH_9125,Final Assembly,Inspector_4,True,False,False,None,True,2025-09-29 00:21:15.732924
+BATCH_4693,Punching,Inspector_10,True,False,False,None,False,2025-09-28 21:21:15.732924
+BATCH_2220,Quality Check,Inspector_5,True,True,True,None,False,2025-09-28 16:21:15.732924
+BATCH_1541,Final Assembly,Inspector_7,True,True,True,None,False,2025-09-28 21:21:15.732924
+BATCH_4885,Welding,Inspector_6,True,True,True,None,False,2025-09-29 02:21:15.732924
+BATCH_7045,Punching,Inspector_5,True,True,False,None,False,2025-09-28 18:21:15.732924
+BATCH_4939,Welding,Inspector_7,True,True,False,None,False,2025-09-28 14:21:15.732924
+BATCH_6986,Quality Check,Inspector_9,False,True,True,None,False,2025-09-28 15:21:15.732924
+BATCH_8155,Final Assembly,Inspector_6,False,True,False,Burr,False,2025-09-28 14:21:15.732924
+BATCH_1997,Welding,Inspector_8,False,False,True,None,False,2025-09-28 19:21:15.732924
+BATCH_1828,Quality Check,Inspector_10,False,False,True,Burr,False,2025-09-28 14:21:15.732924
+BATCH_1502,Welding,Inspector_4,True,True,False,None,False,2025-09-29 02:21:15.732924
+BATCH_6943,Quality Check,Inspector_6,True,False,True,None,False,2025-09-29 02:21:15.732924
+BATCH_3436,Quality Check,Inspector_1,False,True,True,None,False,2025-09-28 14:21:15.732924
+BATCH_5153,Welding,Inspector_5,True,False,True,None,False,2025-09-28 18:21:15.732924
+BATCH_2184,Welding,Inspector_6,True,False,True,None,False,2025-09-28 15:21:15.732924
+BATCH_6966,Punching,Inspector_7,False,False,False,None,False,2025-09-28 18:21:15.732924
+BATCH_4594,Welding,Inspector_3,False,False,False,None,False,2025-09-28 16:21:15.732924
+BATCH_5309,Punching,Inspector_6,True,True,True,None,False,2025-09-28 18:21:15.732924
+BATCH_6022,Quality Check,Inspector_3,True,True,False,None,False,2025-09-28 17:21:15.732924
+BATCH_1544,Quality Check,Inspector_1,False,False,False,None,False,2025-09-29 02:21:15.732924
+BATCH_5147,Final Assembly,Inspector_4,False,False,True,None,False,2025-09-28 22:21:15.732924
+BATCH_8675,Quality Check,Inspector_2,False,False,False,None,False,2025-09-28 14:21:15.732924
+BATCH_3671,Quality Check,Inspector_5,False,True,False,None,False,2025-09-29 19:21:15.732924
+BATCH_1293,Punching,Inspector_8,False,False,False,None,False,2025-09-29 15:21:15.732924
+BATCH_9027,Final Assembly,Inspector_9,True,True,False,Crack,False,2025-09-29 20:21:15.732924
+BATCH_4449,Punching,Inspector_5,True,False,True,None,False,2025-09-29 16:21:15.732924
+BATCH_2672,Quality Check,Inspector_3,False,True,False,None,False,2025-09-29 21:21:15.732924
+BATCH_3561,Punching,Inspector_5,False,True,False,Scratch,False,2025-09-29 14:21:15.732924
+BATCH_5241,Welding,Inspector_10,False,True,True,None,False,2025-09-29 21:21:15.732924
+BATCH_3808,Quality Check,Inspector_2,False,True,True,None,False,2025-09-30 02:21:15.732924
+BATCH_6060,Quality Check,Inspector_8,True,False,True,None,False,2025-09-30 02:21:15.732924
+BATCH_7090,Welding,Inspector_2,False,False,False,None,False,2025-09-29 20:21:15.732924
+BATCH_9333,Final Assembly,Inspector_8,True,False,True,Crack,False,2025-09-29 22:21:15.732924
+BATCH_1194,Quality Check,Inspector_7,True,True,False,None,False,2025-09-29 16:21:15.732924
+BATCH_3020,Punching,Inspector_1,False,False,False,None,False,2025-09-29 19:21:15.732924
+BATCH_7406,Quality Check,Inspector_3,True,True,True,None,False,2025-09-30 01:21:15.732924
+BATCH_7238,Quality Check,Inspector_3,True,True,True,None,False,2025-09-29 19:21:15.732924
+BATCH_1001,Quality Check,Inspector_4,False,False,True,None,False,2025-09-29 23:21:15.732924
+BATCH_2149,Welding,Inspector_7,False,True,True,Crack,False,2025-09-29 15:21:15.732924
+BATCH_5792,Punching,Inspector_2,False,False,False,None,False,2025-09-30 00:21:15.732924
+BATCH_5535,Welding,Inspector_6,False,True,False,None,False,2025-09-29 17:21:15.732924
+BATCH_6278,Quality Check,Inspector_3,True,True,True,None,False,2025-09-30 02:21:15.732924
+BATCH_9906,Final Assembly,Inspector_5,False,True,True,None,False,2025-09-30 00:21:15.732924
+BATCH_5417,Quality Check,Inspector_2,False,True,False,None,False,2025-09-29 17:21:15.732924
+BATCH_1656,Quality Check,Inspector_8,False,True,True,None,False,2025-09-30 01:21:15.732924
+BATCH_6457,Quality Check,Inspector_8,True,True,False,None,False,2025-09-29 20:21:15.732924
+BATCH_2048,Punching,Inspector_5,False,True,False,None,False,2025-09-29 23:21:15.732924
+BATCH_5752,Welding,Inspector_3,False,True,False,None,False,2025-09-29 18:21:15.732924
+BATCH_6911,Final Assembly,Inspector_3,True,True,False,None,False,2025-09-29 15:21:15.732924
+BATCH_7955,Final Assembly,Inspector_4,False,False,True,None,False,2025-09-29 18:21:15.732924
+BATCH_1209,Punching,Inspector_2,False,False,True,None,False,2025-09-30 02:21:15.732924
+BATCH_5735,Final Assembly,Inspector_3,False,True,True,None,False,2025-09-29 14:21:15.732924
+BATCH_7479,Final Assembly,Inspector_10,True,True,True,None,False,2025-09-29 21:21:15.732924
+BATCH_8501,Punching,Inspector_1,False,True,True,None,False,2025-09-29 16:21:15.732924
+BATCH_6341,Punching,Inspector_6,True,True,False,None,False,2025-09-30 01:21:15.732924
+BATCH_6331,Quality Check,Inspector_8,True,True,False,None,False,2025-09-30 01:21:15.732924
+BATCH_9727,Welding,Inspector_9,True,True,False,None,False,2025-09-30 22:21:15.732924
+BATCH_8840,Punching,Inspector_8,True,True,False,None,False,2025-09-30 16:21:15.732924
+BATCH_2422,Quality Check,Inspector_2,True,False,True,None,False,2025-09-30 19:21:15.732924
+BATCH_6901,Quality Check,Inspector_8,False,True,True,None,False,2025-10-01 01:21:15.732924
+BATCH_1472,Final Assembly,Inspector_8,False,False,False,None,False,2025-10-01 00:21:15.732924
+BATCH_1851,Welding,Inspector_5,True,False,True,None,False,2025-09-30 22:21:15.732924
+BATCH_3670,Welding,Inspector_10,True,False,True,None,False,2025-10-01 02:21:15.732924
+BATCH_3033,Quality Check,Inspector_3,True,False,False,Scratch,False,2025-09-30 18:21:15.732924
+BATCH_1231,Welding,Inspector_3,True,False,False,None,False,2025-10-01 02:21:15.732924
+BATCH_7359,Quality Check,Inspector_10,False,False,False,None,False,2025-10-01 00:21:15.732924
+BATCH_1581,Punching,Inspector_2,True,False,False,Burr,False,2025-09-30 16:21:15.732924
+BATCH_4437,Punching,Inspector_6,True,False,True,None,False,2025-10-01 02:21:15.732924
+BATCH_9681,Final Assembly,Inspector_8,True,True,False,None,False,2025-09-30 18:21:15.732924
+BATCH_8792,Punching,Inspector_7,False,False,True,None,False,2025-09-30 19:21:15.732924
+BATCH_9314,Welding,Inspector_8,False,True,False,None,False,2025-09-30 15:21:15.732924
+BATCH_4238,Quality Check,Inspector_8,False,True,False,None,False,2025-09-30 21:21:15.732924
+BATCH_8096,Welding,Inspector_9,True,True,False,None,False,2025-09-30 22:21:15.732924
+BATCH_7473,Welding,Inspector_2,False,False,False,None,False,2025-09-30 16:21:15.732924
+BATCH_2353,Punching,Inspector_1,False,True,True,None,False,2025-09-30 17:21:15.732924
+BATCH_7271,Punching,Inspector_4,False,False,True,None,False,2025-10-01 02:21:15.732924
+BATCH_6144,Quality Check,Inspector_8,True,False,True,None,False,2025-09-30 23:21:15.732924
+BATCH_1991,Punching,Inspector_3,True,False,False,None,False,2025-09-30 14:21:15.732924
+BATCH_4683,Final Assembly,Inspector_4,True,False,False,None,False,2025-09-30 20:21:15.732924
+BATCH_8723,Punching,Inspector_7,False,False,False,None,False,2025-09-30 15:21:15.732924
+BATCH_1146,Punching,Inspector_7,False,True,True,None,False,2025-09-30 22:21:15.732924
+BATCH_9710,Welding,Inspector_7,True,False,False,Scratch,True,2025-09-30 17:21:15.732924
+BATCH_6894,Welding,Inspector_10,True,False,True,Scratch,False,2025-09-30 21:21:15.732924
+BATCH_1894,Quality Check,Inspector_3,True,True,True,None,False,2025-09-30 20:21:15.732924
+BATCH_9175,Welding,Inspector_5,False,True,True,None,False,2025-10-01 02:21:15.732924
+BATCH_5508,Welding,Inspector_3,False,True,True,None,False,2025-09-30 20:21:15.732924
+BATCH_3462,Final Assembly,Inspector_4,True,True,False,None,False,2025-09-30 16:21:15.732924
+BATCH_4358,Punching,Inspector_8,True,False,True,Crack,False,2025-09-30 19:21:15.732924
+BATCH_9288,Punching,Inspector_3,True,False,False,None,False,2025-09-30 17:21:15.732924
+BATCH_6269,Quality Check,Inspector_4,True,True,True,None,False,2025-09-30 23:21:15.732924
+BATCH_3682,Quality Check,Inspector_4,False,True,True,None,False,2025-09-30 18:21:15.732924
+BATCH_6617,Quality Check,Inspector_8,False,True,False,None,False,2025-09-30 22:21:15.732924
+BATCH_9829,Quality Check,Inspector_1,False,True,True,None,False,2025-10-01 01:21:15.732924
+BATCH_6123,Final Assembly,Inspector_8,False,False,True,None,False,2025-09-30 22:21:15.732924
+BATCH_6516,Quality Check,Inspector_6,True,True,False,None,False,2025-10-01 01:21:15.732924
+BATCH_8382,Welding,Inspector_6,False,False,False,None,False,2025-10-01 02:21:15.732924
+BATCH_4116,Punching,Inspector_2,True,False,False,None,False,2025-10-01 02:21:15.732924
+BATCH_7461,Final Assembly,Inspector_2,False,True,True,None,False,2025-09-30 21:21:15.732924
+BATCH_4197,Welding,Inspector_9,True,False,True,None,False,2025-09-30 16:21:15.732924
+BATCH_4730,Quality Check,Inspector_7,False,True,True,None,False,2025-10-01 17:21:15.732924
+BATCH_2373,Quality Check,Inspector_9,True,False,True,None,False,2025-10-01 17:21:15.732924
+BATCH_1887,Quality Check,Inspector_3,False,True,False,None,False,2025-10-01 19:21:15.732924
+BATCH_8493,Quality Check,Inspector_4,True,True,False,None,False,2025-10-02 01:21:15.732924
+BATCH_4908,Quality Check,Inspector_2,True,True,False,None,False,2025-10-01 23:21:15.732924
+BATCH_4166,Final Assembly,Inspector_2,False,False,False,None,False,2025-10-01 15:21:15.732924
+BATCH_2155,Quality Check,Inspector_7,True,True,True,None,False,2025-10-01 17:21:15.732924
+BATCH_1649,Final Assembly,Inspector_2,True,True,False,None,False,2025-10-01 16:21:15.732924
+BATCH_2758,Final Assembly,Inspector_8,True,False,False,None,False,2025-10-01 17:21:15.732924
+BATCH_1661,Punching,Inspector_5,True,False,True,Scratch,False,2025-10-01 16:21:15.732924
+BATCH_2339,Final Assembly,Inspector_3,False,False,False,None,True,2025-10-01 14:21:15.732924
+BATCH_7279,Punching,Inspector_9,True,False,False,None,False,2025-10-01 21:21:15.732924
+BATCH_2149,Punching,Inspector_8,False,False,False,None,False,2025-10-01 18:21:15.732924
+BATCH_2791,Final Assembly,Inspector_9,True,True,False,None,False,2025-10-02 02:21:15.732924
+BATCH_6285,Final Assembly,Inspector_10,True,True,False,None,False,2025-10-01 22:21:15.732924
+BATCH_4902,Punching,Inspector_8,True,True,False,None,False,2025-10-02 02:21:15.732924
+BATCH_3248,Welding,Inspector_2,False,True,True,None,False,2025-10-01 14:21:15.732924
+BATCH_2650,Welding,Inspector_6,False,False,False,None,True,2025-10-02 00:21:15.732924
+BATCH_9717,Punching,Inspector_4,False,True,False,None,False,2025-10-01 18:21:15.732924
+BATCH_5547,Welding,Inspector_9,True,False,True,None,False,2025-10-01 19:21:15.732924
+BATCH_5705,Quality Check,Inspector_5,True,False,False,None,False,2025-10-01 15:21:15.732924
+BATCH_8482,Final Assembly,Inspector_3,False,True,False,None,False,2025-10-01 19:21:15.732924
+BATCH_5151,Welding,Inspector_4,False,True,False,None,False,2025-10-02 01:21:15.732924
+BATCH_3722,Final Assembly,Inspector_4,True,False,True,None,False,2025-10-01 18:21:15.732924
+BATCH_1246,Final Assembly,Inspector_9,True,True,False,None,False,2025-10-01 20:21:15.732924
+BATCH_7657,Punching,Inspector_3,True,False,True,None,False,2025-10-01 23:21:15.732924
+BATCH_5597,Welding,Inspector_4,False,False,False,None,False,2025-10-02 02:21:15.732924
+BATCH_7804,Final Assembly,Inspector_5,False,False,True,None,False,2025-10-02 01:21:15.732924
+BATCH_8540,Quality Check,Inspector_10,False,False,False,None,False,2025-10-01 19:21:15.732924
+BATCH_7412,Punching,Inspector_8,False,True,True,None,False,2025-10-01 21:21:15.732924
+BATCH_1192,Quality Check,Inspector_8,True,False,False,None,True,2025-10-01 18:21:15.732924
+BATCH_7438,Final Assembly,Inspector_1,True,True,True,None,False,2025-10-01 23:21:15.732924
+BATCH_5263,Punching,Inspector_2,False,True,True,None,False,2025-10-01 23:21:15.732924
+BATCH_8471,Punching,Inspector_6,False,False,True,Burr,False,2025-10-03 01:21:15.732924
+BATCH_4044,Quality Check,Inspector_7,False,True,True,None,False,2025-10-02 21:21:15.732924
+BATCH_2660,Welding,Inspector_4,True,True,False,None,False,2025-10-02 23:21:15.732924
+BATCH_7704,Welding,Inspector_8,True,True,True,None,False,2025-10-02 21:21:15.732924
+BATCH_2252,Welding,Inspector_10,False,True,False,None,False,2025-10-02 19:21:15.732924
+BATCH_2466,Final Assembly,Inspector_6,False,True,False,None,False,2025-10-02 21:21:15.732924
+BATCH_2718,Quality Check,Inspector_8,False,False,True,None,False,2025-10-02 18:21:15.732924
+BATCH_1127,Welding,Inspector_4,True,True,False,None,False,2025-10-02 14:21:15.732924
+BATCH_3687,Welding,Inspector_6,False,True,True,None,False,2025-10-03 02:21:15.732924
+BATCH_7550,Final Assembly,Inspector_3,False,False,False,None,False,2025-10-02 17:21:15.732924
+BATCH_2864,Quality Check,Inspector_4,True,False,False,None,False,2025-10-02 17:21:15.732924
+BATCH_7874,Final Assembly,Inspector_3,False,True,True,None,False,2025-10-02 18:21:15.732924
+BATCH_6555,Punching,Inspector_5,True,False,True,None,False,2025-10-02 16:21:15.732924
+BATCH_4945,Quality Check,Inspector_1,True,False,True,None,False,2025-10-02 18:21:15.732924
+BATCH_3296,Quality Check,Inspector_1,False,True,True,None,False,2025-10-02 21:21:15.732924
+BATCH_1549,Welding,Inspector_10,False,False,False,None,False,2025-10-02 20:21:15.732924
+BATCH_8403,Welding,Inspector_5,True,True,False,None,False,2025-10-02 23:21:15.732924
+BATCH_7547,Punching,Inspector_9,True,False,False,None,False,2025-10-02 17:21:15.732924
+BATCH_8000,Punching,Inspector_5,True,False,False,None,False,2025-10-02 19:21:15.732924
+BATCH_5435,Final Assembly,Inspector_4,True,True,True,Burr,False,2025-10-02 19:21:15.732924
+BATCH_3981,Punching,Inspector_9,False,True,True,None,False,2025-10-02 21:21:15.732924
+BATCH_8049,Punching,Inspector_8,False,True,True,None,False,2025-10-02 18:21:15.732924
+BATCH_9700,Final Assembly,Inspector_7,False,False,False,Crack,False,2025-10-02 15:21:15.732924
+BATCH_8381,Quality Check,Inspector_5,True,False,True,None,False,2025-10-02 20:21:15.732924
+BATCH_1222,Punching,Inspector_7,False,True,False,None,False,2025-10-03 02:21:15.732924
+BATCH_6711,Welding,Inspector_5,True,True,True,None,False,2025-10-02 16:21:15.732924
+BATCH_4198,Punching,Inspector_2,False,False,False,None,False,2025-10-02 22:21:15.732924
+BATCH_1747,Final Assembly,Inspector_4,False,False,False,None,False,2025-10-02 22:21:15.732924
+BATCH_1051,Punching,Inspector_2,False,False,True,Crack,False,2025-10-02 20:21:15.732924
+BATCH_2816,Quality Check,Inspector_3,True,False,False,None,False,2025-10-02 18:21:15.732924
+BATCH_4118,Quality Check,Inspector_4,False,True,True,None,False,2025-10-03 01:21:15.732924
+BATCH_8687,Punching,Inspector_2,True,True,True,None,False,2025-10-02 16:21:15.732924
+BATCH_9236,Final Assembly,Inspector_3,True,True,True,None,False,2025-10-02 18:21:15.732924
+BATCH_5990,Punching,Inspector_9,False,True,True,None,False,2025-10-03 01:21:15.732924
+BATCH_5426,Welding,Inspector_5,False,False,True,Burr,False,2025-10-03 02:21:15.732924
+BATCH_7314,Final Assembly,Inspector_5,True,True,True,None,False,2025-10-02 20:21:15.732924
+BATCH_2115,Welding,Inspector_7,True,False,False,None,False,2025-10-02 19:21:15.732924
+BATCH_1157,Punching,Inspector_10,False,False,True,None,False,2025-10-02 15:21:15.732924
+BATCH_3929,Final Assembly,Inspector_5,True,True,False,None,False,2025-10-02 17:21:15.732924
+BATCH_6470,Final Assembly,Inspector_9,False,False,False,None,False,2025-10-02 20:21:15.732924
+BATCH_4484,Punching,Inspector_10,False,True,False,None,False,2025-10-02 22:21:15.732924
+BATCH_8282,Punching,Inspector_5,False,False,False,None,False,2025-10-02 18:21:15.732924
+BATCH_8608,Punching,Inspector_1,True,True,False,None,False,2025-10-02 15:21:15.732924
+BATCH_9350,Welding,Inspector_1,True,True,False,Crack,False,2025-10-02 23:21:15.732924
+BATCH_8282,Quality Check,Inspector_7,True,True,False,None,False,2025-10-03 17:21:15.732924
+BATCH_9162,Final Assembly,Inspector_1,False,False,False,None,False,2025-10-03 22:21:15.732924
+BATCH_7470,Welding,Inspector_10,True,True,True,None,False,2025-10-03 23:21:15.732924
+BATCH_1878,Final Assembly,Inspector_4,False,False,False,None,False,2025-10-03 15:21:15.732924
+BATCH_7505,Quality Check,Inspector_4,False,True,True,None,False,2025-10-03 16:21:15.732924
+BATCH_1338,Quality Check,Inspector_3,True,True,True,None,False,2025-10-03 20:21:15.732924
+BATCH_1786,Final Assembly,Inspector_6,False,True,True,None,False,2025-10-03 21:21:15.732924
+BATCH_8880,Punching,Inspector_6,False,True,True,None,False,2025-10-04 02:21:15.732924
+BATCH_5130,Quality Check,Inspector_7,True,True,False,None,False,2025-10-04 02:21:15.732924
+BATCH_7540,Welding,Inspector_9,True,False,True,None,False,2025-10-04 02:21:15.732924
+BATCH_4170,Welding,Inspector_5,False,True,True,None,False,2025-10-03 21:21:15.732924
+BATCH_6944,Punching,Inspector_1,False,False,True,None,False,2025-10-03 20:21:15.732924
+BATCH_4652,Final Assembly,Inspector_10,False,False,True,None,False,2025-10-03 18:21:15.732924
+BATCH_6025,Final Assembly,Inspector_5,False,True,True,None,False,2025-10-03 23:21:15.732924
+BATCH_2669,Final Assembly,Inspector_4,False,False,True,None,False,2025-10-03 17:21:15.732924
+BATCH_4542,Punching,Inspector_6,False,False,True,None,False,2025-10-03 21:21:15.732924
+BATCH_4942,Punching,Inspector_7,True,False,False,None,False,2025-10-03 23:21:15.732924
+BATCH_9041,Quality Check,Inspector_2,True,False,False,None,False,2025-10-03 20:21:15.732924
+BATCH_7149,Final Assembly,Inspector_8,True,False,True,None,False,2025-10-04 01:21:15.732924
+BATCH_9112,Welding,Inspector_2,False,True,False,None,False,2025-10-03 17:21:15.732924
+BATCH_8042,Final Assembly,Inspector_1,False,False,True,None,False,2025-10-04 00:21:15.732924
+BATCH_3643,Quality Check,Inspector_8,True,True,True,None,False,2025-10-04 01:21:15.732924
+BATCH_3286,Welding,Inspector_10,False,False,True,None,False,2025-10-03 22:21:15.732924
+BATCH_2780,Quality Check,Inspector_6,False,True,False,None,False,2025-10-03 23:21:15.732924
+BATCH_6693,Welding,Inspector_8,False,True,False,None,False,2025-10-03 19:21:15.732924
+BATCH_1695,Final Assembly,Inspector_7,True,False,False,None,False,2025-10-03 19:21:15.732924
+BATCH_5056,Final Assembly,Inspector_6,False,True,False,None,False,2025-10-03 20:21:15.732924
+BATCH_8721,Welding,Inspector_10,True,True,False,None,False,2025-10-03 21:21:15.732924
+BATCH_7109,Punching,Inspector_2,False,True,True,None,False,2025-10-03 19:21:15.732924
+BATCH_7631,Final Assembly,Inspector_9,False,False,False,None,False,2025-10-03 20:21:15.732924
+BATCH_4114,Welding,Inspector_4,False,True,False,None,False,2025-10-03 15:21:15.732924
+BATCH_4817,Welding,Inspector_4,False,True,False,None,True,2025-10-03 14:21:15.732924
+BATCH_9524,Quality Check,Inspector_7,False,False,True,None,False,2025-10-04 01:21:15.732924
+BATCH_9405,Quality Check,Inspector_1,False,False,True,None,False,2025-10-04 00:21:15.732924
+BATCH_2998,Quality Check,Inspector_8,False,False,False,None,False,2025-10-03 20:21:15.732924
+BATCH_4767,Final Assembly,Inspector_3,True,False,False,None,False,2025-10-04 00:21:15.732924
+BATCH_9487,Punching,Inspector_10,True,False,False,None,False,2025-10-04 01:21:15.732924
+BATCH_2908,Welding,Inspector_2,False,True,True,None,False,2025-10-03 18:21:15.732924
+BATCH_4545,Welding,Inspector_10,False,False,True,None,False,2025-10-03 18:21:15.732924
+BATCH_3528,Welding,Inspector_6,True,True,False,None,False,2025-10-03 17:21:15.732924
+BATCH_9051,Quality Check,Inspector_5,False,False,True,None,False,2025-10-03 18:21:15.732924
+BATCH_6014,Punching,Inspector_3,True,False,True,None,False,2025-10-03 20:21:15.732924
+BATCH_7261,Quality Check,Inspector_3,False,True,True,None,False,2025-10-05 01:21:15.732924
+BATCH_2003,Final Assembly,Inspector_1,False,False,True,None,False,2025-10-04 19:21:15.732924
+BATCH_9250,Welding,Inspector_3,False,False,False,None,False,2025-10-04 17:21:15.732924
+BATCH_3725,Punching,Inspector_9,False,True,False,None,False,2025-10-04 16:21:15.732924
+BATCH_9876,Quality Check,Inspector_3,False,True,True,None,False,2025-10-05 00:21:15.732924
+BATCH_6913,Punching,Inspector_9,True,True,False,None,False,2025-10-04 23:21:15.732924
+BATCH_4205,Final Assembly,Inspector_7,True,False,False,None,False,2025-10-05 00:21:15.732924
+BATCH_7259,Punching,Inspector_10,True,True,False,None,False,2025-10-04 15:21:15.732924
+BATCH_5999,Punching,Inspector_5,False,True,False,None,False,2025-10-04 17:21:15.732924
+BATCH_3231,Welding,Inspector_4,False,True,False,Scratch,False,2025-10-04 19:21:15.732924
+BATCH_6140,Final Assembly,Inspector_8,False,False,False,None,False,2025-10-05 02:21:15.732924
+BATCH_3687,Quality Check,Inspector_9,True,True,True,None,False,2025-10-04 21:21:15.732924
+BATCH_2861,Final Assembly,Inspector_2,True,True,True,None,False,2025-10-04 15:21:15.732924
+BATCH_7636,Final Assembly,Inspector_1,False,False,False,None,False,2025-10-04 15:21:15.732924
+BATCH_3567,Quality Check,Inspector_10,True,True,True,None,False,2025-10-04 23:21:15.732924
+BATCH_2836,Final Assembly,Inspector_6,True,False,False,None,False,2025-10-05 02:21:15.732924
+BATCH_8303,Quality Check,Inspector_8,True,True,True,None,False,2025-10-04 19:21:15.732924
+BATCH_1094,Quality Check,Inspector_3,True,True,False,None,False,2025-10-04 15:21:15.732924
+BATCH_4675,Final Assembly,Inspector_1,False,False,False,None,False,2025-10-05 01:21:15.732924
+BATCH_8887,Quality Check,Inspector_10,True,False,True,None,False,2025-10-04 23:21:15.732924
+BATCH_4106,Quality Check,Inspector_9,False,True,True,None,False,2025-10-04 18:21:15.732924
+BATCH_3536,Final Assembly,Inspector_6,True,True,False,None,False,2025-10-05 01:21:15.732924
+BATCH_8071,Final Assembly,Inspector_10,True,False,False,None,False,2025-10-04 20:21:15.732924
+BATCH_5227,Quality Check,Inspector_9,False,False,True,None,False,2025-10-04 22:21:15.732924
+BATCH_9266,Final Assembly,Inspector_10,False,False,False,None,False,2025-10-04 15:21:15.732924
+BATCH_8353,Final Assembly,Inspector_4,True,False,False,None,False,2025-10-04 17:21:15.732924
+BATCH_3939,Final Assembly,Inspector_6,False,False,False,None,False,2025-10-05 02:21:15.732924
+BATCH_9388,Welding,Inspector_9,True,False,True,None,False,2025-10-04 20:21:15.732924
+BATCH_9962,Punching,Inspector_7,True,True,True,None,False,2025-10-04 15:21:15.732924
+BATCH_5688,Punching,Inspector_3,True,False,True,None,False,2025-10-04 17:21:15.732924
+BATCH_2640,Final Assembly,Inspector_8,False,False,True,None,False,2025-10-04 20:21:15.732924
+BATCH_2869,Welding,Inspector_6,False,False,False,None,False,2025-10-04 17:21:15.732924
+BATCH_8186,Welding,Inspector_5,False,True,True,None,False,2025-10-04 19:21:15.732924
+BATCH_4909,Final Assembly,Inspector_10,False,False,False,None,False,2025-10-04 19:21:15.732924
+BATCH_5449,Final Assembly,Inspector_3,True,True,False,None,False,2025-10-04 14:21:15.732924
+BATCH_8458,Quality Check,Inspector_7,True,False,False,None,False,2025-10-04 19:21:15.732924
+BATCH_1839,Quality Check,Inspector_10,False,False,False,None,False,2025-10-05 00:21:15.732924
+BATCH_5854,Final Assembly,Inspector_2,True,True,False,None,False,2025-10-05 00:21:15.732924
+BATCH_9947,Welding,Inspector_5,True,False,False,None,False,2025-10-04 19:21:15.732924
+BATCH_6311,Welding,Inspector_3,True,True,True,None,True,2025-10-04 23:21:15.732924
+BATCH_8097,Quality Check,Inspector_1,False,False,True,None,False,2025-10-04 17:21:15.732924
+BATCH_8022,Final Assembly,Inspector_6,False,True,False,None,False,2025-10-05 00:21:15.732924
+BATCH_9691,Punching,Inspector_5,False,True,False,None,False,2025-10-05 18:21:15.732924
+BATCH_8138,Welding,Inspector_5,False,True,True,None,False,2025-10-05 18:21:15.732924
+BATCH_6347,Punching,Inspector_1,False,False,True,None,False,2025-10-05 20:21:15.732924
+BATCH_6901,Final Assembly,Inspector_4,False,False,True,None,False,2025-10-05 19:21:15.732924
+BATCH_3417,Welding,Inspector_9,True,False,False,None,False,2025-10-05 15:21:15.732924
+BATCH_2974,Punching,Inspector_3,False,False,True,None,False,2025-10-05 15:21:15.732924
+BATCH_6315,Final Assembly,Inspector_8,True,True,False,None,False,2025-10-05 22:21:15.732924
+BATCH_3242,Quality Check,Inspector_7,True,False,False,None,False,2025-10-05 21:21:15.732924
+BATCH_7824,Quality Check,Inspector_8,True,True,True,None,False,2025-10-05 15:21:15.732924
+BATCH_9606,Punching,Inspector_9,False,False,False,None,False,2025-10-05 14:21:15.732924
+BATCH_5526,Punching,Inspector_3,False,True,True,None,False,2025-10-06 02:21:15.732924
+BATCH_7723,Quality Check,Inspector_1,False,False,True,None,False,2025-10-05 20:21:15.732924
+BATCH_3639,Final Assembly,Inspector_1,True,True,False,None,False,2025-10-05 21:21:15.732924
+BATCH_9454,Welding,Inspector_3,True,False,True,None,False,2025-10-05 23:21:15.732924
+BATCH_5872,Final Assembly,Inspector_3,True,False,True,None,False,2025-10-06 00:21:15.732924
+BATCH_8019,Punching,Inspector_3,True,False,True,None,False,2025-10-06 01:21:15.732924
+BATCH_8557,Welding,Inspector_1,True,False,True,None,False,2025-10-05 21:21:15.732924
+BATCH_8682,Welding,Inspector_4,False,True,True,None,False,2025-10-06 02:21:15.732924
+BATCH_9404,Punching,Inspector_1,False,False,True,None,False,2025-10-05 14:21:15.732924
+BATCH_4348,Quality Check,Inspector_9,True,True,False,None,False,2025-10-05 23:21:15.732924
+BATCH_5611,Welding,Inspector_1,False,False,True,None,False,2025-10-05 20:21:15.732924
+BATCH_2142,Final Assembly,Inspector_2,False,False,True,None,False,2025-10-05 14:21:15.732924
+BATCH_4612,Quality Check,Inspector_5,False,False,True,None,False,2025-10-05 21:21:15.732924
+BATCH_5337,Punching,Inspector_2,True,False,False,None,False,2025-10-05 14:21:15.732924
+BATCH_1102,Welding,Inspector_3,True,False,True,None,False,2025-10-05 18:21:15.732924
+BATCH_3856,Welding,Inspector_10,True,True,False,None,False,2025-10-06 02:21:15.732924
+BATCH_4918,Quality Check,Inspector_1,True,False,False,None,False,2025-10-06 02:21:15.732924
+BATCH_1252,Final Assembly,Inspector_2,False,False,True,None,False,2025-10-05 14:21:15.732924
+BATCH_7603,Welding,Inspector_2,True,False,True,None,False,2025-10-06 00:21:15.732924
+BATCH_2869,Welding,Inspector_4,True,True,False,None,False,2025-10-05 15:21:15.732924
+BATCH_1372,Final Assembly,Inspector_4,True,True,False,None,False,2025-10-05 19:21:15.732924
+BATCH_1288,Welding,Inspector_7,True,True,False,None,False,2025-10-05 21:21:15.732924
+BATCH_1705,Final Assembly,Inspector_1,False,False,True,Crack,False,2025-10-05 23:21:15.732924
+BATCH_6656,Punching,Inspector_10,True,False,True,None,False,2025-10-05 18:21:15.732924
+BATCH_6261,Punching,Inspector_10,True,False,False,None,False,2025-10-06 02:21:15.732924
+BATCH_3232,Final Assembly,Inspector_6,False,True,False,None,False,2025-10-05 17:21:15.732924
+BATCH_9802,Final Assembly,Inspector_1,True,False,False,None,False,2025-10-06 01:21:15.732924
+BATCH_4158,Punching,Inspector_3,False,True,True,None,False,2025-10-05 19:21:15.732924
+BATCH_7303,Final Assembly,Inspector_4,False,True,True,None,False,2025-10-06 16:21:15.732924
+BATCH_8828,Quality Check,Inspector_3,True,False,True,None,False,2025-10-07 02:21:15.732924
+BATCH_7494,Quality Check,Inspector_9,False,True,True,None,False,2025-10-06 21:21:15.732924
+BATCH_3262,Welding,Inspector_4,False,True,True,Crack,False,2025-10-07 00:21:15.732924
+BATCH_5746,Welding,Inspector_5,True,True,False,None,False,2025-10-06 21:21:15.732924
+BATCH_2418,Final Assembly,Inspector_8,False,False,False,None,False,2025-10-06 19:21:15.732924
+BATCH_8240,Welding,Inspector_6,False,True,True,None,False,2025-10-06 20:21:15.732924
+BATCH_3377,Welding,Inspector_10,False,False,False,None,False,2025-10-06 17:21:15.732924
+BATCH_7431,Punching,Inspector_5,True,False,False,None,False,2025-10-06 17:21:15.732924
+BATCH_3508,Quality Check,Inspector_2,False,False,True,None,False,2025-10-06 17:21:15.732924
+BATCH_4901,Quality Check,Inspector_8,False,False,True,None,False,2025-10-06 15:21:15.732924
+BATCH_8363,Quality Check,Inspector_9,False,True,True,None,False,2025-10-07 00:21:15.732924
+BATCH_1435,Welding,Inspector_2,True,True,False,None,False,2025-10-06 15:21:15.732924
+BATCH_4331,Welding,Inspector_8,False,True,True,None,True,2025-10-06 18:21:15.732924
+BATCH_1123,Welding,Inspector_9,False,True,True,None,False,2025-10-06 19:21:15.732924
+BATCH_2686,Quality Check,Inspector_2,False,True,True,None,False,2025-10-07 02:21:15.732924
+BATCH_8470,Welding,Inspector_4,True,True,True,None,False,2025-10-07 00:21:15.732924
+BATCH_7918,Welding,Inspector_6,False,True,False,None,False,2025-10-07 00:21:15.732924
+BATCH_5323,Quality Check,Inspector_3,True,True,False,None,False,2025-10-06 18:21:15.732924
+BATCH_4032,Quality Check,Inspector_8,True,False,True,Burr,False,2025-10-07 02:21:15.732924
+BATCH_2601,Final Assembly,Inspector_5,True,True,True,None,False,2025-10-06 19:21:15.732924
+BATCH_9729,Quality Check,Inspector_2,False,True,False,None,False,2025-10-06 15:21:15.732924
+BATCH_1858,Quality Check,Inspector_8,True,True,False,None,False,2025-10-06 19:21:15.732924
+BATCH_6769,Final Assembly,Inspector_6,True,False,False,None,False,2025-10-06 19:21:15.732924
+BATCH_2752,Quality Check,Inspector_4,False,False,True,None,False,2025-10-06 20:21:15.732924
+BATCH_6416,Punching,Inspector_8,False,True,True,None,False,2025-10-06 18:21:15.732924
+BATCH_2135,Final Assembly,Inspector_7,True,True,True,None,False,2025-10-06 23:21:15.732924
+BATCH_2068,Quality Check,Inspector_5,False,False,False,None,False,2025-10-07 16:21:15.732924
+BATCH_4807,Quality Check,Inspector_2,False,False,True,None,False,2025-10-07 15:21:15.732924
+BATCH_9907,Welding,Inspector_5,True,False,False,None,False,2025-10-07 15:21:15.732924
+BATCH_9454,Final Assembly,Inspector_6,False,False,False,Crack,False,2025-10-07 15:21:15.732924
+BATCH_8978,Quality Check,Inspector_5,True,False,False,None,False,2025-10-07 16:21:15.732924
+BATCH_5450,Quality Check,Inspector_10,False,True,True,None,False,2025-10-07 22:21:15.732924
+BATCH_3982,Quality Check,Inspector_9,True,False,False,None,False,2025-10-07 14:21:15.732924
+BATCH_4798,Welding,Inspector_5,False,True,False,None,False,2025-10-08 00:21:15.732924
+BATCH_6108,Welding,Inspector_6,False,True,True,None,False,2025-10-07 21:21:15.732924
+BATCH_9822,Quality Check,Inspector_4,False,False,True,None,False,2025-10-07 20:21:15.732924
+BATCH_4684,Welding,Inspector_9,False,False,False,None,False,2025-10-08 01:21:15.732924
+BATCH_4337,Final Assembly,Inspector_5,False,True,True,None,False,2025-10-07 18:21:15.732924
+BATCH_1234,Punching,Inspector_9,False,True,True,None,False,2025-10-08 00:21:15.732924
+BATCH_2900,Welding,Inspector_4,True,True,False,None,False,2025-10-07 19:21:15.732924
+BATCH_8514,Welding,Inspector_6,False,True,False,None,False,2025-10-07 23:21:15.732924
+BATCH_1087,Quality Check,Inspector_1,True,True,False,None,False,2025-10-07 22:21:15.732924
+BATCH_9871,Final Assembly,Inspector_10,False,True,True,None,False,2025-10-08 01:21:15.732924
+BATCH_3319,Punching,Inspector_3,True,True,True,None,False,2025-10-07 20:21:15.732924
+BATCH_3471,Final Assembly,Inspector_7,True,False,True,None,False,2025-10-07 23:21:15.732924
+BATCH_8553,Welding,Inspector_10,True,True,True,None,False,2025-10-08 02:21:15.732924
+BATCH_4441,Welding,Inspector_4,False,False,False,None,False,2025-10-07 22:21:15.732924
+BATCH_7513,Welding,Inspector_3,True,True,True,None,False,2025-10-07 20:21:15.732924
+BATCH_6916,Quality Check,Inspector_9,True,False,True,Scratch,False,2025-10-08 02:21:15.732924
+BATCH_8254,Punching,Inspector_8,False,False,False,None,False,2025-10-07 22:21:15.732924
+BATCH_9896,Punching,Inspector_7,False,True,False,None,False,2025-10-07 22:21:15.732924
+BATCH_1090,Quality Check,Inspector_10,False,True,True,None,False,2025-10-08 01:21:15.732924
+BATCH_8418,Punching,Inspector_1,False,True,True,None,False,2025-10-07 22:21:15.732924
+BATCH_1262,Welding,Inspector_3,True,True,True,Crack,False,2025-10-07 21:21:15.732924
+BATCH_8597,Quality Check,Inspector_3,False,False,False,None,False,2025-10-08 02:21:15.732924
+BATCH_7217,Quality Check,Inspector_5,False,False,False,Crack,False,2025-10-08 02:21:15.732924
+BATCH_7577,Quality Check,Inspector_9,False,False,False,None,False,2025-10-07 15:21:15.732924
+BATCH_7774,Welding,Inspector_3,False,True,True,None,False,2025-10-07 20:21:15.732924
+BATCH_8843,Welding,Inspector_2,True,True,False,None,False,2025-10-07 14:21:15.732924
+BATCH_5215,Quality Check,Inspector_1,True,True,False,None,False,2025-10-08 00:21:15.732924
+BATCH_1815,Welding,Inspector_8,False,False,True,None,False,2025-10-07 23:21:15.732924

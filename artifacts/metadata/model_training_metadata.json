@@ -1,0 +1,23 @@
+{
+  "training_date": "2025-10-08T06:28:44.791590",
+  "data_summary": {
+    "telemetry_records": 224640,
+    "event_records": 33619,
+    "machines": 26,
+    "date_range": {
+      "start": "2025-09-08 06:21:15.732924",
+      "end": "2025-10-08 06:16:15.732924"
+    }
+  },
+  "model_parameters": {
+    "anomaly_contamination": 0.1,
+    "rul_sequence_length": 60,
+    "rul_prediction_horizon": 24,
+    "fault_n_estimators": 100
+  },
+  "model_files": [
+    "artifacts/models/anomaly_detector.joblib",
+    "artifacts/models/rul_predictor.joblib",
+    "artifacts/models/fault_classifier.joblib"
+  ]
+}
