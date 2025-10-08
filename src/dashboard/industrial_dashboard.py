@@ -70,6 +70,9 @@ class JRManufacturingDashboard:
         
         # Floating AI chatbot
         self.render_ai_chatbot()
+        
+        # Footer with company branding
+        self.render_footer()
     
     def render_header(self):
         """Render dashboard header"""
@@ -2024,11 +2027,80 @@ class JRManufacturingDashboard:
         st.markdown("---")
         st.success("📚 Documentation Complete! Use the sidebar to navigate back to the dashboard.")
     
+    def render_footer(self):
+        """Render footer with company branding"""
+        st.markdown("---")
+        
+        # Footer styling
+        st.markdown("""
+            <style>
+            .footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: linear-gradient(90deg, #1f77b4, #ff7f0e);
+                color: white;
+                padding: 10px 20px;
+                text-align: center;
+                font-size: 14px;
+                font-weight: bold;
+                z-index: 999;
+                box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            }
+            .footer a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .footer a:hover {
+                color: #ffeb3b;
+                text-decoration: underline;
+            }
+            .footer-brand {
+                display: inline-block;
+                margin: 0 10px;
+                padding: 5px 10px;
+                background: rgba(255,255,255,0.1);
+                border-radius: 5px;
+                transition: all 0.3s ease;
+            }
+            .footer-brand:hover {
+                background: rgba(255,255,255,0.2);
+                transform: translateY(-2px);
+            }
+            </style>
+        """, unsafe_allow_html=True)
+        
+        # Footer content
+        footer_html = """
+        <div class="footer">
+            <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+                <span style="margin-right: 20px;">🚀 Made with ❤️ by</span>
+                <a href="https://www.webfixus.com" target="_blank" class="footer-brand">
+                    🌐 WebFixus
+                </a>
+                <span style="margin: 0 10px;">&</span>
+                <a href="https://www.applyai.today" target="_blank" class="footer-brand">
+                    🤖 ApplyAI.today
+                </a>
+                <span style="margin-left: 20px; font-size: 12px; opacity: 0.8;">
+                    Industrial AI Solutions
+                </span>
+            </div>
+        </div>
+        """
+        
+        st.markdown(footer_html, unsafe_allow_html=True)
+        
+        # Add some bottom padding to prevent content overlap
+        st.markdown("<div style='height: 60px;'></div>", unsafe_allow_html=True)
+    
     def render_ai_chatbot(self):
         """Render floating AI chatbot interface"""
         # Initialize session state for chatbot
         if 'ai_chat_open' not in st.session_state:
-            st.session_state.ai_chat_open = False
+            st.session_state.ai_chat_open = True  # Default to open
         if 'ai_chat_history' not in st.session_state:
             st.session_state.ai_chat_history = []
         
@@ -2046,16 +2118,19 @@ class JRManufacturingDashboard:
                     color: white;
                     border: none;
                     border-radius: 50px;
-                    width: 60px;
-                    height: 60px;
-                    font-size: 24px;
+                    width: 80px;
+                    height: 80px;
+                    font-size: 32px;
                     cursor: pointer;
-                    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+                    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
                     transition: all 0.3s ease;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
                 .floating-chat-button:hover {
-                    transform: scale(1.1);
-                    box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+                    transform: scale(1.15);
+                    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
                 }
                 </style>
             """, unsafe_allow_html=True)
@@ -2071,14 +2146,14 @@ class JRManufacturingDashboard:
                 <style>
                 .ai-chat-container {
                     position: fixed;
-                    bottom: 20px;
+                    bottom: 80px;
                     right: 20px;
-                    width: 400px;
-                    height: 500px;
+                    width: 450px;
+                    height: 600px;
                     background: white;
-                    border: 1px solid #ddd;
-                    border-radius: 10px;
-                    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+                    border: 2px solid #1f77b4;
+                    border-radius: 15px;
+                    box-shadow: 0 12px 40px rgba(0,0,0,0.3);
                     z-index: 1001;
                     display: flex;
                     flex-direction: column;
@@ -2086,19 +2161,22 @@ class JRManufacturingDashboard:
                 .ai-chat-header {
                     background: linear-gradient(45deg, #1f77b4, #ff7f0e);
                     color: white;
-                    padding: 15px;
-                    border-radius: 10px 10px 0 0;
+                    padding: 20px;
+                    border-radius: 13px 13px 0 0;
                     font-weight: bold;
+                    font-size: 16px;
                 }
                 .ai-chat-messages {
                     flex: 1;
-                    padding: 15px;
+                    padding: 20px;
                     overflow-y: auto;
-                    max-height: 350px;
+                    max-height: 400px;
+                    background: #f8f9fa;
                 }
                 .ai-chat-input {
-                    padding: 15px;
-                    border-top: 1px solid #eee;
+                    padding: 20px;
+                    border-top: 2px solid #1f77b4;
+                    background: white;
                 }
                 </style>
             """, unsafe_allow_html=True)
