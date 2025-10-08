@@ -1,5 +1,5 @@
 """
-JR Manufacturing Smart Dashboard
+Manufacturing Smart Dashboard
 Complete implementation aligned with project_plan.md specifications
 """
 
@@ -47,7 +47,7 @@ class JRManufacturingDashboard:
     def setup_page_config(self):
         """Setup Streamlit page configuration"""
         st.set_page_config(
-            page_title="JR Manufacturing Smart Dashboard",
+            page_title="Manufacturing Smart Dashboard",
             page_icon="🏭",
             layout="wide",
             initial_sidebar_state="expanded"
@@ -79,15 +79,25 @@ class JRManufacturingDashboard:
         col1, col2, col3 = st.columns([3, 1, 1])
         
         with col1:
-            st.title("🏭 JR Manufacturing Smart Dashboard")
+            st.title("🏭 Manufacturing Smart Dashboard")
             st.subheader("Modular Predictive Maintenance System")
         
         with col2:
             st.metric("System Status", "🟢 Online", "All modules operational")
         
         with col3:
-            current_time = datetime.now().strftime("%H:%M:%S")
+            # Display local time with date
+            now = datetime.now()
+            current_time = now.strftime("%H:%M:%S")
+            current_date = now.strftime("%Y-%m-%d")
             st.metric("Current Time", current_time)
+            st.caption(f"📅 {current_date}")
+            
+            # Add QR code below the time
+            try:
+                st.image("QR.png", width=80, caption="")
+            except:
+                st.write("QR Code")
     
     def render_sidebar(self):
         """Render sidebar with all required filters per project plan"""
@@ -245,7 +255,7 @@ class JRManufacturingDashboard:
         # Company logo and production line status
         col1, col2 = st.columns([1, 2])
         with col1:
-            st.markdown("### 🏭 JR Manufacturing")
+            st.markdown("### 🏭 Manufacturing")
             st.markdown("**Smart Manufacturing Analytics**")
         with col2:
             st.subheader("Production Line Status")
@@ -1696,7 +1706,7 @@ class JRManufacturingDashboard:
     
     def render_documentation(self):
         """Render comprehensive documentation with detailed component numbering"""
-        st.title("📚 JR Manufacturing Smart Dashboard - Complete Documentation")
+        st.title("📚 Manufacturing Smart Dashboard - Complete Documentation")
         
         # Close documentation button
         if st.button("❌ Close Documentation", key="close_docs"):
@@ -1725,7 +1735,7 @@ class JRManufacturingDashboard:
         # Dashboard Overview
         st.header("🎯 Dashboard Overview")
         st.markdown("""
-        The **JR Manufacturing Smart Dashboard** is a comprehensive predictive maintenance and manufacturing analytics platform designed for modern smart manufacturing operations. It provides real-time monitoring, predictive analytics, and intelligent insights for manufacturing processes.
+        The **Manufacturing Smart Dashboard** is a comprehensive predictive maintenance and manufacturing analytics platform designed for modern smart manufacturing operations. It provides real-time monitoring, predictive analytics, and intelligent insights for manufacturing processes.
         
         ### Key Capabilities:
         - **Real-time Monitoring**: Live telemetry data from 26+ manufacturing machines
@@ -2936,7 +2946,7 @@ class ManufacturingAIChatbot:
 
 def main():
     """Main function"""
-    app = JRManufacturingDashboard()
+    app = ManufacturingDashboard()
     app.run()
 
 if __name__ == "__main__":
