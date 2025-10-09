@@ -355,13 +355,14 @@ class JRManufacturingDashboard:
                                     key='time_range_telemetry')
             
             # Filter data based on time range
-            now = pd.Timestamp.now()
+            # Use the latest timestamp from the data instead of current time
+            latest_timestamp = machine_data['timestamp'].max()
             if time_range == 'Last 24 Hours':
-                filtered_data = machine_data[machine_data['timestamp'] >= (now - pd.Timedelta(hours=24))]
+                filtered_data = machine_data[machine_data['timestamp'] >= (latest_timestamp - pd.Timedelta(hours=24))]
             elif time_range == 'Last 7 Days':
-                filtered_data = machine_data[machine_data['timestamp'] >= (now - pd.Timedelta(days=7))]
+                filtered_data = machine_data[machine_data['timestamp'] >= (latest_timestamp - pd.Timedelta(days=7))]
             elif time_range == 'Last 30 Days':
-                filtered_data = machine_data[machine_data['timestamp'] >= (now - pd.Timedelta(days=30))]
+                filtered_data = machine_data[machine_data['timestamp'] >= (latest_timestamp - pd.Timedelta(days=30))]
             else:
                 filtered_data = machine_data
             
