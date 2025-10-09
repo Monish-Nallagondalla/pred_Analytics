@@ -1373,8 +1373,9 @@ class JRManufacturingDashboard:
             try:
                 maintenance_df = pd.read_csv('data/raw/maintenance.csv')
                 if not maintenance_df.empty:
-                    # Convert timestamp column
-                    maintenance_df['timestamp'] = pd.to_datetime(maintenance_df['timestamp'])
+                    # Convert time columns
+                    maintenance_df['start_time'] = pd.to_datetime(maintenance_df['start_time'])
+                    maintenance_df['end_time'] = pd.to_datetime(maintenance_df['end_time'])
                     
                     # Create timeline visualization
                     fig = px.timeline(
@@ -1416,7 +1417,7 @@ class JRManufacturingDashboard:
                     
                     # Recent maintenance events
                     st.subheader("📋 Recent Maintenance Events")
-                    recent_events = maintenance_df.sort_values('timestamp', ascending=False).head(10)
+                    recent_events = maintenance_df.sort_values('start_time', ascending=False).head(10)
                     st.dataframe(recent_events, use_container_width=True)
                     
                     return
